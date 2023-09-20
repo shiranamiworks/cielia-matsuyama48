@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/**
+ *
+ *  ページ用CSS
+ *　specialTOP
+ */
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------
+   Content
+---------------------------------------------------------------------------*/
+#special {
+  background: url("../images/bg01.png") center top no-repeat;
+  background-size: cover; }
+  #special .bnrBlock {
+    margin: auto;
+    width: 90%;
+    max-width: 1200px; }
+    #special .bnrBlock .sectionWrap {
+      margin: auto;
+      width: 90%; }
+      @media screen and (min-width: 480px) {
+        #special .bnrBlock .sectionWrap {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          /*margin-left: -2%; }*/ }
+    #special .bnrBlock figure {
+      margin-top: 3em;
+      border: 10px solid #415464; }
+      @media screen and (min-width: 480px) {
+        #special .bnrBlock figure {
+          width: 33%;
+          margin: 0 auto;
+          /*margin-left: 2%;*/
+           } }

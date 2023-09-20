@@ -1,0 +1,382 @@
+@charset "UTF-8";
+/**
+ *
+ *  ページ用CSS
+ *　salon
+ */
+.sm {
+  display: block;
+}
+@media screen and (min-width: 480px) {
+  .sm {
+    display: none;
+  }
+}
+
+.sm-md {
+  display: block;
+}
+@media screen and (min-width: 767px) {
+  .sm-md {
+    display: none;
+  }
+}
+
+.sm-lg {
+  display: block;
+}
+@media screen and (min-width: 1023px) {
+  .sm-lg {
+    display: none;
+  }
+}
+
+.md {
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  .md {
+    display: block;
+  }
+}
+
+.lg {
+  display: none;
+}
+@media screen and (min-width: 960px) {
+  .lg {
+    display: block;
+  }
+}
+
+.xl {
+  display: none;
+}
+@media screen and (min-width: 1023px) {
+  .xl {
+    display: block;
+  }
+}
+
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+.page-ttl h2 {
+  margin-top: -30px;
+  font-size: 6rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .page-ttl h2 {
+    margin-top: -20px;
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .page-ttl h2 {
+    margin-top: -20px;
+    font-size: 4.5rem;
+  }
+}
+/*--------------------------------------------------------------------------
+   Content
+---------------------------------------------------------------------------*/
+#salon figure {
+  position: relative;
+}
+#salon figure figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 .5em;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.2rem;
+}
+
+#salon .inner {
+  padding-top: 0;
+}
+#salon .intro {
+  position: relative;
+}
+#salon .intro .sectionWrap {
+  margin: auto;
+  padding: 2em 0;
+  width: 90%;
+  max-width: 1000px;
+}
+#salon .intro .intro__title {
+  margin-top: .5em;
+  text-align: center;
+  color: #415464;
+  font-size: 2rem;
+}
+@media screen and (min-width: 960px) {
+  #salon .intro .intro__title {
+    margin-top: 1.5em;
+    font-size: 2.8rem;
+  }
+}
+#salon .intro .intro__title span {
+  display: block;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 960px) {
+  #salon .intro .intro__title span {
+    font-size: 1.9rem;
+  }
+}
+#salon .intro .intro__subTitle {
+  margin: auto;
+  padding: .3em 1em;
+  width: 12em;
+  text-align: center;
+  color: white;
+  background: #948a68;
+}
+@media screen and (min-width: 960px) {
+  #salon .intro .intro__subTitle {
+    font-size: 1.8rem;
+  }
+}
+#salon .intro .intro__read {
+  margin-top: 2em;
+  text-align: center;
+}
+
+#salon .FlowBlock {
+  padding-bottom: 3em;
+  background: url("../images/flow_bg01.png") center top no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+@media screen and (min-width: 960px) {
+  #salon .FlowBlock {
+    padding-bottom: 8em;
+  }
+}
+
+#salon .sectionFlow .sectionWrap {
+  margin: auto;
+  padding: 2em 0;
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+}
+#salon .sectionFlow .sectionFlow__titleBlock__title__sub {
+  margin: auto;
+  width: 13%;
+}
+#salon .sectionFlow .sectionFlow__titleBlock__title__main {
+  margin-top: .5em;
+  color: #415464;
+  font-size: 2rem;
+}
+@media screen and (min-width: 960px) {
+  #salon .sectionFlow .sectionFlow__titleBlock__title__main {
+    margin-top: 1.5em;
+    font-size: 2.8rem;
+  }
+}
+#salon .sectionFlow .sectionFlow__readBlock {
+  margin-top: 2em;
+}
+
+@media screen and (min-width: 960px) {
+  #salon .sectionStep {
+    margin-top: 8em;
+  }
+}
+#salon .sectionStep .sectionWrap {
+  margin: auto;
+  padding: 2em 0;
+  width: 90%;
+  max-width: 1220px;
+}
+@media screen and (min-width: 960px) {
+  #salon .sectionStep .sectionWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 960px) {
+  #salon .sectionStep__textBlock {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 960px) {
+  #salon .sectionStep__titleBlock {
+    margin-top: 2em;
+  }
+}
+@media screen and (min-width: 960px) {
+  #salon .sectionStep__titleBlock__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #646468;
+  }
+}
+#salon .sectionStep__titleBlock__title__sub {
+  text-align: center;
+  color: #415464;
+  font-size: 2.6rem;
+}
+@media screen and (min-width: 960px) {
+  #salon .sectionStep__titleBlock__title__sub {
+    font-size: 2rem;
+  }
+}
+#salon .sectionStep__titleBlock__title__sub span {
+  font-size: 3.5rem;
+}
+@media screen and (min-width: 960px) {
+  #salon .sectionStep__titleBlock__title__sub span {
+    margin-left: .1em;
+    font-size: 4rem;
+  }
+}
+#salon .sectionStep__titleBlock__title__main {
+  text-align: center;
+  color: #415464;
+  font-size: 2.2rem;
+}
+@media screen and (min-width: 960px) {
+  #salon .sectionStep__titleBlock__title__main {
+    margin-left: .5em;
+    margin-bottom: .1em;
+    font-size: 3rem;
+  }
+}
+#salon .sectionStep__readBlock {
+  margin-top: 2em;
+}
+@media screen and (min-width: 960px) {
+  #salon .sectionStep__readBlock {
+    margin-right: 5em;
+  }
+}
+#salon .sectionStep__photoBlock {
+  margin-top: 1.5em;
+}
+@media screen and (min-width: 960px) {
+  #salon .sectionStep__photoBlock {
+    width: 60%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #salon .sectionStep.even .sectionWrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (min-width: 960px) {
+  #salon .sectionStep.even .sectionWrap .sectionStep__titleBlock__title {
+    padding-left: 3em;
+  }
+}
+@media screen and (min-width: 960px) {
+  #salon .sectionStep.even .sectionWrap .sectionStep__readBlock {
+    padding-left: 3em;
+  }
+}
+
+#salon .caption figure.note {
+  width: 100%;
+  max-width: 574px;
+}
+
+#salon .sectionContact {
+  margin-top: 2em;
+}
+@media screen and (min-width: 960px) {
+  #salon .sectionContact {
+    margin-top: 6em;
+  }
+}
+#salon .sectionContact .sectionWrap {
+  margin: auto;
+  width: 90%;
+  max-width: 1000px;
+  border: 2px solid #415464;
+}
+#salon .sectionContact__inner {
+  margin: 8px;
+  padding: 1.5em .5em;
+  background: rgba(255, 255, 255, 0.5);
+}
+@media screen and (min-width: 960px) {
+  #salon .sectionContact__inner {
+    padding: 2em 15em;
+  }
+}
+#salon .sectionContact__title {
+  text-align: center;
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 960px) {
+  #salon .sectionContact__title {
+    font-size: 2.5rem;
+  }
+}
+#salon .sectionContact__btn {
+  margin-top: 1em;
+}
+#salon .sectionContact__btn a {
+  padding: 1.5em 0;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #FFF;
+  background: #904e55;
+  opacity: 1;
+  transition: 0.5s;
+}
+#salon .sectionContact__btn a:hover {
+  opacity: .7;
+}
+#salon .sectionContact__btn a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  display: block;
+  width: 8px;
+  height: 8px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: url("../images/icon_arrow01.png") no-repeat;
+  background-size: 100% auto;
+}
+
+
+.ladies{
+  width: 90%;
+  max-width: 1220px;
+  border: 2px solid #9e6363;
+  background-color: #fce8e9;
+  padding: 40px;
+  text-align: center;
+  margin: 20px auto 60px;
+  display: block;
+}
+
+.ladies h3{
+  color: #9e6363;
+  font-size: 140%;
+  margin-bottom: 20px;
+}

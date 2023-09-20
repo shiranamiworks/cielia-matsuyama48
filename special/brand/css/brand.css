@@ -1,0 +1,410 @@
+@charset "UTF-8";
+/**
+ *
+ *  ページ用CSS
+ *　position
+ */
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+.page-ttl h2 {
+  margin-top: -30px;
+  font-size: 6rem; }
+
+@media screen and (max-width: 1280px) {
+  .page-ttl h2 {
+    margin-top: -20px;
+    font-size: 4rem; } }
+@media screen and (max-width: 480px) {
+  .page-ttl h2 {
+    margin-top: -20px;
+    font-size: 4.5rem; } }
+/*--------------------------------------------------------------------------
+   Content
+---------------------------------------------------------------------------*/
+#brand {
+  padding-top: 120px;
+  text-align: center; }
+
+#brand .inner {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0; }
+
+#brand h3 {
+  margin-bottom: 30px;
+  font-size: 2.8rem;
+  line-height: 1.5;
+  font-weight: normal; }
+
+#brand .txt-lead {
+  font-size: 1.8rem;
+  line-height: 2; }
+
+/* intro
+-----------------------------------------------------------------*/
+#brand .intro {
+  padding: 0 0 55px; }
+
+#brand .intro .logo {
+  margin-bottom: 30px; }
+
+#brand .intro .logo span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 2rem; }
+
+#brand .intro .txt-lead {
+  margin-bottom: 75px; }
+
+#brand .cielia-list {
+  max-width: 860px;
+  margin: 0 auto 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+#brand .cielia-list li {
+  width: 50%;
+  margin-bottom: 15px; }
+
+#brand .cielia-list li img {
+  width: 100%; }
+
+#brand .cielia-list li:nth-child(3),
+#brand .cielia-list li:nth-child(4) {
+  width: 49%; }
+
+#brand .cielia-list .cap {
+  display: block;
+  font-size: 1.8rem;
+  text-align: left; }
+
+#brand .cielia-list .cap.sp {
+  display: none; }
+
+#brand .series {
+  margin-bottom: 90px; }
+
+#brand .series .pic .caption {
+  display: block;
+  max-width: 960px;
+  margin: 10px auto 0;
+  text-align: left;
+  font-size: 1.2rem; }
+
+#brand .example h3 {
+  margin-bottom: 25px; }
+
+#brand .series-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 865px;
+  margin: 0 auto; }
+
+#brand .series-list li {
+  width: 50%;
+  padding: 0 9px;
+  margin-bottom: 35px; }
+
+#brand .series-list .pic {
+  margin-bottom: 12px; }
+
+#brand .series-list .name {
+  font-size: 2rem; }
+
+#brand .series-list .name .area {
+  position: relative;
+  display: block;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  font-size: 1.6rem; }
+
+#brand .series-list .name .area::after {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  display: block;
+  content: "";
+  width: 108px;
+  height: 1px;
+  background: #A19B98; }
+
+#brand .series-list .name .note {
+  display: block;
+  font-size: 1.4rem; }
+
+/* cielia-plus
+-----------------------------------------------------------------*/
+#brand .cielia-plus {
+  padding: 105px 0 75px;
+  background: url(../images/bg_cielia-plus.jpg) repeat-x center top; }
+
+#brand .cielia-plus txt-lead {
+  margin-bottom: 75px; }
+
+#brand .cielia-plus .logo {
+  margin-bottom: 40px; }
+
+#brand .cielia-plus .logo span {
+  display: block;
+  margin-top: 25px;
+  line-height: 1.6; }
+
+#brand .service-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto; }
+
+#brand .service-list .name {
+  position: relative;
+  display: block;
+  margin-bottom: 25px; }
+
+#brand .service-list .txt {
+  text-align: left;
+  line-height: 1.6; }
+
+#brand .service-list .note {
+  padding-top: 3px;
+  font-size: 1.2rem;
+  text-align: left; }
+
+#brand .cielia-plus .service-list {
+  max-width: 646px;
+  justify-content: space-between; }
+
+#brand .cielia-plus .service-list li {
+  max-width: 270px; }
+
+#brand .denkaBlock {
+  margin-top: 4em; }
+  #brand .denkaBlock h4 {
+    font-size: 1.8rem;
+    font-weight: 500; }
+    @media screen and (min-width: 767px) {
+      #brand .denkaBlock h4 {
+        font-size: 2.5rem; } }
+    #brand .denkaBlock h4 .note {
+      margin-left: -.5em;
+      color: #646468;
+      font-size: 1.2rem;
+      vertical-align: text-top; }
+  #brand .denkaBlock__innre {
+    margin-top: 2em; }
+    @media screen and (min-width: 767px) {
+      #brand .denkaBlock__innre {
+        margin: 4em auto 0;
+        width: 100%;
+        max-width: 1000px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; } }
+  @media screen and (min-width: 767px) {
+    #brand .denkaBlock__photo {
+      width: 40%; } }
+  #brand .denkaBlock__read {
+    margin-top: 1em;
+    text-align: left; }
+    @media screen and (min-width: 767px) {
+      #brand .denkaBlock__read {
+        margin-top: 0;
+        width: 55%; } }
+    #brand .denkaBlock__read .note {
+      margin-top: 1em;
+      color: #646468;
+      font-size: 1.2rem; }
+    #brand .denkaBlock__read .reference {
+      color: #646468;
+      font-size: 1.2rem; }
+  #brand .denkaBlock__requestBlock {
+    margin-top: 4em;
+    position: relative;
+    display: inline-block; }
+    @media screen and (min-width: 767px) {
+      #brand .denkaBlock__requestBlock {
+        margin-top: 7em; } }
+    #brand .denkaBlock__requestBlock::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -2em;
+      display: inline-block;
+      width: 120px;
+      height: 1px;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      background-color: #252627; }
+      @media screen and (min-width: 767px) {
+        #brand .denkaBlock__requestBlock::before {
+          top: -3em; } }
+    #brand .denkaBlock__requestBlock p {
+      font-size: 1.7rem; }
+
+/* service
+-----------------------------------------------------------------*/
+#brand .service {
+  padding: 90px 0 75px;
+  background: url(../images/bg_service.jpg); }
+
+#brand .service .txt-lead {
+  margin-bottom: 50px; }
+
+#brand .service .service-list {
+  max-width: 925px; }
+
+#brand .service .service-list li {
+  width: 33.33%;
+  padding: 0 19px; }
+
+/*--------------------------------------------------------------------------
+   mobile
+---------------------------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+  /*--------------------------------------------------------------------------
+     Content
+  ---------------------------------------------------------------------------*/
+  #brand {
+    padding-top: 40px; }
+
+  #brand h3 {
+    margin-bottom: 20px;
+    font-size: 1.6rem; }
+
+  #brand .txt-lead {
+    font-size: 1.3rem;
+    line-height: 1.8; }
+
+  #Notes {
+    min-height: 40px; }
+
+  /* intro
+  -----------------------------------------------------------------*/
+  #brand .intro {
+    padding: 0 0 40px; }
+
+  #brand .intro .logo {
+    width: 50%;
+    margin: 0 auto 20px; }
+
+  #brand .intro .logo span {
+    font-size: 1.6rem; }
+
+  #brand .intro .txt-lead {
+    margin-bottom: 40px; }
+
+  #brand .cielia-list {
+    max-width: initial;
+    margin: 0 auto 70px; }
+
+  #brand .cielia-list li {
+    margin-bottom: 15px; }
+
+  #brand .cielia-list li:first-child {
+    float: none;
+    margin-left: 0; }
+
+  #brand .cielia-list .cap {
+    margin-top: 8px;
+    font-size: 1.4rem;
+    line-height: 1.3;
+    text-align: center; }
+
+  #brand .series {
+    margin-bottom: 40px; }
+
+  #brand .series .pic .caption {
+    max-width: initial;
+    font-size: 1.1rem; }
+
+  #brand .example h3 {
+    margin-bottom: 20px; }
+
+  #brand .series-list li {
+    width: 50%;
+    padding: 0 4px;
+    margin-bottom: 30px; }
+
+  #brand .series-list .pic {
+    margin-bottom: 8px; }
+
+  #brand .series-list .name {
+    font-size: 1.2rem;
+    line-height: 1.3; }
+
+  #brand .series-list .name .area {
+    font-size: 1.2rem; }
+
+  #brand .series-list .name .note {
+    display: block;
+    font-size: 1.2rem; }
+
+  /* cielia-plus
+  -----------------------------------------------------------------*/
+  #brand .cielia-plus {
+    padding: 50px 0 40px; }
+
+  #brand .cielia-plus txt-lead {
+    margin-bottom: 75px; }
+
+  #brand .cielia-plus .logo {
+    margin-bottom: 40px; }
+
+  #brand .cielia-plus .logo span {
+    display: block;
+    margin-top: 25px;
+    line-height: 1.6; }
+
+  #brand .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto; }
+
+  #brand .service-list li {
+    margin-bottom: 3em; }
+
+  #brand .service-list .name {
+    position: relative;
+    display: block;
+    margin-bottom: 25px; }
+
+  #brand .service-list .txt {
+    text-align: left;
+    line-height: 1.6;
+    font-size: 1.3rem; }
+
+  #brand .cielia-plus .service-list {
+    max-width: initial;
+    display: block;
+    justify-content: space-between; }
+
+  #brand .cielia-plus .service-list li {
+    max-width: initial;
+    padding: 0; }
+
+  #brand .cielia-plus .service-list li + li {
+    margin-top: 25px; }
+
+  /* service
+  -----------------------------------------------------------------*/
+  #brand .service {
+    padding: 40px 0 45px;
+    background: url(../images/bg_service.jpg); }
+
+  #brand .service .txt-lead {
+    margin-bottom: 50px; }
+
+  #brand .service .service-list {
+    max-width: initial;
+    display: block; }
+
+  #brand .service .service-list li {
+    width: 100%;
+    padding: 0; }
+
+  #brand .service .service-list li + li {
+    margin-top: 25px; } }

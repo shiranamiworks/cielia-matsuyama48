@@ -1,0 +1,834 @@
+@charset "utf-8";
+/**
+ *
+ *  ページ用CSS
+ *　ecology
+ */
+
+//**************************
+// brake point
+//**************************
+$breakpoint-sm: 480px;
+$breakpoint-md: 767px;
+$breakpoint-lg: 960px;
+$breakpoint-xl: 1023px;
+$breakpoint-xll: 1279px;
+$breakpoint-max: 1600px;
+
+@mixin breakpoint-sm {
+	@media screen and (min-width:($breakpoint-sm)) { @content; } }
+
+@mixin breakpoint-md {
+	@media screen and (min-width:($breakpoint-md)) { @content; } }
+
+@mixin breakpoint-lg {
+	@media screen and (min-width:($breakpoint-lg)) { @content; } }
+
+@mixin breakpoint-xl {
+	@media screen and (min-width:($breakpoint-xl)) { @content; } }
+
+@mixin breakpoint-xll {
+	@media screen and (min-width:($breakpoint-xll)) { @content; } }
+
+@mixin breakpoint-max {
+	@media screen and (min-width:($breakpoint-max)) { @content; } }
+
+//**************************
+// color
+//**************************
+$color_primaryA_01:rgba(220, 229, 233, 1);
+$color_primaryA_02:rgba(181, 199, 206, 1);
+$color_primaryA_03:rgba(162, 182, 189, 1);
+$color_primaryA_04:rgba(65, 84, 100, 1);
+
+$color_accentA_01:rgba(144, 78, 85, 1);
+$color_accentB_01:rgba(102, 139, 103, 1);
+
+$color_accentC_01:rgba(235, 220, 203, 1);
+$color_accentC_02:rgba(191, 180, 143, 1);
+$color_accentC_03:rgba(148, 138, 104, 1);
+
+$color_gray_01:rgba(100, 100, 104, 1);
+$color_gray_02:rgba(37, 38, 39, 1);//TEXT Color
+$color_gray_03:rgba(8, 9, 9, 1);
+
+$color_white:rgba(255, 255, 255, 1);
+$color_black:rgba(0, 0, 0, 1);
+
+.sm {
+	display: block;
+	@include breakpoint-sm {
+		display: none;
+	}
+}
+.sm-md {
+	display: block;
+	@include breakpoint-md {
+		display: none;
+	}
+}
+.sm-lg {
+	display: block;
+	@include breakpoint-xl {
+		display: none;
+	}
+}
+.md {
+	display: none;
+	@include breakpoint-md {
+		display: block;
+	}
+}
+.lg {
+	display: none;
+	@include breakpoint-lg {
+		display: block;
+	}
+}
+.xl {
+	display: none;
+	@include breakpoint-xl {
+		display: block;
+	}
+}
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+
+.page-ttl h2 {
+	margin-top: -30px;
+	font-size: 6rem;
+}
+
+@media screen and (max-width:1280px) {
+	.page-ttl h2{
+		margin-top: -20px;
+		font-size: 4rem;
+	}
+}
+@media screen and (max-width:480px) {
+    .page-ttl h2 {
+			margin-top: -20px;
+      font-size: 4.5rem;
+    }
+}
+
+
+/*--------------------------------------------------------------------------
+   Content
+---------------------------------------------------------------------------*/
+
+#ecology {
+	figure {
+		position: relative;
+		figcaption {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			padding: 0 .5em;
+			background: rgba($color_black, .5);
+			color: $color_white;
+			font-size: 1.2rem;
+		}
+	}
+}
+
+#ecology {
+	.inner {
+		padding-top:0;
+	}
+	.intro {
+		position: relative;
+		.sectionWrap {
+			margin: auto;
+			padding: 2em 0;
+			width: 90%;
+			max-width: 1000px;
+		}
+		.intro__title {
+			margin-top: .5em;
+			text-align: center;
+			color: $color_primaryA_04;
+			font-size: 2rem;
+			@include breakpoint-lg {
+				margin-top: 1.5em;
+				font-size: 2.8rem;
+			}
+			span {
+				display: block;
+				font-size: 1.5rem;
+				@include breakpoint-lg {
+					font-size: 1.9rem;
+				}
+			}
+		}
+		.intro__subTitle {
+			margin: auto;
+			padding: .3em 1em;
+			width: 12em;
+			text-align: center;
+			color: $color_white;
+			background: $color_accentC_03;
+			@include breakpoint-lg {
+				font-size: 1.8rem;
+			}
+		}
+		.intro__read {
+			margin-top: 2em;
+			text-align: center;
+			@include breakpoint-lg {
+				font-size: 2rem;
+			}
+		}
+		&::before {
+			@include breakpoint-lg {
+				content:"";
+				position: absolute;
+				top: 2em;
+				left: 0;
+				display:block;
+				width: 23%;
+				height: 390px;
+				background:url("../images/intro_img01.png") no-repeat;
+				background-size:100% auto;
+			}
+			@include breakpoint-xll {
+				position: absolute;
+				top: 1em;
+				left: 5%;
+			}
+		}
+		&::after {
+			@include breakpoint-lg {
+				content:"";
+				position: absolute;
+				top: 2em;
+				right: 0;
+				display:block;
+				width: 23%;
+				height: 390px;
+				background:url("../images/intro_img02.png") no-repeat;
+				background-size:100% auto;
+			}
+			@include breakpoint-xll {
+				position: absolute;
+				top: 1em;
+				right: 5%;
+			}
+		}
+	}
+}
+
+#ecology {
+	.pageNav {
+		padding-top: 20%;
+		padding-bottom: 1em;
+		background: url("../images/pagenav_img01.png") center top no-repeat;
+		background-size: cover;
+		@include breakpoint-lg {
+			padding-top: 0;
+			margin-top: 0;
+			background: none;
+		}
+		@include breakpoint-xll {
+			margin-top: 4%;
+		}
+		.sectionWrap {
+			margin: auto;
+			width: 90%;
+			max-width: 1000px;
+		}
+		&__list {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			&__item {
+				margin-top: 1em;
+				width: 48%;
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+				@include breakpoint-lg {
+					width: 24%;
+				}
+				a {
+					position: relative;
+					display:-webkit-box;
+					display:-ms-flexbox;
+					display:flex;
+					-webkit-box-align: center;
+					-ms-flex-align: center;
+					align-items: center;
+					display: block;
+					padding: 1em 1em 1.5em 1em;
+					width: 100%;
+					text-align: center;
+					color: $color_white;
+					background: $color_accentC_03;
+					transition: .7s ease-out;
+					@include breakpoint-lg {
+						font-size: 1.8rem;
+						padding: 2em 1em 2.5em 1em;
+					}
+					&::before {
+						content:"";
+						position: absolute;
+						bottom: 8%;
+						left: 50%;
+						-webkit-transform: translateX(-50%);
+						transform: translateX(-50%);/*位置調整*/
+						display:block;
+						width: 8px;
+						height: 8px;
+						background:url("../images/pagenav_img02.png") no-repeat;
+						background-size:100% auto;
+					}
+					&:hover {
+						background: #776939;
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+
+#ecology {
+	.sectionContents {
+		margin-top: 3em;
+		&__titleBlock {
+			z-index: -1;
+			position: relative;
+			height: 30vh;
+			background: url("../images/con01_img01.png") no-repeat;
+			background-position: 50% 40%;
+			background-size: 180% auto;
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			@include breakpoint-lg {
+				height: 400px;
+				background: url("../images/con01_img01.png") no-repeat;
+				background-position: left top;
+				background-size: cover;
+			}
+			&::after {
+				content:"imagephoto";
+				display:block;
+				position:absolute;
+				bottom: 0;
+				right: 0;
+				color: $color_white;
+				font-size: 1.2rem;
+				letter-spacing: -.05px;
+			}
+			&__title {
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				margin: auto;
+				padding: 1em;
+				width: 80%;
+				color: $color_white;
+				height: 50%;
+				background: rgba(35,49,61,.8);
+				font-size: 1.8rem;
+				text-align: center;
+				@include breakpoint-lg {
+					font-size: 2.5rem;
+					width: 50%;
+					height: 40%;
+				}
+				@include breakpoint-xll {
+					width: 30%;
+				}
+			}
+		}
+		.sectionWrap {
+			margin: auto;
+			padding: 2em 0 0;
+			width: 90%;
+			max-width: 1200px;
+			@include breakpoint-lg {
+				margin-top: -5em;
+				padding-top: 4em;
+				background: $color_white;
+			}
+		}
+	}
+}
+
+#ecology {
+	.con01.sectionContents {
+		.sectionContents__titleBlock {
+			background: url("../images/con01_img01.png") no-repeat;
+			background-position: 50% 40%;
+			background-size: 180% auto;
+			@include breakpoint-lg {
+				background: url("../images/con01_img01.png") no-repeat;
+				background-position: left top;
+				background-size: cover;
+			}
+		}
+	}
+	.con01 {
+		&__inner {
+			@include breakpoint-lg {
+				margin: auto;
+				width: 100%;
+				max-width: 710px;
+			}
+		}
+		h5 {
+			padding: .5em;
+			text-align: center;
+			color: $color_white;
+			background: $color_accentB_01;
+			@include breakpoint-lg {
+				font-size: 1.8rem;
+			}
+		}
+		.note {
+			text-align: right;
+			font-size: 1.2rem;
+			color: $color_gray_01;
+		}
+		figure {
+			margin: 2em auto 0;
+			@include breakpoint-lg {
+				margin-top: 4em;
+			}
+		}
+	}
+}
+
+#ecology {
+	.con02.sectionContents {
+		.sectionContents__titleBlock {
+			background: url("../images/con02_img01.png") no-repeat;
+			background-position: 5% 50%;
+			background-size: 200% auto;
+			@include breakpoint-lg {
+				background: url("../images/con02_img01.png") no-repeat;
+				background-position: left top;
+				background-size: cover;
+			}
+		}
+	}
+	.con02 {
+		margin-top: 5em;
+		@include breakpoint-lg {
+			margin-top: 8em;
+		}
+		&__inner {
+			@include breakpoint-lg {
+				margin: auto;
+				width: 100%;
+				max-width: 900px;
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+				-webkit-box-pack: justify;
+				-ms-flex-pack: justify;
+				justify-content: space-between;
+			}
+		}
+		&__subtitle {
+			text-align: center;
+			color: $color_accentC_03;
+			font-size: 1.6rem;
+			@include breakpoint-lg {
+				font-size: 2rem;
+			}
+		}
+		&__readBlock {
+			@include breakpoint-lg {
+				width: 46%;
+				background: url("../images/con02_img04.png") left bottom no-repeat;
+				background-size: auto 60%;
+			}
+		}
+		&__imageBlock {
+			margin-top: 2em;
+			@include breakpoint-lg {
+				margin-top: 0;
+				width: 48%;
+			}
+		}
+		h5 {
+			padding: .2em 1em;
+			text-align: center;
+			@include breakpoint-lg {
+				margin-top: .5em;
+				font-size: 2.4rem;
+				color: $color_white;
+				background: $color_accentB_01;
+			}
+		}
+		.read {
+			margin-top: 2em;
+			padding: 0 1em;
+			@include breakpoint-lg {
+				padding: 0;
+			}
+		}
+		.note {
+			text-align: left;
+			font-size: 1.2rem;
+			color: $color_gray_01;
+		}
+	}
+}
+
+#ecology {
+	.con03.sectionContents {
+		.sectionContents__titleBlock {
+			background: url("../images/con03_img01.png") no-repeat;
+			background-position: right 50%;
+			background-size: 200% auto;
+			@include breakpoint-lg {
+				background: url("../images/con03_img01.png") no-repeat;
+				background-position: left top;
+				background-size: cover;
+			}
+		}
+	}
+	.con03 {
+		margin-top: 5em;
+		@include breakpoint-lg {
+			margin-top: 8em;
+		}
+		&__inner {
+			@include breakpoint-lg {
+				margin: auto;
+				width: 100%;
+				max-width: 1000px;
+			}
+		}
+		.note {
+			font-size: 1.2rem;
+			color: $color_gray_01;
+		}
+		&__listBlockWrap {
+			@include breakpoint-lg {
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+				-webkit-box-pack: justify;
+				-ms-flex-pack: justify;
+				justify-content: space-between;
+			}
+		}
+		&__listBlock {
+			margin-top: 2em;
+			&:first-child {
+				margin-top: 0;
+			}
+			@include breakpoint-lg {
+				margin-top: 0;
+				width: 44%;
+			}
+			&__title {
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+				-webkit-box-align: start;
+				-ms-flex-align: start;
+				align-items: flex-start;
+				&__num {
+					width: 8%;
+					margin-right: .5em;
+					text-align: center;
+					font-size: 1.6rem;
+					color: $color_white;
+					background: $color_accentC_03;
+					@include breakpoint-lg {
+						font-size: 1.9rem;
+					}
+				}
+				&__titleText {
+					width: 90%;
+					font-size: 1.6rem;
+					color: $color_accentC_03;
+					@include breakpoint-lg {
+						font-size: 1.9rem;
+					}
+				}
+				&+p{
+					margin-top: 1em;
+				}
+			}
+			figure {
+				margin-top: 1em;
+				&+p {
+					margin-top: 1em;
+				}
+			}
+			&__innerBlock {
+				margin-top: 1em;
+				@include breakpoint-lg {
+					margin: 2em auto auto;
+					width: 96%;
+					display:-webkit-box;
+					display:-ms-flexbox;
+					display:flex;
+					-webkit-box-pack: justify;
+					-ms-flex-pack: justify;
+					justify-content: space-between;
+				}
+				&__item {
+					@include breakpoint-lg {
+						width: 45%;
+					}
+					h6 {
+						margin-top: 1em;
+						color: $color_accentC_03;
+					}
+					.pointNote {
+						margin-top: 0;
+						color: $color_accentC_03;
+					}
+				}
+			}
+		}
+		.con03__listBlock.block03 {
+			@include breakpoint-lg {
+				margin-top: 3em;
+				width: 100%;
+				.con03__listBlock__title__num {
+					width: 2em;
+				}
+			}
+		}
+	}
+}
+
+#ecology {
+	.con04.sectionContents {
+		.sectionContents__titleBlock {
+			background: url("../images/con04_img01.png") no-repeat;
+			background-position: 5% 50%;
+			background-size: 200% auto;
+			@include breakpoint-lg {
+				background: url("../images/con04_img01.png") no-repeat;
+				background-position: left top;
+				background-size: cover;
+			}
+		}
+	}
+	.con04 {
+		margin-top: 5em;
+		@include breakpoint-lg {
+			margin-top: 8em;
+		}
+		&__inner {
+			@include breakpoint-lg {
+				margin: auto;
+				width: 100%;
+				max-width: 900px;
+			}
+		}
+		.note {
+			font-size: 1.2rem;
+			color: $color_gray_01;
+			@include breakpoint-lg {
+				margin-top: .5em;
+			}
+		}
+		&__listBlock01 {
+			&__title {
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+				-webkit-box-align: start;
+				-ms-flex-align: start;
+				align-items: flex-start;
+				&__num {
+					width: 2em;
+					margin-right: .5em;
+					text-align: center;
+					font-size: 1.6rem;
+					color: $color_white;
+					background: $color_accentC_03;
+					@include breakpoint-lg {
+						font-size: 1.9rem;
+					}
+				}
+				&__titleText {
+					width: 98%;
+					font-size: 1.6rem;
+					color: $color_accentC_03;
+					@include breakpoint-lg {
+						font-size: 1.9rem;
+					}
+				}
+			}
+			&Inner {
+				margin-top: 1em;
+				@include breakpoint-lg {
+					margin-top: 2em;
+					display:-webkit-box;
+					display:-ms-flexbox;
+					display:flex;
+					-webkit-box-pack: justify;
+					-ms-flex-pack: justify;
+					justify-content: space-between;
+
+				}
+			}
+			&__readBlock {
+				p+p {
+					margin-top: 1em;
+				}
+				@include breakpoint-lg {
+					width: 50%;
+				}
+			}
+			&__imageBlock {
+				margin-top: 1em;
+				@include breakpoint-lg {
+					margin-top: 0;
+					width: 45%;
+				}
+			}
+		}
+		&__listBlock02 {
+			margin-top: 2em;
+			@include breakpoint-lg {
+				margin-top: 4em;
+			}
+			&__title {
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+				-webkit-box-align: start;
+				-ms-flex-align: start;
+				align-items: flex-start;
+				&__num {
+					width: 2em;
+					margin-right: .5em;
+					text-align: center;
+					font-size: 1.6rem;
+					color: $color_white;
+					background: $color_accentC_03;
+					@include breakpoint-lg {
+						font-size: 1.9rem;
+					}
+				}
+				&__titleText {
+					width: 98%;
+					font-size: 1.6rem;
+					color: $color_accentC_03;
+					@include breakpoint-lg {
+						font-size: 1.9rem;
+					}
+				}
+			}
+			&Inner {
+				margin-top: 1em;
+				@include breakpoint-lg {
+					display:-webkit-box;
+					display:-ms-flexbox;
+					display:flex;
+					-webkit-box-pack: justify;
+					-ms-flex-pack: justify;
+					justify-content: space-between;
+					-ms-flex-wrap: wrap;
+					flex-wrap: wrap;
+				}
+			}
+			&__item {
+				margin-top: 1em;
+				padding: .6em;
+				background: $color_primaryA_01;
+				@include breakpoint-lg {
+					margin-top: 2em;
+					padding: .6em 1.2em;
+					width: 49%;
+				}
+				h6 {
+					padding-bottom: .5em;
+					color: $color_primaryA_04;
+					border-bottom: 1px solid $color_primaryA_03;
+					@include breakpoint-lg {
+						font-size: 1.8rem;
+					}
+					&::before {
+						content: '';
+						display: inline-block;
+						width: 22px;
+						height: 22px;
+						margin-right: .5em;
+						background-image: url("../images/con04_icon01.png");
+						background-repeat: none;
+						background-size: contain;
+						vertical-align: middle;
+						@include breakpoint-lg {
+							width: 35px;
+							height: 35px;
+						}
+					}
+					&.item01 {
+						&::before {
+							background-image: url("../images/con04_icon01.png");
+							background-repeat: none;
+							background-size: contain;
+						}
+					}
+					&.item02 {
+						&::before {
+							background-image: url("../images/con04_icon02.png");
+							background-repeat: none;
+							background-size: contain;
+						}
+					}
+					&.item03 {
+						&::before {
+							background-image: url("../images/con04_icon03.png");
+							background-repeat: none;
+							background-size: contain;
+						}
+					}
+					&.item04 {
+						&::before {
+							background-image: url("../images/con04_icon04.png");
+							background-repeat: none;
+							background-size: contain;
+						}
+					}
+					&.item05 {
+						&::before {
+							background-image: url("../images/con04_icon05.png");
+							background-repeat: none;
+							background-size: contain;
+						}
+					}
+				}
+				p {
+					margin-top: .5em;
+				}
+			}
+		}
+	}
+}
+
+#ecology {
+	.caption {
+		figure.note {
+			width: 100%;
+			max-width: 574px;
+		}
+	}
+}
+

@@ -1,0 +1,431 @@
+@charset "UTF-8";
+/**
+ *
+ *  ページ用CSS
+ *　newstyle
+ */
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------
+   Content
+---------------------------------------------------------------------------*/
+#newstyle .sm {
+  display: block; }
+  @media screen and (min-width: 480px) {
+    #newstyle .sm {
+      display: none; } }
+#newstyle .md {
+  display: none; }
+  @media screen and (min-width: 767px) {
+    #newstyle .md {
+      display: block; } }
+.mv figure{
+  position: relative;
+}
+.mv figcaption{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 .5em;
+  color: #fff;
+  font-size: 1.2rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+#newstyle .inner{
+  padding-top: 0;
+}
+#newstyle .sectionWrap{
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+}
+#newstyle .intro {
+  margin: auto;
+  padding: 50px 0;
+  background: #13A195; }
+  @media screen and (min-width: 767px) {
+      #newstyle .intro {
+         padding: 100px 0; } }
+  #newstyle .intro h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff; }
+    @media screen and (min-width: 767px) {
+      #newstyle .intro h3 {
+        font-size: 3.5rem; } }
+  #newstyle .intro .newstyleTime {
+    margin-top: 3em; }
+    @media screen and (min-width: 767px) {
+      #newstyle .intro .newstyleTime {
+        margin: 3em auto 0;
+        width: 70%;
+        max-width: 510px; } }
+  #newstyle .intro .photoBlock {
+    margin-top: 3em; }
+    @media screen and (min-width: 767px) {
+      #newstyle .intro .photoBlock {
+        margin-top: 5em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
+  #newstyle .intro figure {
+    position: relative; }
+    #newstyle .intro figure figcaption {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 0 .5em;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 1.2rem; }
+  #newstyle .intro .read {
+    margin-top: 3em;
+    line-height: 2;
+    color: #fff;
+    text-align: center;}
+    @media screen and (min-width: 767px) {
+      #newstyle .intro .read {
+        text-align: center; } }
+  #newstyle .intro .newstyleIllust {
+    margin-top: 3em; }
+    @media screen and (min-width: 767px) {
+      #newstyle .intro .newstyleIllust {
+        margin: 5em auto 0;
+        width: 70%;
+        max-width: 700px; } }
+
+#newstyle .contents01 {
+    margin-bottom: 100px;
+  }
+  #newstyle .page-ttl {
+    position: relative;
+    background: url("../images/bg01.jpg") no-repeat center center;
+    padding-top: 30px;
+    font-size: 2.5rem;
+    height: 130px;
+    background-size: cover;}
+    @media screen and (max-width: 480px) {
+        #newstyle .page-ttl {
+            height: 150px;
+            font-size: 2rem;
+            padding-top: 45px;}
+     }
+  #newstyle .page-ttl .caption{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    background: none;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 0 0.5em;}
+    @media screen and (min-width: 767px) {
+     }
+  #newstyle .page-ttl .title{
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    line-height: 1.6;
+    letter-spacing: 0.25em;}
+@media screen and (max-width: 480px) {
+    #newstyle .page-ttl .title{
+    font-size: 2.7rem;}
+}
+  #newstyle .page-ttl .title span{
+    display: block;
+    font-size: 1.25rem;
+    letter-spacing: 0.15em;}
+  #newstyle .contents01 h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #415464; }
+    @media screen and (min-width: 767px) {
+      #newstyle .contents01 h3 {
+        font-size: 2.5rem; } }
+  #newstyle .intro h3 span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+  #newstyle .intro h3 span:before,#newstyle .intro h3 span:after{
+    content: "";
+    width: 50px;
+    border-top: 1px solid #fff;
+    }
+  #newstyle .intro h3 span:before{
+    margin-right: .5em;
+    }
+  #newstyle .intro h3 span:after{
+    margin-left: .5em;
+    }
+  #newstyle .contents01 .accessTime {
+    margin: 3em auto 0;
+    width: 70%;}
+    @media screen and (min-width: 767px) {
+      #newstyle .contents01 .accessTime {
+        margin: 3em auto 0;
+        width: 70%;
+        max-width: 510px; } }
+  #newstyle .contents01 .photoBlock {
+    margin-top: 0; }
+    @media screen and (min-width: 767px) {
+      #newstyle .contents01 .photoBlock {
+        max-width: 1200px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
+  #newstyle .contents01 figure {
+    position: relative;
+    margin-right: 0;
+    margin-bottom: 1em;}
+    @media screen and (min-width: 767px){
+        #newstyle .contents01 figure{
+          margin-right: 1%;  
+        }
+    }
+  #newstyle .contents01 figure img {
+    width:100%; }
+  #newstyle .contents01 figure.mr0 {
+    margin-right: 0;}
+  #newstyle .contents01 .access01{
+       margin-top: 3em;} 
+  #newstyle .contents01 .access01 figure img{
+    position: relative;
+    width:100%;;
+    display: inline-block;} 
+    #newstyle .contents01 figure figcaption {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 0 .5em;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 1.2rem; }
+  #newstyle .contents01 .read {
+    margin-top: 3em;
+    text-align: left;
+    line-height: 1.6;}
+    @media screen and (min-width: 767px) {
+      #newstyle .contents01 .read {
+        text-align: center; } }
+    #newstyle .contents01 .read span{
+        display: block;
+        font-size: 2rem;}
+    @media screen and (min-width: 767px) {
+    #newstyle .contents01 .read span{
+     display: block;
+     font-size: 2.2rem;}}
+  #newstyle .contents01 .accessIllust {
+    text-align: center;
+    margin-top: 3em; }
+    @media screen and (min-width: 767px) {
+      #newstyle .contents01 .accessIllust {
+        margin: 5em auto 0;
+        width: 70%;
+        max-width: 700px; } }
+
+
+#newstyle .contents02 {
+    margin-bottom: 100px;
+  }
+  #newstyle .contents02 .page-ttl {
+    background: url("../images/bg02.jpg") no-repeat center center;
+    background-size: cover;
+   }
+  #newstyle .contents02 .page-ttl.img02 {
+    background: url("../images/bg03.jpg") no-repeat center center;
+    background-size: cover;}
+  #newstyle .contents03 .page-ttl {
+    background: url("../images/bg04.jpg") no-repeat center center;
+    background-size: cover;}
+  #newstyle .contents02 .page-ttl .caption{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    background: none;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 0 0.5em;}
+    @media screen and (min-width: 767px) {
+     }
+  #newstyle .contents02 .photoBlock {
+    text-align: center;
+    margin: 1em auto 2em;}
+    @media screen and (min-width: 767px) {
+      #newstyle .contents02 .photoBlock {
+        max-width: 1200px;
+        margin: 5em auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
+  #newstyle .contents02 figure {
+    position: relative; 
+    margin-right: 2%;
+    margin-top: 10px;
+    width: 32%;
+    max-width: 220px;
+    min-width: 130px;
+    display: inline-block;}
+  #newstyle .contents02 figure.mr0{
+    position: relative; 
+    margin-right: 0;}
+    #newstyle .contents02 figure figcaption {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 0 .5em;
+      filter: drop-shadow(0 0 1px rgba(0,0,0,.8));
+      color: white;
+      font-size: 1rem; }
+      @media screen and (max-width: 767px){
+      #newstyle .contents02 figure.mr0_sp{ 
+      margin-right: 0;}}
+  #newstyle .contents02 .photoBlock.voice{
+      display: block;
+   }
+  #newstyle .contents02 .photoBlock.voice .example{
+      margin-bottom: 1em;
+   }
+  #newstyle .contents02 .photoBlock.voice figure{
+      margin-right: 0;
+      width: 50%;
+      min-width: 280px;
+      vertical-align: middle;}
+    @media screen and (min-width: 862px){
+    #newstyle .contents02 .photoBlock.voice figure{
+      vertical-align: middle;
+      max-width: 350px;
+       } }
+  #newstyle .contents02 .photoBlock.voice figure figcaption{
+      right: 8%;
+   }
+  #newstyle .contents02 .photoBlock.voice figure figcaption.right{
+      right: 8%;}
+    @media screen and (min-width: 767px){
+    #newstyle .contents02 .photoBlock.voice figure figcaption.right{
+      right: 0;
+   }} 
+  #newstyle .contents02 .photoBlock.voice .text{
+      margin: 1em auto 0;
+      vertical-align: middle;
+      text-align: left;
+      max-width: 400px;
+    }
+    @media screen and (min-width: 767px) {
+        #newstyle .contents02 .photoBlock.voice .text{
+        max-width: 420px;
+        width: 55%;
+        text-align: left;
+        display: inline-block; } }
+  #newstyle .contents02 .photoBlock.voice .sp{
+        display: block; }
+    @media screen and (min-width: 767px) {
+        #newstyle .contents02 .photoBlock.voice .sp{
+        display: none; }}
+     @media screen and (max-width: 766px) {
+         #newstyle .contents02 .photoBlock.voice .pc{
+        display: none; }}
+#newstyle .contents02 .read {
+    margin: 3em auto 5em;
+    text-align: left;
+    line-height: 1.6;}
+    @media screen and (min-width: 767px) {
+      #newstyle .contents02 .read {
+        text-align: center; } }
+#newstyle .contents02 .read span{
+     display: block;
+     font-size: 2rem;}
+@media screen and (min-width: 767px) {
+    #newstyle .contents02 .read span{
+     display: block;
+     font-size: 2.2rem;}}
+  #newstyle .contents03 .photoBlock{
+    position: relative; 
+    display: block;
+    padding: 40px 20px 20px;
+    background-color: rgba(19,161,149,.1);
+    margin: 5em auto 2.5em;}
+    @media screen and (min-width: 767px) {
+         #newstyle .contents03 .photoBlock{
+        display: flex;
+        max-width: 1000px;}}
+  #newstyle .contents03 .photoBlock .link{
+    display: block;
+    margin: 30px auto;
+    max-width: 420px;}
+    @media screen and (min-width: 767px) {
+         #newstyle .contents03 .photoBlock .link.sp{
+        display: none;}
+  #newstyle .contents03 .photoBlock .link a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+/*
+    padding: 10px 20px;
+    background: #13A195;
+*/
+    color: #fff;}
+  #newstyle .contents03 .photoBlock .detail{
+    margin-bottom: 2em;
+    margin-left: 0;}
+    @media screen and (min-width: 767px) {
+         #newstyle .contents03 .photoBlock .detail{
+        margin-left: 2em; }}
+
+#newstyle .contents04 .sectionWrap{
+    text-align: center;}
+#newstyle .contents04 .bnrarea,#newstyle .contents04 .linkarea{
+    display: block;}
+     @media screen and (min-width: 767px) {
+         #newstyle .contents04 .bnrarea,#newstyle .contents04 .linkarea{
+        display: inline-flex;
+        margin: 0 auto 3em;
+        max-width: 1000px; }}
+#newstyle .contents04 .bnrarea figure{
+    position: relative;
+    margin-right: 0;
+    margin-bottom: 1em;} 
+     @media screen and (min-width: 767px) {
+         #newstyle .contents04 .bnrarea figure{
+             margin-right: 1em;}}
+#newstyle .contents04 .bnrarea figure.mr0{
+    margin-right: 0;}
+#newstyle .contents04 .bnrarea figure figcaption{
+    position: absolute;
+    right: 1%;
+    bottom: 3%;
+    color: #fff;
+    font-size: 0.6rem;}
+#newstyle .contents04 .linkarea{
+    display: block;}
+#newstyle .contents04 .linkarea figure{
+    display: block;}
+   @media screen and (min-width: 767px) {
+       #newstyle .contents04 .linkarea figure{
+        max-width: 400px;
+        margin-bottom: 1em;
+        display: inline-block;}}
+#newstyle .contents04 figure.back a,#newstyle .contents04 figure.reserve a{
+    display: block;
+    background-color: #13A195;
+    color: #fff;
+    text-align: center;
+    padding: 1em 3.5em;}
+#newstyle .contents04 figure.reserve a{
+    background-color: #904E55;
+    margin-right: 0;
+    margin-bottom: 1em;}
+    @media screen and (min-width: 767px) {
+        #newstyle .contents04 figure.reserve a{
+        padding: 1em 2em;
+        margin-right: 0.5em;}}
+#newstyle .contents03 .read {
+    margin: 3em auto 5em;
+    text-align: left;
+    line-height: 1.6;}
+@media screen and (min-width: 767px) {
+        #newstyle .contents03 .read{
+        text-align: center;}}
+#newstyle .contents03 .read span{
+     display: block;
+     font-size: 2.2rem;}

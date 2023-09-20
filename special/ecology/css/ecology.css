@@ -1,0 +1,913 @@
+@charset "UTF-8";
+/**
+ *
+ *  ページ用CSS
+ *　ecology
+ */
+.sm {
+  display: block;
+}
+@media screen and (min-width: 480px) {
+  .sm {
+    display: none;
+  }
+}
+
+.sm-md {
+  display: block;
+}
+@media screen and (min-width: 767px) {
+  .sm-md {
+    display: none;
+  }
+}
+
+.sm-lg {
+  display: block;
+}
+@media screen and (min-width: 1023px) {
+  .sm-lg {
+    display: none;
+  }
+}
+
+.md {
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  .md {
+    display: block;
+  }
+}
+
+.lg {
+  display: none;
+}
+@media screen and (min-width: 960px) {
+  .lg {
+    display: block;
+  }
+}
+
+.xl {
+  display: none;
+}
+@media screen and (min-width: 1023px) {
+  .xl {
+    display: block;
+  }
+}
+
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+.page-ttl h2 {
+  margin-top: -30px;
+  font-size: 6rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .page-ttl h2 {
+    margin-top: -20px;
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .page-ttl h2 {
+    margin-top: -20px;
+    font-size: 4.5rem;
+  }
+}
+/*--------------------------------------------------------------------------
+   Content
+---------------------------------------------------------------------------*/
+#ecology figure {
+  position: relative;
+}
+#ecology figure figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 .5em;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.2rem;
+}
+
+#ecology .inner {
+  padding-top: 0;
+}
+#ecology .intro {
+  position: relative;
+}
+#ecology .intro .sectionWrap {
+  margin: auto;
+  padding: 2em 0;
+  width: 90%;
+  max-width: 1000px;
+}
+#ecology .intro .intro__title {
+  margin-top: .5em;
+  text-align: center;
+  color: #415464;
+  font-size: 2rem;
+}
+@media screen and (min-width: 960px) {
+  #ecology .intro .intro__title {
+    margin-top: 1.5em;
+    font-size: 2.8rem;
+  }
+}
+#ecology .intro .intro__title span {
+  display: block;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 960px) {
+  #ecology .intro .intro__title span {
+    font-size: 1.9rem;
+  }
+}
+#ecology .intro .intro__subTitle {
+  margin: auto;
+  padding: .3em 1em;
+  width: 12em;
+  text-align: center;
+  color: white;
+  /*background: #948a68;*/
+}
+@media screen and (min-width: 960px) {
+  #ecology .intro .intro__subTitle {
+    font-size: 1.8rem;
+  }
+}
+#ecology .intro .intro__read {
+  margin-top: 2em;
+  text-align: center;
+}
+@media screen and (min-width: 960px) {
+  #ecology .intro .intro__read {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  #ecology .intro::before {
+    content: "";
+    position: absolute;
+    top: 2em;
+    left: 0;
+    display: block;
+    width: 23%;
+    height: 390px;
+    background: url("../images/intro_img01.png") no-repeat;
+    background-size: 100% auto;
+  }
+}
+@media screen and (min-width: 1279px) {
+  #ecology .intro::before {
+    position: absolute;
+    top: 1em;
+    left: 5%;
+  }
+}
+@media screen and (min-width: 960px) {
+  #ecology .intro::after {
+    content: "";
+    position: absolute;
+    top: 2em;
+    right: 0;
+    display: block;
+    width: 23%;
+    height: 390px;
+    background: url("../images/intro_img02.png") no-repeat;
+    background-size: 100% auto;
+  }
+}
+@media screen and (min-width: 1279px) {
+  #ecology .intro::after {
+    position: absolute;
+    top: 1em;
+    right: 5%;
+  }
+}
+
+#ecology .pageNav {
+  padding-top: 20%;
+  padding-bottom: 1em;
+  background: url("../images/pagenav_img01.png") center top no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 960px) {
+  #ecology .pageNav {
+    padding-top: 0;
+    margin-top: 0;
+    background: none;
+  }
+}
+@media screen and (min-width: 1279px) {
+  #ecology .pageNav {
+    margin-top: 4%;
+  }
+}
+#ecology .pageNav .sectionWrap {
+  margin: auto;
+  width: 90%;
+  max-width: 1000px;
+}
+#ecology .pageNav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+#ecology .pageNav__list__item {
+  margin-top: 1em;
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 960px) {
+  #ecology .pageNav__list__item {
+    width: 24%;
+  }
+}
+#ecology .pageNav__list__item a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: block;
+  padding: 1em 1em 1.5em 1em;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background: #948a68;
+  transition: .7s ease-out;
+}
+@media screen and (min-width: 960px) {
+  #ecology .pageNav__list__item a {
+    font-size: 1.8rem;
+    padding: 2em 1em 2.5em 1em;
+  }
+}
+#ecology .pageNav__list__item a::before {
+  content: "";
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: url("../images/pagenav_img02.png") no-repeat;
+  background-size: 100% auto;
+}
+#ecology .pageNav__list__item a:hover {
+  background: #776939;
+  opacity: 1;
+}
+
+#ecology .sectionContents {
+  margin-top: 3em;
+}
+#ecology .sectionContents__titleBlock {
+  z-index: -1;
+  position: relative;
+  height: 30vh;
+  background: url("../images/con01_img01.png") no-repeat;
+  background-position: 50% 40%;
+  background-size: 180% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 960px) {
+  #ecology .sectionContents__titleBlock {
+    height: 400px;
+    background: url("../images/con01_img01.png") no-repeat;
+    background-position: left top;
+    background-size: cover;
+  }
+}
+#ecology .sectionContents__titleBlock::after {
+  content: "imagephoto";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: -.05px;
+}
+#ecology .sectionContents__titleBlock__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: auto;
+  padding: 1em;
+  width: 80%;
+  color: white;
+  height: 50%;
+  background: rgba(35, 49, 61, 0.8);
+  font-size: 1.8rem;
+  text-align: center;
+}
+@media screen and (min-width: 960px) {
+  #ecology .sectionContents__titleBlock__title {
+    font-size: 2.5rem;
+    width: 50%;
+    height: 40%;
+  }
+}
+@media screen and (min-width: 1279px) {
+  #ecology .sectionContents__titleBlock__title {
+    width: 30%;
+  }
+}
+#ecology .sectionContents .sectionWrap {
+  margin: auto;
+  padding: 2em 0 0;
+  width: 90%;
+  max-width: 1200px;
+}
+@media screen and (min-width: 960px) {
+  #ecology .sectionContents .sectionWrap {
+    margin-top: -5em;
+    padding-top: 4em;
+    background: white;
+  }
+}
+
+#ecology .con01.sectionContents .sectionContents__titleBlock {
+  background: url("../images/con01_img01.png") no-repeat;
+  background-position: 50% 40%;
+  background-size: 180% auto;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con01.sectionContents .sectionContents__titleBlock {
+    background: url("../images/con01_img01.png") no-repeat;
+    background-position: left top;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 960px) {
+  #ecology .con01__inner {
+    margin: auto;
+    width: 100%;
+    max-width: 710px;
+  }
+}
+#ecology .con01 h5 {
+  padding: .5em;
+  text-align: center;
+  color: white;
+  background: #668b67;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con01 h5 {
+    font-size: 1.8rem;
+  }
+}
+#ecology .con01 .note {
+  text-align: right;
+  font-size: 1.2rem;
+  color: #646468;
+}
+#ecology .con01 figure {
+  margin: 2em auto 0;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con01 figure {
+    margin-top: 4em;
+  }
+}
+
+#ecology .con02.sectionContents .sectionContents__titleBlock {
+  background: url("../images/con02_img01.png") no-repeat;
+  background-position: 5% 50%;
+  background-size: 200% auto;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con02.sectionContents .sectionContents__titleBlock {
+    background: url("../images/con02_img01.png") no-repeat;
+    background-position: left top;
+    background-size: cover;
+  }
+}
+#ecology .con02 {
+  margin-top: 5em;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con02 {
+    margin-top: 8em;
+  }
+}
+@media screen and (min-width: 960px) {
+  #ecology .con02__inner {
+    margin: auto;
+    width: 100%;
+    max-width: 900px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+#ecology .con02__subtitle {
+  text-align: center;
+  color: #948a68;
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con02__subtitle {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  #ecology .con02__readBlock {
+    width: 46%;
+    background: url("../images/con02_img04.png") left bottom no-repeat;
+    background-size: auto 60%;
+  }
+}
+#ecology .con02__imageBlock {
+  margin-top: 2em;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con02__imageBlock {
+    margin-top: 0;
+    width: 48%;
+  }
+}
+#ecology .con02 h5 {
+  padding: .2em 1em;
+  text-align: center;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con02 h5 {
+    margin-top: .5em;
+    font-size: 2.4rem;
+    color: white;
+    background: #668b67;
+  }
+}
+#ecology .con02 .read {
+  margin-top: 2em;
+  padding: 0 1em;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con02 .read {
+    padding: 0;
+  }
+}
+#ecology .con02 .note {
+  text-align: left;
+  font-size: 1.2rem;
+  color: #646468;
+}
+
+#ecology .con03.sectionContents .sectionContents__titleBlock {
+  background: url("../images/con03_img01.png") no-repeat;
+  background-position: right 50%;
+  background-size: 200% auto;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con03.sectionContents .sectionContents__titleBlock {
+    background: url("../images/con03_img01.png") no-repeat;
+    background-position: left top;
+    background-size: cover;
+  }
+}
+#ecology .con03 {
+  margin-top: 5em;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con03 {
+    margin-top: 8em;
+  }
+}
+@media screen and (min-width: 960px) {
+  #ecology .con03__inner {
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+  }
+}
+#ecology .con03 .note {
+  font-size: 1.2rem;
+  color: #646468;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con03__listBlockWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+#ecology .con03__listBlock {
+  margin-top: 2em;
+}
+#ecology .con03__listBlock:first-child {
+  margin-top: 0;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con03__listBlock {
+    margin-top: 0;
+    width: 44%;
+  }
+}
+#ecology .con03__listBlock__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+#ecology .con03__listBlock__title__num {
+  width: 8%;
+  margin-right: .5em;
+  text-align: center;
+  font-size: 1.6rem;
+  color: white;
+  background: #948a68;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con03__listBlock__title__num {
+    font-size: 1.9rem;
+  }
+}
+#ecology .con03__listBlock__title__titleText {
+  width: 90%;
+  font-size: 1.6rem;
+  color: #948a68;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con03__listBlock__title__titleText {
+    font-size: 1.9rem;
+  }
+}
+#ecology .con03__listBlock__title + p {
+  margin-top: 1em;
+}
+#ecology .con03__listBlock figure {
+  margin-top: 1em;
+}
+#ecology .con03__listBlock figure + p {
+  margin-top: 1em;
+}
+#ecology .con03__listBlock__innerBlock {
+  margin-top: 1em;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con03__listBlock__innerBlock {
+    margin: 2em auto auto;
+    width: 96%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 960px) {
+  #ecology .con03__listBlock__innerBlock__item {
+    width: 45%;
+  }
+}
+#ecology .con03__listBlock__innerBlock__item h6 {
+  margin-top: 1em;
+  color: #948a68;
+}
+#ecology .con03__listBlock__innerBlock__item .pointNote {
+  margin-top: 0;
+  color: #948a68;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con03 .con03__listBlock.block03 {
+    margin-top: 3em;
+    width: 100%;
+  }
+  #ecology .con03 .con03__listBlock.block03 .con03__listBlock__title__num {
+    width: 2em;
+  }
+}
+
+#ecology .con04.sectionContents .sectionContents__titleBlock {
+  background: url("../images/con04_img01.png") no-repeat;
+  background-position: 5% 50%;
+  background-size: 200% auto;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con04.sectionContents .sectionContents__titleBlock {
+    background: url("../images/con04_img01.png") no-repeat;
+    background-position: left top;
+    background-size: cover;
+  }
+}
+#ecology .con04 {
+  margin-top: 5em;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con04 {
+    margin-top: 8em;
+  }
+}
+@media screen and (min-width: 960px) {
+  #ecology .con04__inner {
+    margin: auto;
+    width: 100%;
+    max-width: 900px;
+  }
+}
+#ecology .con04 .note {
+  font-size: 1.2rem;
+  color: #646468;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con04 .note {
+    margin-top: .5em;
+  }
+}
+#ecology .con04__listBlock01__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+#ecology .con04__listBlock01__title__num {
+  width: 2em;
+  margin-right: .5em;
+  text-align: center;
+  font-size: 1.6rem;
+  color: white;
+  background: #948a68;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con04__listBlock01__title__num {
+    font-size: 1.9rem;
+  }
+}
+#ecology .con04__listBlock01__title__titleText {
+  width: 98%;
+  font-size: 1.6rem;
+  color: #948a68;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con04__listBlock01__title__titleText {
+    font-size: 1.9rem;
+  }
+}
+#ecology .con04__listBlock01Inner {
+  margin-top: 1em;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con04__listBlock01Inner {
+    margin-top: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+#ecology .con04__listBlock01__readBlock p + p {
+  margin-top: 1em;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con04__listBlock01__readBlock {
+    width: 50%;
+  }
+}
+#ecology .con04__listBlock01__imageBlock {
+  margin-top: 1em;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con04__listBlock01__imageBlock {
+    margin-top: 0;
+    width: 45%;
+  }
+}
+#ecology .con04__listBlock02 {
+  margin-top: 2em;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con04__listBlock02 {
+    margin-top: 4em;
+  }
+}
+#ecology .con04__listBlock02__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+#ecology .con04__listBlock02__title__num {
+  width: 2em;
+  margin-right: .5em;
+  text-align: center;
+  font-size: 1.6rem;
+  color: white;
+  background: #948a68;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con04__listBlock02__title__num {
+    font-size: 1.9rem;
+  }
+}
+#ecology .con04__listBlock02__title__titleText {
+  width: 98%;
+  font-size: 1.6rem;
+  color: #948a68;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con04__listBlock02__title__titleText {
+    font-size: 1.9rem;
+  }
+}
+#ecology .con04__listBlock02Inner {
+  margin-top: 1em;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con04__listBlock02Inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+#ecology .con04__listBlock02__item {
+  margin-top: 1em;
+  padding: .6em;
+  background: #dce5e9;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con04__listBlock02__item {
+    margin-top: 2em;
+    padding: .6em 1.2em;
+    width: 49%;
+  }
+}
+#ecology .con04__listBlock02__item h6 {
+  padding-bottom: .5em;
+  color: #415464;
+  border-bottom: 1px solid #a2b6bd;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con04__listBlock02__item h6 {
+    font-size: 1.8rem;
+  }
+}
+#ecology .con04__listBlock02__item h6::before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: .5em;
+  background-image: url("../images/con04_icon01.png");
+  background-repeat: none;
+  background-size: contain;
+  vertical-align: middle;
+}
+@media screen and (min-width: 960px) {
+  #ecology .con04__listBlock02__item h6::before {
+    width: 35px;
+    height: 35px;
+  }
+}
+#ecology .con04__listBlock02__item h6.item01::before {
+  background-image: url("../images/con04_icon01.png");
+  background-repeat: none;
+  background-size: contain;
+}
+#ecology .con04__listBlock02__item h6.item02::before {
+  background-image: url("../images/con04_icon02.png");
+  background-repeat: none;
+  background-size: contain;
+}
+#ecology .con04__listBlock02__item h6.item03::before {
+  background-image: url("../images/con04_icon03.png");
+  background-repeat: none;
+  background-size: contain;
+}
+#ecology .con04__listBlock02__item h6.item04::before {
+  background-image: url("../images/con04_icon04.png");
+  background-repeat: none;
+  background-size: contain;
+}
+#ecology .con04__listBlock02__item h6.item05::before {
+  background-image: url("../images/con04_icon05.png");
+  background-repeat: none;
+  background-size: contain;
+}
+#ecology .con04__listBlock02__item p {
+  margin-top: .5em;
+}
+
+#ecology .caption figure.note {
+  width: 100%;
+  max-width: 574px;
+}
+
+#ecology .otoku_e{
+  margin: 10% auto 0;
+  display: block;
+  max-width: 900px;
+}
+
+#ecology .otoku_e .left{
+  width: 46%;
+  float: left;
+  margin-bottom: 5%;
+}
+
+#ecology .otoku_e .right{
+  width: 46%;
+  float: right;
+}
+
+
+#ecology .otoku_e .con02__subtitle{
+  font-size: 2.4rem;
+    color: white;
+    background: #668b67;
+}
+
+#ecology .otoku_e img{
+  display: block;
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+}
+
+#ecology .otoku_e .read{
+  text-align: left;
+}
+
+#ecology .otoku_e .con2__detail{
+  width: 100%;
+  margin: 5% auto;
+  background-color: #dce5e9;
+  text-align: center;
+  padding: 3% 0;
+  box-sizing:border-box ;
+  clear: both;
+}
+
+#ecology .otoku_e .con2__detail img{
+  display: block;
+  width: 90%;
+  max-width: 600px;
+  margin: 1% auto 2%;
+}
+
+
+@media screen and (max-width: 960px) {
+  #ecology .otoku_e .left{
+  width: 100%;
+  float: none;
+  margin-bottom: 5%;
+}
+
+#ecology .otoku_e .right{
+  width: 100%;
+  float: none;
+  margin-bottom: 5%;
+}
+#ecology .otoku_e img{
+  width: 100%;
+  max-width: none;
+}
+
+}
+

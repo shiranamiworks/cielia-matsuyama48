@@ -1,0 +1,280 @@
+@charset "UTF-8";
+/**
+ *
+ *  ページ用CSS
+ *　history
+ */
+.sm {
+  display: block; }
+  @media screen and (min-width: 480px) {
+    .sm {
+      display: none; } }
+
+.sm-lg {
+  display: block; }
+  @media screen and (min-width: 1023px) {
+    .sm-lg {
+      display: none; } }
+
+.md {
+  display: none; }
+  @media screen and (min-width: 767px) {
+    .md {
+      display: block; } }
+
+.lg {
+  display: none; }
+  @media screen and (min-width: 960px) {
+    .lg {
+      display: block; } }
+
+.xl {
+  display: none; }
+  @media screen and (min-width: 1023px) {
+    .xl {
+      display: block; } }
+
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+.page-ttl h2 {
+  margin-top: -30px;
+  font-size: 6rem; }
+
+@media screen and (max-width: 1280px) {
+  .page-ttl h2 {
+    margin-top: -20px;
+    font-size: 4rem; } }
+@media screen and (max-width: 480px) {
+  .page-ttl h2 {
+    margin-top: -20px;
+    font-size: 4.5rem; } }
+/*--------------------------------------------------------------------------
+   Content
+---------------------------------------------------------------------------*/
+#history figure {
+  position: relative; }
+  #history figure figcaption {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 .5em;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1.2rem; }
+
+#history .inner {
+  padding-top: 0; }
+#history .intro .intro__titleBox {
+  padding: 6em 0;
+  background: url("../images/intro_bg01.png") no-repeat;
+  background-position: right top;
+  background-size: cover; }
+  @media screen and (min-width: 960px) {
+    #history .intro .intro__titleBox {
+      padding: 12em 0; } }
+  #history .intro .intro__titleBox h3 {
+    margin: auto;
+    padding: 1.5em;
+    width: 7.5em;
+    background: #415464;
+    max-height: 22em; }
+    @media screen and (min-width: 960px) {
+      #history .intro .intro__titleBox h3 {
+        width: 9.5em; } }
+    #history .intro .intro__titleBox h3 p {
+      color: #dce5e9;
+      font-family: 'Noto Serif JP', "游明朝", "Yu Mincho", YuMincho, "游明朝体", 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','HGS明朝E','ＭＳ Ｐ明朝', serif;
+      font-size: 1.6rem;
+      writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+      -webkit-writing-mode: vertical-rl; }
+      @media screen and (min-width: 960px) {
+        #history .intro .intro__titleBox h3 p {
+          font-size: 2.4rem; } }
+#history .intro .intro__readBox {
+  position: relative;
+  margin: -40px auto 0;
+  width: 70%;
+  max-width: 1200px;
+  text-align: center; }
+  #history .intro .intro__readBox p {
+    padding-top: 120px; }
+    @media screen and (min-width: 960px) {
+      #history .intro .intro__readBox p {
+        font-size: 2rem; } }
+  #history .intro .intro__readBox::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 100px;
+    background: #252627; }
+
+#history .contentWrapBlock {
+  margin-top: 3em;
+  position: relative; }
+  @media screen and (min-width: 960px) {
+    #history .contentWrapBlock {
+      margin-top: 8em; } }
+  #history .contentWrapBlock .line {
+    position: absolute;
+    left: 18px;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background: #948a68; }
+    @media screen and (min-width: 960px) {
+      #history .contentWrapBlock .line {
+        position: absolute;
+        left: 50%;
+        top: 0; } }
+  #history .contentWrapBlock .periodReadBlock {
+    padding: 100px 0 0 30px; }
+    @media screen and (min-width: 960px) {
+      #history .contentWrapBlock .periodReadBlock {
+        padding: 100px 0 0 60px;
+        width: 50%; } }
+    #history .contentWrapBlock .periodReadBlock .periodReadBlock__iconCircle {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      margin-top: -4px;
+      margin-left: -4px;
+      border-radius: 50%;
+      height: 8px;
+      width: 8px;
+      border-color: #948a68;
+      background-color: #948a68; }
+      @media screen and (min-width: 960px) {
+        #history .contentWrapBlock .periodReadBlock .periodReadBlock__iconCircle {
+          margin-left: 1px;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+          /*位置調整*/ } }
+    #history .contentWrapBlock .periodReadBlock .periodReadBlock__iconLine {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      display: block;
+      width: 30%;
+      height: 1px;
+      background-color: #948a68; }
+      @media screen and (min-width: 960px) {
+        #history .contentWrapBlock .periodReadBlock .periodReadBlock__iconLine {
+          width: 15%;
+          left: calc(50% + 4px); } }
+    #history .contentWrapBlock .periodReadBlock .periodReadBlock__year {
+      position: absolute;
+      top: 60px;
+      left: calc(30% + 10px);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      /*位置調整*/
+      color: #948a68;
+      font-size: 1.6rem; }
+      @media screen and (min-width: 960px) {
+        #history .contentWrapBlock .periodReadBlock .periodReadBlock__year {
+          left: calc(50% + 15% + 10px); } }
+    #history .contentWrapBlock .periodReadBlock .periodReadBlock__periodTitle {
+      padding: .2em .5em;
+      position: relative;
+      font-size: 1.5rem;
+      color: #948a68; }
+      @media screen and (min-width: 767px) {
+        #history .contentWrapBlock .periodReadBlock .periodReadBlock__periodTitle {
+          font-size: 2rem; } }
+      #history .contentWrapBlock .periodReadBlock .periodReadBlock__periodTitle::before, #history .contentWrapBlock .periodReadBlock .periodReadBlock__periodTitle::after {
+        content: "";
+        display: block;
+        width: 6em;
+        height: 1px;
+        background-color: #948a68; }
+      #history .contentWrapBlock .periodReadBlock .periodReadBlock__periodTitle::before {
+        position: absolute;
+        top: 0;
+        left: 0; }
+      #history .contentWrapBlock .periodReadBlock .periodReadBlock__periodTitle::after {
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+    #history .contentWrapBlock .periodReadBlock h3.periodReadBlock__periodRead {
+      margin-top: 1em;
+      font-size: 1.7rem;
+      color: #415464; }
+      @media screen and (min-width: 767px) {
+        #history .contentWrapBlock .periodReadBlock h3.periodReadBlock__periodRead {
+          font-size: 2.6rem; } }
+      #history .contentWrapBlock .periodReadBlock h3.periodReadBlock__periodRead span.small {
+        font-size: 1.2rem; }
+        @media screen and (min-width: 767px) {
+          #history .contentWrapBlock .periodReadBlock h3.periodReadBlock__periodRead span.small {
+            font-size: 1.8rem; } }
+    #history .contentWrapBlock .periodReadBlock .periodReadBlock__periodText {
+      margin-top: 3em;
+      width: 100%;
+      max-width: 530px; }
+      #history .contentWrapBlock .periodReadBlock .periodReadBlock__periodText P + P {
+        margin-top: 1em; }
+  #history .contentWrapBlock .periodPhotoBlock {
+    padding: 3em 0 0 30px; }
+    @media screen and (min-width: 960px) {
+      #history .contentWrapBlock .periodPhotoBlock {
+        width: 50%;
+        padding: 10em 60px 0 30px; } }
+    #history .contentWrapBlock .periodPhotoBlock figure {
+      width: 100%;
+      max-width: 490px; }
+      @media screen and (min-width: 960px) {
+        #history .contentWrapBlock .periodPhotoBlock figure {
+          margin: auto 0 auto auto; } }
+
+#history .edoPeriod {
+  padding-bottom: 5em;
+  background: url("../images/edo_bg01.png") right top no-repeat;
+  background-size: cover; }
+  #history .edoPeriod .sectionWrap {
+    position: relative;
+    margin: 0 20px 0 18px; }
+    @media screen and (min-width: 960px) {
+      #history .edoPeriod .sectionWrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse; } }
+#history .meijiPeriod {
+  padding-bottom: 5em;
+  background: url("../images/meiji_bg01.png") right top no-repeat;
+  background-size: cover; }
+  #history .meijiPeriod .sectionWrap {
+    position: relative;
+    margin: 0 20px 0 18px; }
+    @media screen and (min-width: 960px) {
+      #history .meijiPeriod .sectionWrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse; } }
+#history .presentDay {
+  margin-bottom: 5em; }
+  #history .presentDay .sectionWrap {
+    position: relative;
+    margin: 0 20px 0 18px; }
+    @media screen and (min-width: 960px) {
+      #history .presentDay .sectionWrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse; } }

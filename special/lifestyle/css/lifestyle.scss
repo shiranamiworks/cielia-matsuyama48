@@ -1,0 +1,303 @@
+@charset "utf-8";
+/**
+ *
+ *  ページ用CSS
+ *　lifestyle
+ */
+
+//**************************
+// brake point
+//**************************
+$breakpoint-sm: 480px;
+$breakpoint-md: 767px;
+$breakpoint-lg: 960px;
+$breakpoint-xl: 1023px;
+$breakpoint-xll: 1279px;
+$breakpoint-max: 1600px;
+
+@mixin breakpoint-sm {
+	@media screen and (min-width:($breakpoint-sm)) { @content; } }
+
+@mixin breakpoint-md {
+	@media screen and (min-width:($breakpoint-md)) { @content; } }
+
+@mixin breakpoint-lg {
+	@media screen and (min-width:($breakpoint-lg)) { @content; } }
+
+@mixin breakpoint-xl {
+	@media screen and (min-width:($breakpoint-xl)) { @content; } }
+
+@mixin breakpoint-xll {
+	@media screen and (min-width:($breakpoint-xll)) { @content; } }
+
+@mixin breakpoint-max {
+	@media screen and (min-width:($breakpoint-max)) { @content; } }
+
+//**************************
+// color
+//**************************
+$color_primaryA_01:rgba(220, 229, 233, 1);
+$color_primaryA_02:rgba(181, 199, 206, 1);
+$color_primaryA_03:rgba(162, 182, 189, 1);
+$color_primaryA_04:rgba(65, 84, 100, 1);
+
+$color_accentA_01:rgba(144, 78, 85, 1);
+$color_accentB_01:rgba(102, 139, 103, 1);
+
+$color_accentC_01:rgba(235, 220, 203, 1);
+$color_accentC_02:rgba(191, 180, 143, 1);
+$color_accentC_03:rgba(148, 138, 104, 1);
+
+$color_gray_01:rgba(100, 100, 104, 1);
+$color_gray_02:rgba(37, 38, 39, 1);//TEXT Color
+$color_gray_03:rgba(8, 9, 9, 1);
+
+$color_white:rgba(255, 255, 255, 1);
+$color_black:rgba(0, 0, 0, 1);
+
+.sm {
+	display: block;
+	@include breakpoint-sm {
+		display: none;
+	}
+}
+.sm-lg {
+	display: block;
+	@include breakpoint-xl {
+		display: none;
+	}
+}
+.md {
+	display: none;
+	@include breakpoint-md {
+		display: block;
+	}
+}
+.lg {
+	display: none;
+	@include breakpoint-lg {
+		display: block;
+	}
+}
+
+.xl {
+	display: none;
+	@include breakpoint-xl {
+		display: block;
+	}
+}
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+
+.page-ttl h2 {
+	margin-top: -30px;
+	font-size: 6rem;
+}
+
+@media screen and (max-width:1280px) {
+	.page-ttl h2{
+		margin-top: -20px;
+		font-size: 4rem;
+	}
+}
+@media screen and (max-width:480px) {
+    .page-ttl h2 {
+			margin-top: -20px;
+      font-size: 4.5rem;
+    }
+}
+
+
+/*--------------------------------------------------------------------------
+   Content
+---------------------------------------------------------------------------*/
+
+#lifestyle {
+	figure {
+		position: relative;
+		figcaption {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			padding: 0 .5em;
+			background: rgba($color_black, .5);
+			color: $color_white;
+			font-size: 1.2rem;
+		}
+	}
+}
+
+#lifestyle {
+	.inner {
+		padding-top:0;
+	}
+	.intro {
+		.sectionWrap {
+			margin: auto;
+			padding: 2em 0;
+			width: 90%;
+			max-width: 1000px;
+		}
+		.intro__title {
+			text-align: center;
+			color: $color_primaryA_04;
+			font-size: 1.7rem;
+			@include breakpoint-lg {
+				margin-top: 2em;
+				font-size: 2.8rem;
+			}
+		}
+		.intro__read {
+			margin-top: 2em;
+			text-align: center;
+			@include breakpoint-lg {
+				font-size: 2rem;
+			}
+		}
+	}
+}
+
+#lifestyle {
+	.sectionOnOFF {
+			width: 100%;
+			max-width: 1200px;
+			@include breakpoint-lg {
+				margin: auto;
+			}
+		.sectionWrap {
+			padding: 2em 0 6em 0;
+			width: 95%;
+			@include breakpoint-lg {
+				margin: auto;
+				padding: 6em 0;
+				width: 90%;
+			}
+		}
+		.sectionOnOFF__timeBlock {
+			@include breakpoint-lg {
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+				-webkit-box-pack: justify;
+				-ms-flex-pack: justify;
+				justify-content: space-between;
+			}
+			& +.sectionOnOFF__timeBlock {
+				margin-top: 4em;
+			}
+			.sectionOnOFF__timeBlock__readBlock {
+				position: relative;
+				padding-left: 90px;
+				@include breakpoint-lg {
+					padding-left: 100px;
+					width: 58%;
+				}
+				&::before {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 75px;
+					height: 150px;
+					background: url("../images/on_icon01.png") no-repeat;
+					background-size: 100% auto;
+				}
+				h4 {
+					font-size: 1.7rem;
+					@include breakpoint-lg {
+						font-size: 2.6rem;
+					}
+				}
+				h4 + p {
+					margin-top: 2em;
+					@include breakpoint-lg {
+						padding-right: 5em;
+						line-height: 2em;
+					}
+				}
+			}
+			.sectionOnOFF__timeBlock__photoBlock {
+				margin-top: 1em;
+				margin-left: 5%;
+				@include breakpoint-md {
+					margin: 1em 5% 0 auto;
+					width: 400px;
+				}
+				@include breakpoint-lg {
+					margin: 3em 0 0 0;
+					width: 38%;
+				}
+			}
+		}
+	}
+}
+
+#lifestyle {
+	.sectionOnOFF.case1 {
+		background: $color_primaryA_01;
+		@include breakpoint-lg {
+			margin-top: 3em;
+		}
+		.sectionOnOFF__timeBlock {
+			.sectionOnOFF__timeBlock__readBlock {
+				h4 {
+					color: $color_primaryA_04;
+				}
+			}
+			.sectionOnOFF__timeBlock__readBlock.time01 {
+				&::before {
+					background: url("../images/on_icon01.png") no-repeat;
+					background-size: 100% auto;
+				}
+			}
+			.sectionOnOFF__timeBlock__readBlock.time02 {
+				&::before {
+					background: url("../images/on_icon02.png") no-repeat;
+					background-size: 100% auto;
+				}
+			}
+			.sectionOnOFF__timeBlock__readBlock.time03 {
+				&::before {
+					background: url("../images/on_icon03.png") no-repeat;
+					background-size: 100% auto;
+				}
+			}
+		}
+	}
+}
+
+#lifestyle {
+	.sectionOnOFF.case2 {
+		.sectionWrap {
+			padding-bottom: 0;
+		}
+		.sectionOnOFF__timeBlock {
+			.sectionOnOFF__timeBlock__readBlock {
+				h4 {
+					color: $color_accentB_01;
+				}
+			}
+			.sectionOnOFF__timeBlock__readBlock.time01 {
+				&::before {
+					background: url("../images/off_icon01.png") no-repeat;
+					background-size: 100% auto;
+				}
+			}
+			.sectionOnOFF__timeBlock__readBlock.time02 {
+				&::before {
+					background: url("../images/off_icon02.png") no-repeat;
+					background-size: 100% auto;
+				}
+			}
+			.sectionOnOFF__timeBlock__readBlock.time03 {
+				&::before {
+					background: url("../images/off_icon03.png") no-repeat;
+					background-size: 100% auto;
+				}
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,246 @@
+@charset "UTF-8";
+/**
+ *
+ *  ページ用CSS
+ *　lifestyle
+ */
+.sm {
+  display: block;
+}
+@media screen and (min-width: 480px) {
+  .sm {
+    display: none;
+  }
+}
+
+.sm-lg {
+  display: block;
+}
+@media screen and (min-width: 1023px) {
+  .sm-lg {
+    display: none;
+  }
+}
+
+.md {
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  .md {
+    display: block;
+  }
+}
+
+.lg {
+  display: none;
+}
+@media screen and (min-width: 960px) {
+  .lg {
+    display: block;
+  }
+}
+
+.xl {
+  display: none;
+}
+@media screen and (min-width: 1023px) {
+  .xl {
+    display: block;
+  }
+}
+
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+.page-ttl h2 {
+  margin-top: -30px;
+  font-size: 6rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .page-ttl h2 {
+    margin-top: -20px;
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .page-ttl h2 {
+    margin-top: -20px;
+    font-size: 4.5rem;
+  }
+}
+/*--------------------------------------------------------------------------
+   Content
+---------------------------------------------------------------------------*/
+#lifestyle figure {
+  position: relative;
+}
+#lifestyle figure figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 .5em;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.2rem;
+}
+
+#lifestyle .inner {
+  padding-top: 0;
+}
+#lifestyle .intro .sectionWrap {
+  margin: auto;
+  padding: 2em 0;
+  width: 90%;
+  max-width: 1000px;
+}
+#lifestyle .intro .intro__title {
+  text-align: center;
+  color: #415464;
+  font-size: 1.7rem;
+}
+@media screen and (min-width: 960px) {
+  #lifestyle .intro .intro__title {
+    margin-top: 2em;
+    font-size: 2.8rem;
+  }
+}
+#lifestyle .intro .intro__read {
+  margin-top: 2em;
+  text-align: center;
+}
+@media screen and (min-width: 960px) {
+  #lifestyle .intro .intro__read {
+    font-size: 2rem;
+  }
+}
+
+#lifestyle .sectionOnOFF {
+  width: 100%;
+  max-width: 1200px;
+}
+@media screen and (min-width: 960px) {
+  #lifestyle .sectionOnOFF {
+    margin: auto;
+  }
+}
+#lifestyle .sectionOnOFF .sectionWrap {
+  padding: 2em 0 6em 0;
+  width: 95%;
+}
+@media screen and (min-width: 960px) {
+  #lifestyle .sectionOnOFF .sectionWrap {
+    margin: auto;
+    padding: 6em 0;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 960px) {
+  #lifestyle .sectionOnOFF .sectionOnOFF__timeBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+#lifestyle .sectionOnOFF .sectionOnOFF__timeBlock + .sectionOnOFF__timeBlock {
+  margin-top: 4em;
+}
+#lifestyle .sectionOnOFF .sectionOnOFF__timeBlock .sectionOnOFF__timeBlock__readBlock {
+  position: relative;
+  padding-left: 90px;
+}
+@media screen and (min-width: 960px) {
+  #lifestyle .sectionOnOFF .sectionOnOFF__timeBlock .sectionOnOFF__timeBlock__readBlock {
+    padding-left: 100px;
+    width: 58%;
+  }
+}
+#lifestyle .sectionOnOFF .sectionOnOFF__timeBlock .sectionOnOFF__timeBlock__readBlock::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 150px;
+  background: url("../images/on_icon01.png") no-repeat;
+  background-size: 100% auto;
+}
+#lifestyle .sectionOnOFF .sectionOnOFF__timeBlock .sectionOnOFF__timeBlock__readBlock h4 {
+  font-size: 1.7rem;
+}
+@media screen and (min-width: 960px) {
+  #lifestyle .sectionOnOFF .sectionOnOFF__timeBlock .sectionOnOFF__timeBlock__readBlock h4 {
+    font-size: 2.6rem;
+  }
+}
+#lifestyle .sectionOnOFF .sectionOnOFF__timeBlock .sectionOnOFF__timeBlock__readBlock h4 + p {
+  margin-top: 2em;
+}
+@media screen and (min-width: 960px) {
+  #lifestyle .sectionOnOFF .sectionOnOFF__timeBlock .sectionOnOFF__timeBlock__readBlock h4 + p {
+    padding-right: 5em;
+    line-height: 2em;
+  }
+}
+#lifestyle .sectionOnOFF .sectionOnOFF__timeBlock .sectionOnOFF__timeBlock__photoBlock {
+  margin-top: 1em;
+  margin-left: 5%;
+}
+@media screen and (min-width: 767px) {
+  #lifestyle .sectionOnOFF .sectionOnOFF__timeBlock .sectionOnOFF__timeBlock__photoBlock {
+    margin: 1em 5% 0 auto;
+    width: 400px;
+  }
+}
+@media screen and (min-width: 960px) {
+  #lifestyle .sectionOnOFF .sectionOnOFF__timeBlock .sectionOnOFF__timeBlock__photoBlock {
+    margin: 3em 0 0 0;
+    width: 38%;
+  }
+}
+
+#lifestyle .sectionOnOFF.case1 {
+  background: #dce5e9;
+}
+@media screen and (min-width: 960px) {
+  #lifestyle .sectionOnOFF.case1 {
+    margin-top: 3em;
+  }
+}
+#lifestyle .sectionOnOFF.case1 .sectionOnOFF__timeBlock .sectionOnOFF__timeBlock__readBlock h4 {
+  color: #415464;
+}
+#lifestyle .sectionOnOFF.case1 .sectionOnOFF__timeBlock .sectionOnOFF__timeBlock__readBlock.time01::before {
+  background: url("../images/on_icon01.png") no-repeat;
+  background-size: 100% auto;
+}
+#lifestyle .sectionOnOFF.case1 .sectionOnOFF__timeBlock .sectionOnOFF__timeBlock__readBlock.time02::before {
+  background: url("../images/on_icon02.png") no-repeat;
+  background-size: 100% auto;
+}
+#lifestyle .sectionOnOFF.case1 .sectionOnOFF__timeBlock .sectionOnOFF__timeBlock__readBlock.time03::before {
+  background: url("../images/on_icon03.png") no-repeat;
+  background-size: 100% auto;
+}
+
+#lifestyle .sectionOnOFF.case2 .sectionWrap {
+  padding-bottom: 0;
+}
+#lifestyle .sectionOnOFF.case2 .sectionOnOFF__timeBlock .sectionOnOFF__timeBlock__readBlock h4 {
+  color: #668b67;
+}
+#lifestyle .sectionOnOFF.case2 .sectionOnOFF__timeBlock .sectionOnOFF__timeBlock__readBlock.time01::before {
+  background: url("../images/off_icon01.png") no-repeat;
+  background-size: 100% auto;
+}
+#lifestyle .sectionOnOFF.case2 .sectionOnOFF__timeBlock .sectionOnOFF__timeBlock__readBlock.time02::before {
+  background: url("../images/off_icon02.png") no-repeat;
+  background-size: 100% auto;
+}
+#lifestyle .sectionOnOFF.case2 .sectionOnOFF__timeBlock .sectionOnOFF__timeBlock__readBlock.time03::before {
+  background: url("../images/off_icon03.png") no-repeat;
+  background-size: 100% auto;
+}

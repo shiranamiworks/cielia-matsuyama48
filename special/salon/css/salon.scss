@@ -1,0 +1,406 @@
+@charset "utf-8";
+/**
+ *
+ *  ページ用CSS
+ *　salon
+ */
+
+//**************************
+// brake point
+//**************************
+$breakpoint-sm: 480px;
+$breakpoint-md: 767px;
+$breakpoint-lg: 960px;
+$breakpoint-xl: 1023px;
+$breakpoint-xll: 1279px;
+$breakpoint-max: 1600px;
+
+@mixin breakpoint-sm {
+	@media screen and (min-width:($breakpoint-sm)) { @content; } }
+
+@mixin breakpoint-md {
+	@media screen and (min-width:($breakpoint-md)) { @content; } }
+
+@mixin breakpoint-lg {
+	@media screen and (min-width:($breakpoint-lg)) { @content; } }
+
+@mixin breakpoint-xl {
+	@media screen and (min-width:($breakpoint-xl)) { @content; } }
+
+@mixin breakpoint-xll {
+	@media screen and (min-width:($breakpoint-xll)) { @content; } }
+
+@mixin breakpoint-max {
+	@media screen and (min-width:($breakpoint-max)) { @content; } }
+
+//**************************
+// color
+//**************************
+$color_primaryA_01:rgba(220, 229, 233, 1);
+$color_primaryA_02:rgba(181, 199, 206, 1);
+$color_primaryA_03:rgba(162, 182, 189, 1);
+$color_primaryA_04:rgba(65, 84, 100, 1);
+
+$color_accentA_01:rgba(144, 78, 85, 1);
+$color_accentB_01:rgba(102, 139, 103, 1);
+
+$color_accentC_01:rgba(235, 220, 203, 1);
+$color_accentC_02:rgba(191, 180, 143, 1);
+$color_accentC_03:rgba(148, 138, 104, 1);
+
+$color_gray_01:rgba(100, 100, 104, 1);
+$color_gray_02:rgba(37, 38, 39, 1);//TEXT Color
+$color_gray_03:rgba(8, 9, 9, 1);
+
+$color_white:rgba(255, 255, 255, 1);
+$color_black:rgba(0, 0, 0, 1);
+
+.sm {
+	display: block;
+	@include breakpoint-sm {
+		display: none;
+	}
+}
+.sm-md {
+	display: block;
+	@include breakpoint-md {
+		display: none;
+	}
+}
+.sm-lg {
+	display: block;
+	@include breakpoint-xl {
+		display: none;
+	}
+}
+.md {
+	display: none;
+	@include breakpoint-md {
+		display: block;
+	}
+}
+.lg {
+	display: none;
+	@include breakpoint-lg {
+		display: block;
+	}
+}
+.xl {
+	display: none;
+	@include breakpoint-xl {
+		display: block;
+	}
+}
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+
+.page-ttl h2 {
+	margin-top: -30px;
+	font-size: 6rem;
+}
+
+@media screen and (max-width:1280px) {
+	.page-ttl h2{
+		margin-top: -20px;
+		font-size: 4rem;
+	}
+}
+@media screen and (max-width:480px) {
+    .page-ttl h2 {
+			margin-top: -20px;
+      font-size: 4.5rem;
+    }
+}
+
+
+/*--------------------------------------------------------------------------
+   Content
+---------------------------------------------------------------------------*/
+
+#salon {
+	figure {
+		position: relative;
+		figcaption {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			padding: 0 .5em;
+			background: rgba($color_black, .5);
+			color: $color_white;
+			font-size: 1.2rem;
+		}
+	}
+}
+
+#salon {
+	.inner {
+		padding-top:0;
+	}
+	.intro {
+		position: relative;
+		.sectionWrap {
+			margin: auto;
+			padding: 2em 0;
+			width: 90%;
+			max-width: 1000px;
+		}
+		.intro__title {
+			margin-top: .5em;
+			text-align: center;
+			color: $color_primaryA_04;
+			font-size: 2rem;
+			@include breakpoint-lg {
+				margin-top: 1.5em;
+				font-size: 2.8rem;
+			}
+			span {
+				display: block;
+				font-size: 1.5rem;
+				@include breakpoint-lg {
+					font-size: 1.9rem;
+				}
+			}
+		}
+		.intro__subTitle {
+			margin: auto;
+			padding: .3em 1em;
+			width: 12em;
+			text-align: center;
+			color: $color_white;
+			background: $color_accentC_03;
+			@include breakpoint-lg {
+				font-size: 1.8rem;
+			}
+		}
+		.intro__read {
+			margin-top: 2em;
+			text-align: center;
+			@include breakpoint-lg {
+				//font-size: 2rem;
+			}
+		}
+	}
+}
+
+#salon {
+	.FlowBlock {
+		padding-bottom: 3em;
+		background: url("../images/flow_bg01.png") center top no-repeat;
+	  background-attachment: fixed;
+	  background-size: cover;
+		@include breakpoint-lg {
+			padding-bottom: 8em;
+		}
+	}
+}
+
+#salon {
+	.sectionFlow {
+		.sectionWrap {
+			margin: auto;
+			padding: 2em 0;
+			width: 90%;
+			max-width: 1000px;
+			text-align: center;
+		}
+		.sectionFlow__titleBlock__title {
+			&__sub {
+				margin: auto;
+				width: 13%;
+			}
+			&__main {
+				margin-top: .5em;
+				color: $color_primaryA_04;
+				font-size: 2rem;
+				@include breakpoint-lg {
+					margin-top: 1.5em;
+					font-size: 2.8rem;
+				}
+			}
+		}
+		.sectionFlow__readBlock {
+			margin-top: 2em;
+		}
+	}
+}
+
+
+#salon {
+	.sectionStep {
+		@include breakpoint-lg {
+			margin-top: 8em;
+		}
+		.sectionWrap {
+			margin: auto;
+			padding: 2em 0;
+			width: 90%;
+			max-width: 1220px;
+			@include breakpoint-lg {		
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+				-webkit-box-pack: justify;
+				-ms-flex-pack: justify;
+				justify-content: space-between;
+			}
+			
+		}
+		&__textBlock {
+			@include breakpoint-lg {
+				width: 60%;
+			}
+		}
+		&__titleBlock {
+			@include breakpoint-lg {
+				margin-top: 2em;
+			}
+			&__title {
+				@include breakpoint-lg {
+					display:-webkit-box;
+					display:-ms-flexbox;
+					display:flex;
+					-webkit-box-align: end;
+					-ms-flex-align: end;
+					align-items: flex-end;
+					padding-bottom: .5em;
+					border-bottom: 1px solid $color_gray_01;
+				}
+				&__sub {
+					text-align: center;
+					color: $color_primaryA_04;
+					font-size: 2.6rem;
+					@include breakpoint-lg {
+						font-size: 2rem;
+					}
+					span {
+						font-size: 3.5rem;
+						@include breakpoint-lg {
+							margin-left: .1em;
+							font-size: 4rem;
+						}
+					}
+				}
+				&__main {
+					text-align: center;
+					color: $color_primaryA_04;
+					font-size: 2.2rem;
+					@include breakpoint-lg {
+						margin-left: .5em;
+						margin-bottom: .1em;
+						font-size: 3rem;
+					}
+				}
+			}
+		}
+		&__readBlock {
+			margin-top: 2em;
+			@include breakpoint-lg {
+				margin-right: 5em;
+			}
+		}
+		&__photoBlock {
+			margin-top: 1.5em;
+			@include breakpoint-lg {
+				width: 60%;
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+
+#salon {
+	.sectionStep.even {
+		.sectionWrap {
+			@include breakpoint-lg {
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: reverse;
+				-ms-flex-direction: row-reverse;
+				flex-direction: row-reverse;
+			}
+			.sectionStep__titleBlock__title {
+				@include breakpoint-lg {
+					padding-left: 3em;
+				}
+			}
+			.sectionStep__readBlock {
+				@include breakpoint-lg {
+					padding-left: 3em;
+				}
+			}
+		}
+	}
+}
+
+#salon {
+	.caption {
+		figure.note {
+			width: 100%;
+			max-width: 574px;
+		}
+	}
+}
+
+#salon {
+.sectionContact {
+	margin-top: 2em;
+	@include breakpoint-lg {
+		margin-top: 6em;
+	}
+	.sectionWrap {
+		margin: auto;
+		//padding: 2em 0;
+		width: 90%;
+		max-width: 1000px;
+		border: 2px solid $color_primaryA_04;
+	}
+	&__inner {
+		margin: 8px;
+		padding: 1.5em .5em;
+		background: rgba(255,255,255,.5);
+		@include breakpoint-lg {
+			padding: 2em 15em;
+		}
+	}
+	&__title {
+		text-align: center;
+		font-size: 1.8rem;
+		@include breakpoint-lg {
+			font-size: 2.5rem;
+		}
+	}
+	&__btn {
+		margin-top: 1em;
+		a {
+			padding: 1.5em 0;
+			width: 100%;
+			display: inline-block;
+			position: relative;
+			text-align: center;
+			color: #FFF;
+			background: $color_accentA_01;
+			opacity: 1;
+			transition: 0.5s; // ゆっくり
+			&:hover {
+				 opacity: .7;
+			}
+			&::before {
+				content:"";
+				position: absolute;
+				top: 50%;
+				right: 10%;
+				display:block;
+				width: 8px;
+				height: 8px;
+				-webkit-transform: translateY(-50%);
+				transform: translateY(-50%);
+				background:url("../images/icon_arrow01.png") no-repeat;
+				background-size:100% auto;
+			}
+		}
+	}
+	
+	
+	}
+}

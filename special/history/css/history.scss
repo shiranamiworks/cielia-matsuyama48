@@ -1,0 +1,398 @@
+@charset "utf-8";
+/**
+ *
+ *  ページ用CSS
+ *　history
+ */
+
+//**************************
+// brake point
+//**************************
+$breakpoint-sm: 480px;
+$breakpoint-md: 767px;
+$breakpoint-lg: 960px;
+$breakpoint-xl: 1023px;
+$breakpoint-xll: 1279px;
+$breakpoint-max: 1600px;
+
+@mixin breakpoint-sm {
+	@media screen and (min-width:($breakpoint-sm)) { @content; } }
+
+@mixin breakpoint-md {
+	@media screen and (min-width:($breakpoint-md)) { @content; } }
+
+@mixin breakpoint-lg {
+	@media screen and (min-width:($breakpoint-lg)) { @content; } }
+
+@mixin breakpoint-xl {
+	@media screen and (min-width:($breakpoint-xl)) { @content; } }
+
+@mixin breakpoint-xll {
+	@media screen and (min-width:($breakpoint-xll)) { @content; } }
+
+@mixin breakpoint-max {
+	@media screen and (min-width:($breakpoint-max)) { @content; } }
+
+//**************************
+// color
+//**************************
+$color_primaryA_01:rgba(220, 229, 233, 1);
+$color_primaryA_02:rgba(181, 199, 206, 1);
+$color_primaryA_03:rgba(162, 182, 189, 1);
+$color_primaryA_04:rgba(65, 84, 100, 1);
+
+$color_accentA_01:rgba(144, 78, 85, 1);
+$color_accentB_01:rgba(102, 139, 103, 1);
+
+$color_accentC_01:rgba(235, 220, 203, 1);
+$color_accentC_02:rgba(191, 180, 143, 1);
+$color_accentC_03:rgba(148, 138, 104, 1);
+
+$color_gray_01:rgba(100, 100, 104, 1);
+$color_gray_02:rgba(37, 38, 39, 1);//TEXT Color
+$color_gray_03:rgba(8, 9, 9, 1);
+
+$color_white:rgba(255, 255, 255, 1);
+$color_black:rgba(0, 0, 0, 1);
+
+.sm {
+	display: block;
+	@include breakpoint-sm {
+		display: none;
+	}
+}
+.sm-lg {
+	display: block;
+	@include breakpoint-xl {
+		display: none;
+	}
+}
+.md {
+	display: none;
+	@include breakpoint-md {
+		display: block;
+	}
+}
+.lg {
+	display: none;
+	@include breakpoint-lg {
+		display: block;
+	}
+}
+
+.xl {
+	display: none;
+	@include breakpoint-xl {
+		display: block;
+	}
+}
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+
+.page-ttl h2 {
+	margin-top: -30px;
+	font-size: 6rem;
+}
+
+@media screen and (max-width:1280px) {
+	.page-ttl h2{
+		margin-top: -20px;
+		font-size: 4rem;
+	}
+}
+@media screen and (max-width:480px) {
+    .page-ttl h2 {
+			margin-top: -20px;
+      font-size: 4.5rem;
+    }
+}
+
+
+
+/*--------------------------------------------------------------------------
+   Content
+---------------------------------------------------------------------------*/
+
+#history {
+	figure {
+		position: relative;
+		figcaption {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			padding: 0 .5em;
+			background: rgba($color_black, .5);
+			color: $color_white;
+			font-size: 1.2rem;
+		}
+	}
+}
+
+#history {
+	.inner {
+		padding-top:0;
+	}
+	.intro {
+		.sectionWrap {
+		}
+		.intro__titleBox {
+			padding: 6em 0;
+			background: url("../images/intro_bg01.png") no-repeat;
+			background-position: right top;
+			background-size: cover;
+			@include breakpoint-lg {
+				padding: 12em 0;
+			}
+			h3 {
+				margin: auto;
+				padding: 1.5em;
+				width: 7.5em;
+				background: $color_primaryA_04;
+				max-height: 22em;
+				@include breakpoint-lg {
+					width: 9.5em;
+				}
+				p {
+					color: $color_primaryA_01;
+					font-family:'Noto Serif JP', "游明朝", "Yu Mincho", YuMincho, "游明朝体", 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','HGS明朝E','ＭＳ Ｐ明朝', serif;
+					font-size: 1.6rem;
+					writing-mode: vertical-rl;
+					-ms-writing-mode: tb-rl;
+					-webkit-writing-mode:vertical-rl;
+					@include breakpoint-lg {
+						font-size: 2.4rem;
+					}
+				}
+
+			}
+		}
+		.intro__readBox {
+			position: relative;
+			margin: -40px auto 0;
+			width: 70%;
+			max-width: 1200px;
+			text-align: center;
+			p {
+				padding-top: 120px;
+				@include breakpoint-lg {
+					font-size: 2rem;
+				}
+			}
+			&::before {
+				content: "";
+				display:block;
+				position: absolute;
+				left: 50%;
+				top:0;
+				width: 1px;
+				height: 100px;
+				background: $color_gray_02;
+			}
+		}
+	}
+}
+
+#history {
+	.contentWrapBlock {
+		margin-top: 3em;
+		position: relative;
+		@include breakpoint-lg {
+			margin-top: 8em;
+		}
+		.line {
+			position: absolute;
+			left: 18px;
+			top:0;
+			height: 100%;
+			width: 1px;
+			background: $color_accentC_03;
+			@include breakpoint-lg {
+				position: absolute;
+				left: 50%;
+				top:0;
+			}
+		}
+		.periodReadBlock {
+			padding: 100px 0 0 30px;
+			@include breakpoint-lg {
+				padding: 100px 0 0 60px;
+				width: 50%;
+			}
+			.periodReadBlock__iconCircle {
+				position: absolute;
+				top: 60px;
+				left: 0;
+				margin-top: -4px;
+				margin-left: -4px;
+				border-radius: 50%;
+				height: 8px;
+				width: 8px;
+				border-color: $color_accentC_03;
+				background-color: $color_accentC_03;
+				@include breakpoint-lg {
+					margin-left: 1px;
+					left: 50%;
+					-webkit-transform: translateX(-50%);
+					transform: translateX(-50%);/*位置調整*/
+				}
+			}
+			.periodReadBlock__iconLine {
+				position: absolute;
+				top: 60px;
+				left: 0;
+				display: block;
+				width: 30%;
+				height: 1px;
+				background-color: $color_accentC_03;
+				@include breakpoint-lg {
+					width: 15%;
+					left: calc(50% + 4px);
+				}
+			}
+			.periodReadBlock__year {
+				position: absolute;
+				top: 60px;
+				left: calc(30% + 10px);
+				-webkit-transform: translateY(-50%);
+				transform: translateY(-50%);/*位置調整*/
+				color: $color_accentC_03;
+				font-size: 1.6rem;
+				@include breakpoint-lg {
+					left: calc(50% + 15% + 10px);
+				}
+			}
+			.periodReadBlock__periodTitle {
+				padding: .2em .5em;
+				position: relative;
+				font-size: 1.5rem;
+				color: $color_accentC_03;
+				@include breakpoint-md {
+					font-size: 2rem;
+				}
+				&::before,
+				&::after{
+					content: "";
+					display: block;
+					width: 6em;
+					height: 1px;
+					background-color: $color_accentC_03;
+				}
+				&::before {
+					position: absolute;
+					top:0;
+					left:0;
+				}
+				&::after {
+					position: absolute;
+					bottom:0;
+					left:0;
+				}
+			}
+			h3.periodReadBlock__periodRead {
+				margin-top: 1em;
+				font-size: 1.7rem;
+				color: $color_primaryA_04;
+				@include breakpoint-md {
+					font-size: 2.6rem;
+				}
+				span.small {
+					font-size: 1.2rem;
+					@include breakpoint-md {
+						font-size: 1.8rem;
+					}
+				}
+			}
+			.periodReadBlock__periodText {
+				margin-top: 3em;
+				width: 100%;
+				max-width: 530px;
+				P+P {
+					margin-top: 1em;
+				}
+			}
+		}
+		.periodPhotoBlock {
+			padding: 3em 0 0 30px;
+			@include breakpoint-lg {
+				width: 50%;
+				padding: 10em 60px 0 30px;
+			}
+			figure {
+				width: 100%;
+				max-width: 490px;
+				@include breakpoint-lg {
+					margin: auto 0 auto auto;
+				}
+			}
+		}
+	}
+}
+
+#history {
+	.edoPeriod {
+		padding-bottom: 5em;
+		background: url("../images/edo_bg01.png") right top no-repeat;
+		background-size: cover;
+		.sectionWrap {
+			position: relative;
+			margin: 0 20px 0 18px;
+			@include breakpoint-lg {		
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: reverse;
+				-ms-flex-direction: row-reverse;
+				flex-direction: row-reverse;
+			}
+			//margin: auto;
+			//width: 90%;
+			//max-width: 1200px;
+		}
+	}
+	.meijiPeriod {
+		padding-bottom: 5em;
+		background: url("../images/meiji_bg01.png") right top no-repeat;
+		background-size: cover;
+		.sectionWrap {
+			position: relative;
+			margin: 0 20px 0 18px;
+			@include breakpoint-lg {		
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: reverse;
+				-ms-flex-direction: row-reverse;
+				flex-direction: row-reverse;
+			}
+		}
+	}
+	.presentDay {
+		margin-bottom: 5em;
+		.sectionWrap {
+			position: relative;
+			margin: 0 20px 0 18px;
+			@include breakpoint-lg {		
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: reverse;
+				-ms-flex-direction: row-reverse;
+				flex-direction: row-reverse;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

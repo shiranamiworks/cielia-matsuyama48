@@ -1,0 +1,469 @@
+@charset "UTF-8";
+/* brake point */
+/* font color */
+/* =========================================================
+	PC/SP
+========================================================== */
+
+.pc{display: block;}
+.sp{display: none;}
+
+@media screen and (max-width: 768px) {
+  .pc{display: none;}
+  .sp{display: block;}
+}
+
+img {
+  width: 100%;
+}
+
+/* =========================================================
+	.alignfull  & .alignwide
+========================================================== */
+.alignfull {
+  width: 100vw !important;
+  margin-left: calc( 50% - 50vw );
+  margin-right: calc( 50% - 50vw );
+  max-width: none; }
+
+@media screen and (max-width: 1103px) {
+  .alignfull_sp {
+    padding: 0;
+    width: 100vw !important;
+    margin-left: calc( 50% - 50vw );
+    margin-right: calc( 50% - 50vw );
+    max-width: none; } }
+
+@media screen and (min-width: 1104px) {
+  .alignwide {
+    width: 1104px !important;
+    margin-left: calc( 50% - 1104px / 2 ) !important; } }
+
+/* =========================================================
+	.cap
+========================================================== */
+span.cap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 1%;
+  color: #bfbfbf;
+  font-size: 1.1rem;
+  background: rgba(30, 30, 30, 0.7); }
+  @media screen and (min-width: 1104px) {
+    span.cap {
+      font-size: 1.4rem;
+      line-height: 1.6rem; } }
+
+.min-note {
+  font-size: 1.2rem; }
+  @media screen and (min-width: 1104px) {
+    .min-note {
+      font-size: 0.8rem; } }
+
+span.minuteWalkTimes {
+  font-size: 0.8em; }
+
+/* =========================================================
+	.sectionTitle
+========================================================== */
+.sectionTitle {
+  position: relative;
+  margin-top: 80px;
+}
+  .sectionTitle .sectionTitle__sub {
+    margin-bottom: 1.5em;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #1f1f1f; }
+    @media screen and (min-width: 1104px) {
+      .sectionTitle .sectionTitle__sub {
+        font-size: 2rem;
+        margin-bottom: 2em; } }
+
+  .sectionTitle h3 {
+    color: #142e77;
+    font-size: 2.5rem;
+    line-height: 1.5em;
+    text-align: center; }
+
+    @media screen and (min-width: 1104px) {
+      .sectionTitle h3 {
+        font-size: 3.0rem;
+        font-weight: 600;
+        line-height: 1.7em;
+        letter-spacing: 0.1em; } }
+
+  .sectionTitle .title{
+    width: 90%;
+    text-align: center;
+    margin: 30px auto 0;
+  }
+
+
+h4 {
+  margin-bottom: 1em;
+  font-size: 2rem;
+  line-height: 1.5em;
+  color: #70452e;
+  text-align: center; }
+  @media screen and (min-width: 1104px) {
+    h4 {
+      margin-bottom: 2em;
+      font-size: 2.8rem;
+      line-height: 1.8em;
+      font-weight: 600; } }
+
+.sideAlphabet {
+  margin-left: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .sideAlphabet::before {
+    content: '';
+    width: 5%;
+    max-width: 15px;
+    min-width: 10px;
+    margin-right: 7px;
+    display: inline-block;
+    vertical-align: middle; }
+
+/* =========================================================
+  .read
+========================================================== */
+
+.page-ttl h2{
+  font-size: 2.5em;
+  padding-bottom: 20px;
+  margin-top: -15px;
+}
+
+@media screen and (max-width: 768px) {
+  .page-ttl h2{
+    font-size: 1.8em;
+    padding-bottom: 15px;
+    margin-top: -15px;
+  }
+}
+
+/* =========================================================
+  .read
+========================================================== */
+
+.read{
+  width: 90%;
+  max-width: 627px;
+  margin: 60px auto 0;
+}
+
+@media screen and (max-width: 768px) {
+  .read{
+    margin: 40px auto 0;
+  }
+}
+
+.read2{
+  max-width: 447px;
+  margin: 20px auto 0;
+}
+
+@media screen and (max-width: 768px) {
+  .read2{
+    margin: 10px auto 0;
+    width: 64%;
+  }
+}
+
+
+/* =========================================================
+  .cv
+========================================================== */
+
+.cv{
+  width: 90%;
+  max-width: 804px;
+  margin: 40px auto 60px;
+}
+
+.cv ul{
+  overflow:hidden;
+}
+
+.cv ul .siryo{
+  width: 48%;
+  float: left;
+}
+
+.cv ul .raijo{
+  width: 48%;
+  float: right;
+}
+
+.cv .cv_tel{
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* =========================================================
+  .cont1
+========================================================== */
+
+h4{
+  font-weight: normal;
+  color: #415464;
+  font-size: 2.0em;
+}
+
+@media screen and (max-width: 768px) {
+  h4{
+    font-size: 1.6em;
+  }
+}
+
+#cont1{
+  width: 100%;
+  clear: both;
+  background-color: #dce5e9;
+  padding: 80px 0;
+  margin: 80px auto;
+}
+
+/* =========================================================
+  point1
+========================================================== */
+
+
+#cont1 .point1{
+  width: 90%;
+  max-width: 1502px;
+  overflow:hidden;
+}
+
+#cont1 .point1 .left{
+  width: 60%;
+  max-width: 960px;
+  float: left;
+  margin-right: 4%;
+}
+
+#cont1 .point1 .right{
+  width: 35%;
+  float: right;
+  max-width: 463px;
+}
+
+#cont1 .point1 a{
+  width: 100%;
+  max-width: 386px;
+  margin-top: 40px;
+  display: block;
+}
+
+@media screen and (max-width: 960px) {
+  #cont1{
+  padding: 40px 0;
+  margin: 40px auto;
+  }
+
+  #cont1 .point1{
+    margin: 0 auto;
+  }
+
+  #cont1 .point1 .left{
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    margin-left: 0;
+  }
+
+  #cont1 .point1 .right{
+    width: 100%;
+    float: none;
+    margin: 40px 0 0;
+    max-width: none;
+  }
+
+  #cont1 .point1 .right .text{
+    max-width: 555px;
+  }
+
+  #cont1 .point1 a{
+    margin-top: 40px;
+    max-width: none;
+  }
+}
+
+
+/* =========================================================
+  point2
+========================================================== */
+
+#cont1 .point2{
+  width: 90%;
+  max-width: 1280px;
+  margin: 100px auto 0;
+  overflow:hidden;
+}
+
+#cont1 .point2 .left{
+  width: 45%;
+  float: left;
+  margin-right: 4%;
+}
+
+#cont1 .point2 .left .text img{
+  max-width: 428px;
+}
+
+#cont1 .point2 .left .text p{
+  margin-top: 40px;
+}
+
+#cont1 .point2 .right{
+  width: 50%;
+  float: right;
+}
+
+#cont1 .point2 a{
+  width: 100%;
+  max-width: 386px;
+  margin-top: 40px;
+  display: block;
+}
+
+@media screen and (max-width: 960px) {
+
+  #cont1 .point2{
+    margin: 0 auto;
+  }
+
+  #cont1 .point2 .left{
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    margin-left: 0;
+  }
+
+  #cont1 .point2 .left .text p{
+    margin-top: 20px;
+  }
+
+  #cont1 .point2 .right{
+    width: 100%;
+    float: none;
+    margin: 40px 0 20px;
+    max-width: none;
+  }
+
+  #cont1 .point2 .right .text{
+    max-width: 555px;
+  }
+
+  #cont1 .point2 a{
+    margin-top: 40px;
+    max-width: none;
+  }
+}
+
+
+/* =========================================================
+  point3
+========================================================== */
+
+#cont1 .point3{
+  width: 100%;
+  max-width: 1440px;
+  margin: 100px auto 0;
+  overflow: hidden;
+}
+
+#cont1 .point3 a{
+  width: 100%;
+  max-width: 386px;
+  float: right;
+  display: block;
+}
+
+@media screen and (max-width: 960px) {
+  #cont1 .point3{
+    margin: 40px auto 0;
+  }
+
+  #cont1 .point3 a{
+    width: 90%;
+    max-width: none;
+    margin: 20px auto 0;
+    float: none;
+  }
+}
+
+
+/* =========================================================
+  point4
+========================================================== */
+
+#cont1 .point4{
+  width: 90%;
+  max-width: 1280px;
+  margin: 100px auto 0;
+}
+
+#cont1 .point4 a{
+  width: 100%;
+  max-width: 386px;
+  display: block;
+  margin: 40px auto 0;
+}
+
+@media screen and (max-width: 960px) {
+  #cont1 .point4{
+    margin: 40px auto 0;
+  }
+}
+
+
+/* =========================================================
+  .cont2
+========================================================== */
+
+.cont2{
+  width: 90%;
+  max-width: 1280px;
+  margin: 80px auto;
+}
+
+@media screen and (max-width: 960px) {
+  .cont2{
+    margin: 40px auto;
+  }
+}
+
+/* =========================================================
+  .footer_cv
+========================================================== */
+
+.footer_cv{
+  width: 100%;
+  border-top: 1px solid #c5c5c5;
+}
+
+.footer_cv .inner{
+  padding-top: 60px;
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.footer_cv .cv{
+  margin-bottom: 0;
+}
+
+
+/********** page_bnr **********/
+
+.page_bnr{
+  width: 90%;
+  max-width: 678px;
+  margin: 40px auto 0;
+  display: block;
+}

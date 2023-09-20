@@ -1,0 +1,794 @@
+@charset "UTF-8";
+/**
+ *
+ *  ページ用CSS
+ *　modelroom
+ */
+.sm {
+  display: block;
+}
+@media screen and (min-width: 480px) {
+  .sm {
+    display: none;
+  }
+}
+
+.sm-md {
+  display: block;
+}
+@media screen and (min-width: 767px) {
+  .sm-md {
+    display: none;
+  }
+}
+
+.sm-lg {
+  display: block;
+}
+@media screen and (min-width: 1023px) {
+  .sm-lg {
+    display: none;
+  }
+}
+
+.md {
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  .md {
+    display: block;
+  }
+}
+
+.lg {
+  display: none;
+}
+@media screen and (min-width: 960px) {
+  .lg {
+    display: block;
+  }
+}
+
+.xl {
+  display: none;
+}
+@media screen and (min-width: 1023px) {
+  .xl {
+    display: block;
+  }
+}
+
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+.page-ttl h2 {
+  margin-top: -30px;
+  font-size: 6rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .page-ttl h2 {
+    margin-top: -20px;
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .page-ttl h2 {
+    margin-top: -20px;
+    font-size: 4.5rem;
+  }
+}
+/*--------------------------------------------------------------------------
+   Content
+---------------------------------------------------------------------------*/
+#modelroom figure {
+  position: relative;
+}
+#modelroom figure figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 .5em;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.2rem;
+}
+
+#modelroom .intro {
+  position: relative;
+  color: white;
+}
+#modelroom .intro::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0%;
+  transform: skewY(5deg);
+  transform-origin: bottom left;
+  z-index: -1;
+  width: 100%;
+  height: 90%;
+  background: url("../images/intro_bg01.png") center bottom no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 767px) {
+  #modelroom .intro::after {
+    height: 70%;
+  }
+}
+#modelroom .intro .sectionWrap {
+  margin: auto;
+  padding: 2em 0;
+  width: 90%;
+  max-width: 1200px;
+}
+#modelroom .intro .intro__Inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+#modelroom .intro .intro__titleReadWrap {
+  width: 100%;
+}
+@media screen and (min-width: 767px) {
+  #modelroom .intro .intro__titleReadWrap {
+    width: 50%;
+  }
+}
+#modelroom .intro .intro__titleReadWrap .intro__title {
+  margin-top: 2em;
+  font-size: 2rem;
+  text-align: left;
+}
+@media screen and (min-width: 767px) {
+  #modelroom .intro .intro__titleReadWrap .intro__title {
+    font-size: 2.5rem;
+  }
+}
+#modelroom .intro .intro__titleReadWrap .intro__read {
+  text-align: left;
+  margin-top: 2em;
+}
+@media screen and (min-width: 767px) {
+  #modelroom .intro .intro__titleReadWrap .intro__read {
+    padding-right: 2em;
+  }
+}
+#modelroom .intro .intro__photoList {
+  margin-top: 2em;
+}
+@media screen and (min-width: 767px) {
+  #modelroom .intro .intro__photoList {
+    width: 50%;
+  }
+}
+#modelroom .intro .intro__photoList .intro__photoList__item {
+  position: relative;
+}
+#modelroom .intro .intro__photoList .intro__photoList__item.item01 {
+  margin: auto 0 auto auto;
+  width: 70%;
+  z-index: 2;
+}
+#modelroom .intro .intro__photoList .intro__photoList__item.item02 {
+  margin-top: -5em;
+  width: 50%;
+  z-index: 1;
+}
+
+#modelroom .photo .sectionWrap {
+  margin: auto;
+  padding: 2em 0;
+  width: 100%;
+  max-width: 1200px;
+}
+@media screen and (min-width: 767px) {
+  #modelroom .photo .sectionWrap {
+    width: 90%;
+  }
+}
+#modelroom .photo .photo__title {
+  margin: auto;
+  width: 90%;
+  font-size: 1.8rem;
+  color: #415464;
+}
+@media screen and (min-width: 767px) {
+  #modelroom .photo .photo__title {
+    width: 100%;
+    font-size: 2.2rem;
+  }
+}
+
+/* photoSliderBlock
+---------------------------------------------------- */
+#modelroom .photoSliderBlock {
+  margin-top: 2em;
+}
+#modelroom .photoSliderBlock .slider {
+  position: relative;
+}
+#modelroom .photoSliderBlock .slider img.photo {
+  width: 100%;
+}
+#modelroom .photoSliderBlock .slider p.text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding: .2em;
+  color: white;
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 959px) {
+  #modelroom .photoSliderBlock .slider p.text {
+    right: 5px;
+    font-size: 1rem;
+  }
+}
+#modelroom .photoSliderBlock .thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 98%;
+  max-width: 1200px;
+  letter-spacing: -.4em\9;
+}
+#modelroom .photoSliderBlock .thumb > div {
+  margin: 0 5px 10px 0;
+  display: inline-block\9;
+  letter-spacing: normal\9;
+  vertical-align: top\9;
+}
+#modelroom .photoSliderBlock .thumb > div a {
+  display: block;
+  position: relative;
+}
+#modelroom .photoSliderBlock .thumb > div a img {
+  width: 100px;
+}
+@media screen and (max-width: 644px) {
+  #modelroom .photoSliderBlock .thumb > div a img {
+    /*{SP}*/
+    width: 80px;
+  }
+}
+#modelroom .photoSliderBlock .thumb > div a .df {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+#modelroom .photoSliderBlock .thumb > div a:hover .df, #modelroom .photoSliderBlock .thumb > div a.active .df {
+  opacity: 0;
+}
+#modelroom .photoSliderBlock .bx-wrapper {
+  margin-bottom: 10px;
+}
+
+/** VARIABLES
+===================================*/
+/** RESET AND LAYOUT
+===================================*/
+.bx-wrapper {
+  position: relative;
+  margin-bottom: 130px;
+  padding: 0;
+  *zoom: 1;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+
+.bx-wrapper img {
+  max-width: 100%;
+}
+
+.bxslider {
+  margin: 0;
+  padding: 0;
+}
+
+ul.bxslider {
+  list-style: none;
+}
+
+.bx-viewport {
+  /*fix other elements on the page moving (on Chrome)*/
+  -webkit-transform: translatez(0);
+}
+
+/** THEME
+===================================*/
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+}
+
+/* LOADER */
+.bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url("../images/bx_loader.gif") center center no-repeat #ffffff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+
+/* PAGER */
+.bx-wrapper .bx-pager {
+  text-align: center;
+  font-size: .85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #666;
+  padding-top: 20px;
+  z-index: 99999;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: #aaaaaa;
+  text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  outline: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: #ffdd82;
+}
+
+.bx-wrapper .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  display: inline-block;
+  vertical-align: bottom;
+  *zoom: 1;
+  *display: inline;
+}
+
+.bx-wrapper .bx-pager-item {
+  font-size: 0;
+  line-height: 0;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.bx-wrapper .bx-prev {
+  left: 10px;
+  background: url("../images/controls.png") no-repeat 0 -32px;
+}
+
+.bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-prev:focus {
+  background-position: 0 0;
+}
+
+.bx-wrapper .bx-next {
+  right: 10px;
+  background: url("../images/controls.png") no-repeat -43px -32px;
+}
+
+.bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-next:focus {
+  background-position: -43px 0;
+}
+
+.bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  outline: 0;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+.bx-wrapper .bx-controls-auto {
+  text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+  display: block;
+  text-indent: -9999px;
+  width: 10px;
+  height: 11px;
+  outline: 0;
+  background: url("../images/controls.png") -86px -11px no-repeat;
+  margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active,
+.bx-wrapper .bx-controls-auto .bx-start:focus {
+  background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+  display: block;
+  text-indent: -9999px;
+  width: 9px;
+  height: 11px;
+  outline: 0;
+  background: url("../images/controls.png") -86px -44px no-repeat;
+  margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active,
+.bx-wrapper .bx-controls-auto .bx-stop:focus {
+  background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+  text-align: left;
+  width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+  right: 0;
+  width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+.bx-wrapper .bx-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #666;
+  background: rgba(80, 80, 80, 0.75);
+  width: 100%;
+}
+
+.bx-wrapper .bx-caption span {
+  color: #fff;
+  font-family: Arial;
+  display: block;
+  font-size: .85em;
+  padding: 10px;
+}
+
+@media screen and (max-width: 640px) {
+  .bx-wrapper {
+    margin-bottom: 60px;
+  }
+}
+#modelroom .ootemaeModel {
+  padding: 2em 0;
+  background: #dce5e9;
+}
+@media screen and (min-width: 767px) {
+  #modelroom .ootemaeModel {
+    margin-top: 3em;
+    padding: 5em 0;
+  }
+}
+#modelroom .ootemaeModel .sectionWrap {
+  margin: auto;
+  padding: 2em 0;
+  width: 90%;
+  max-width: 1176px;
+}
+@media screen and (min-width: 767px) {
+  #modelroom .ootemaeModel .sectionWrap {
+    width: 90%;
+  }
+}
+#modelroom .ootemaeModel .ootemaeModel__title {
+  margin: auto;
+  width: 90%;
+  font-size: 1.8rem;
+  color: #415464;
+  text-align: center;
+}
+@media screen and (min-width: 767px) {
+  #modelroom .ootemaeModel .ootemaeModel__title {
+    width: 100%;
+    font-size: 4rem;
+  }
+}
+#modelroom .ootemaeModel .ootemaeModel__read {
+  margin-top: 2em;
+  text-align: center;
+}
+#modelroom .ootemaeModel .ootemaeModel__list {
+  margin-top: 2em;
+}
+@media screen and (min-width: 767px) {
+  #modelroom .ootemaeModel .ootemaeModel__list {
+    margin-top: 4em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+#modelroom .ootemaeModel .ootemaeModel__list figcaption {
+  font-size: 1rem;
+}
+#modelroom .ootemaeModel .ootemaeModel__list .ootemaeModel__list__item01 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 767px) {
+  #modelroom .ootemaeModel .ootemaeModel__list .ootemaeModel__list__item01 {
+    width: 33%;
+  }
+}
+#modelroom .ootemaeModel .ootemaeModel__list .ootemaeModel__list__item01 .ootemaeModel__list__item01__inner {
+      width: 100%;
+
+}
+@media screen and (min-width: 767px) {
+  #modelroom .ootemaeModel .ootemaeModel__list .ootemaeModel__list__item01 .ootemaeModel__list__item01__inner {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 767px) {
+  #modelroom .ootemaeModel .ootemaeModel__list .ootemaeModel__list__item01 .ootemaeModel__list__item01__inner.inner02 {
+  }
+}
+#modelroom .ootemaeModel .ootemaeModel__list .ootemaeModel__list__item02 {
+  margin-top: .5em;
+  width: 100%;
+}
+@media screen and (min-width: 767px) {
+  #modelroom .ootemaeModel .ootemaeModel__list .ootemaeModel__list__item02 {
+    margin-top: 0;
+    width: 66%;
+  }
+}
+#modelroom .ootemaeModel .ootemaeModel__list .ootemaeModel__list__item03 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: block;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+@media screen and (min-width: 767px) {
+  #modelroom .ootemaeModel .ootemaeModel__list .ootemaeModel__list__item03 {
+    width: 100%;
+    display: flex;
+  }
+}
+#modelroom .ootemaeModel .ootemaeModel__list .ootemaeModel__list__item03 .ootemaeModel__list__item03__inner {
+  width: 100%;
+}
+@media screen and (min-width: 767px) {
+  #modelroom .ootemaeModel .ootemaeModel__list .ootemaeModel__list__item03 .ootemaeModel__list__item03__inner {
+    width: 49.5%;
+  }
+}
+#modelroom .ootemaeModel .ootemaeModel__btBlock {
+  margin: auto;
+  margin-top: 3em;
+  width: 90%;
+  max-width: 530px;
+}
+#modelroom .ootemaeModel .ootemaeModel__btBlock a {
+  display: block;
+  padding: 20px 20px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.4;
+  transition: 0.4s;
+  position: relative;
+  background: #415464;
+  box-shadow: 6px 6px #a2b6bd;
+}
+#modelroom .ootemaeModel .ootemaeModel__btBlock a::after {
+  content: url(../../../crm/images/icon-arrow-wh.svg);
+  width: 40px;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transition: 0.4s;
+  transform: translateY(-50%);
+}
+#modelroom .ootemaeModel .ootemaeModel__btBlock a:hover {
+  opacity: 0.7;
+}
+
+
+#modelroom .ootemaeModel .ootemaeModel__chusyaku{
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: 20px;
+}
+
+/*--------------------------------------------------------------------------
+   Anker
+---------------------------------------------------------------------------*/
+
+#modelroom .anker{
+  width: 90%;
+  max-width: 1065px;
+  margin: 60px auto;
+}
+
+#modelroom .anker ul li{
+  display: inline-block;
+  width: 30.8%;
+  margin: 0 1%;
+}
+
+@media screen and (max-width: 767px) {
+  #modelroom .anker{
+  margin: 30px auto 50px;
+}
+
+#modelroom .anker ul li{
+  display: block;
+  width: 100%;
+  margin: 0 0 2% 0;
+}
+}
+
+/*--------------------------------------------------------------------------
+   Plan_detail
+---------------------------------------------------------------------------*/
+
+.plan_detail{
+  width: 90%;
+  max-width: 1200px;
+  margin: 10px auto 20px;
+}
+
+.plan_detail .text{
+  width: 50%;
+  float: right;
+  padding: 3%;
+}
+
+.plan_detail .text p{
+  padding-top: 30px;
+  border-top: 1px solid #a0a9b1;
+  margin-top: 30px;
+}
+
+.plan_detail .plan_img{
+  width: 50%;
+  float: left;
+  padding: 3%;
+}
+
+.sectionWrap{
+  clear: both;
+}
+
+#Btype{
+  background-color: #f1f3ef;
+  padding: 80px 0;
+  margin: 80px 0 0;
+  border-bottom: 1px solid #ccc5b7;
+}
+
+#Ctype{
+  background-color: #fcf3de;
+  padding: 80px 0;
+  margin: 0;
+}
+
+
+@media screen and (max-width: 767px) {
+  .plan_detail .text{
+  width: 100%;
+  float: none;
+  padding: 0;
+}
+
+.plan_detail .plan_img{
+  width: 100%;
+  float: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+#Btype{
+  padding: 40px 0;
+  margin: 40px 0 0;
+  }
+
+#Ctype{
+  padding: 40px 0;
+  }
+}
+
+
+
+.reserve_btn{
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-color: #904e55;
+  padding: 3%;
+  float: left;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px; /* 角を丸くする */
+}
+
+
+/* =========================================================
+  Movie
+========================================================== */
+
+ .movie {
+  width: 90%;
+  max-width: 960px;
+  margin: 40px auto 0;
+  aspect-ratio: 16 / 9;
+}
+
+.movie iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 728px) {
+  .movie {
+    margin: 20px auto 0;
+  }
+}
+
+
+/* =========================================================
+  Add
+========================================================== */
+
+.bunjou_sumi{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 160px;
+  z-index: 9999;
+}
+
+@media screen and (max-width: 728px) {
+  .bunjou_sumi{
+    width: 20%;
+  }
+}
+
+.photoSliderBlock__wrap{
+  position: relative;
+}

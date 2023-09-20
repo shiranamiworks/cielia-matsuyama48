@@ -1,0 +1,450 @@
+@charset "UTF-8";
+/**
+ *
+ *  ページ用CSS
+ *　review
+ */
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------
+   Content
+---------------------------------------------------------------------------*/
+#review {
+  margin-top: 4em;
+  /* clearfix */
+}
+@media screen and (min-width: 767px) {
+  #review {
+    margin-top: 6em;
+    border-top: 1px solid #bfb48f;
+  }
+}
+#review figure {
+  position: relative;
+}
+#review figure figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 .5em;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.2rem;
+}
+#review .sm {
+  display: block;
+}
+@media screen and (min-width: 480px) {
+  #review .sm {
+    display: none;
+  }
+}
+#review .md {
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  #review .md {
+    display: block;
+  }
+}
+#review .clearfix {
+  *zoom: 1;
+  overflow: hidden;
+}
+#review .clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+#review .intro {
+  margin: auto;
+  width: 90%;
+  max-width: 1200px;
+}
+@media screen and (min-width: 767px) {
+  #review .intro {
+    margin-top: 2em;
+  }
+}
+#review .intro h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #415464;
+}
+@media screen and (min-width: 767px) {
+  #review .intro h3 {
+    font-size: 2rem;
+  }
+}
+#review h4 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #415464;
+}
+@media screen and (min-width: 960px) {
+  #review h4 {
+    font-size: 2.5rem;
+  }
+}
+
+#review .interviewBlock .sectionWrap {
+  margin: auto;
+  width: 90%;
+  max-width: 1200px;
+}
+#review .interviewBlock .titleBlock {
+  margin-top: 4em;
+  padding: 1em 0;
+  text-align: center;
+  color: white;
+  background: #948a68;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewBlock .titleBlock {
+    margin: 5em auto 0 auto;
+    padding: .5em 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 960px) {
+  #review .interviewBlock .titleBlock h3 p {
+    display: inline-block;
+  }
+}
+#review .interviewBlock .titleBlock .num {
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewBlock .titleBlock .num {
+    margin-left: -20%;
+    margin-right: 1em;
+    font-size: 2.5rem;
+    opacity: .5;
+  }
+}
+#review .interviewBlock .titleBlock .num em {
+  font-size: 2.4rem;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewBlock .titleBlock .num em {
+    font-size: 4.2rem;
+    opacity: .5;
+  }
+}
+#review .interviewBlock .titleBlock .name {
+  font-size: 2.4rem;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewBlock .titleBlock .name {
+    font-size: 4.2rem;
+  }
+}
+#review .interviewBlock .titleBlock .name span {
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewBlock .titleBlock .name span {
+    font-size: 2rem;
+  }
+}
+#review .interviewBlock__inner01 {
+  margin-top: 2em;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewBlock__inner01 {
+    margin-top: 4em;
+  }
+}
+#review .interviewBlock__inner01 p + p {
+  margin-top: 2em;
+}
+#review .interviewBlock__inner01 .readBlock01 {
+  margin-top: 2em;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewBlock__inner01 .readBlock01 {
+    margin-top: 5em;
+    float: left;
+    width: 45%;
+  }
+}
+#review .interviewBlock__inner01 .photoBlock {
+  margin-top: 2em;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewBlock__inner01 .photoBlock {
+    margin-top: 5em;
+    float: right;
+    width: 50%;
+  }
+}
+#review .interviewBlock__inner01 .readBlock02 {
+  margin-top: 2em;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewBlock__inner01 .readBlock02 {
+    float: left;
+    width: 45%;
+  }
+}
+#review .interviewBlock__inner02 {
+  margin: 2em auto 0 auto;
+  padding: 4em 0;
+  background: #dce5e9;
+  max-width: 1200px;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewBlock__inner02 {
+    margin-top: 4em;
+  }
+}
+#review .interviewBlock__inner02 p + p {
+  margin-top: 2em;
+}
+#review .interviewBlock__inner02 .readBlock01 {
+  margin-top: 2em;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewBlock__inner02 .readBlock01 {
+    margin-top: 5em;
+    float: right;
+    width: 45%;
+  }
+}
+#review .interviewBlock__inner02 .photoBlock {
+  margin-top: 2em;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewBlock__inner02 .photoBlock {
+    margin-top: 5em;
+    float: left;
+    width: 50%;
+  }
+}
+#review .interviewBlock__inner02 .readBlock02 {
+  margin-top: 2em;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewBlock__inner02 .readBlock02 {
+    float: right;
+    width: 45%;
+  }
+}
+#review .interviewBlock__inner02__shopBlock {
+  margin-top: 2em;
+  padding: 1em 0;
+  background: white;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewBlock__inner02__shopBlock {
+    margin: 1em 0 0 auto;
+    padding: 1em 0;
+    width: 45%;
+  }
+}
+#review .interviewBlock__inner02__shopBlock .sectionWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+#review .interviewBlock__inner02__shopBlock__readBlock {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewBlock__inner02__shopBlock__readBlock {
+    width: 63%;
+  }
+}
+#review .interviewBlock__inner02__shopBlock__readBlock .time {
+  font-size: 1.3rem;
+}
+#review .interviewBlock__inner02__shopBlock__photoBlock {
+  width: 50%;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewBlock__inner02__shopBlock__photoBlock {
+    width: 33%;
+  }
+}
+#review .interviewBlock__inner02__shopBlock h4 {
+  text-align: left;
+  font-size: 1.8rem;
+  color: #948a68;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewBlock__inner02__shopBlock h4 {
+    font-size: 2.2rem;
+  }
+}
+#review .interviewBlock__inner02__shopBlock h4 span {
+  display: block;
+  font-size: 1.2rem;
+  color: #252627;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewBlock__inner02__shopBlock h4 span {
+    font-size: 1.6rem;
+  }
+}
+#review .interviewBlock__inner02__shopBlock ul {
+  margin-top: auto;
+}
+#review .interviewBlock__inner02__shopBlock ul li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #948a68;
+  margin-right: .5em;
+}
+
+@media screen and (min-width: 960px) {
+  #review .interviewBlock.interview02 {
+    margin-top: 10em;
+  }
+}
+#review .interviewBlock.interview02 .titleBlock {
+  background: #668b67;
+}
+#review .interviewBlock.interview02 .interviewBlock__inner01 .photoBlock {
+  margin-top: 2em;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewBlock.interview02 .interviewBlock__inner01 .photoBlock {
+    margin-top: 5em;
+    float: left;
+    width: 50%;
+  }
+}
+#review .interviewBlock.interview02 .interviewBlock__inner01 .readBlock02 {
+  margin-top: 2em;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewBlock.interview02 .interviewBlock__inner01 .readBlock02 {
+    margin-top: 5em;
+    float: right;
+    width: 45%;
+  }
+}
+
+#review .interviewMoreWrap {
+  padding-top: 1em;
+  background: rgba(235, 220, 203, 0.2);
+}
+@media screen and (min-width: 960px) {
+  #review .interviewMoreWrap {
+    margin-top: 5em;
+  }
+}
+#review .interviewMore {
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewMore {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+#review .interviewMoreBlock {
+  margin-top: 3em;
+  position: relative;
+}
+#review .interviewMoreBlock::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: url("../images/interview_more_icon03.png") no-repeat;
+  background-size: 100% auto;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewMoreBlock {
+    margin-bottom: 3em;
+    width: 46%;
+  }
+}
+#review .interviewMoreBlock .sectionWrap {
+  margin: 0 5% 0 10%;
+  width: 85%;
+}
+#review .interviewMoreBlock h3 {
+  padding-top: 50px;
+  font-size: 1.8rem;
+  color: #948a68;
+}
+@media screen and (min-width: 960px) {
+  #review .interviewMoreBlock h3 {
+    font-size: 2.5rem;
+  }
+}
+#review .interviewMoreBlock .name {
+  text-align: right;
+  color: #646468;
+}
+#review .interviewMoreBlock .read {
+  margin-top: 2em;
+}
+#review .interviewMoreBlock ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#review .interviewMoreBlock ul li {
+  width: 60%;
+  z-index: 2;
+}
+#review .interviewMoreBlock ul li:nth-child(2) {
+  z-index: 1;
+  margin: 3em 0 0 -2em;
+}
+#review .interviewMoreBlock ul li .photoBlock {
+  margin-top: 2em;
+}
+#review .interviewMoreBlock .photoBlock {
+  margin-top: 2em;
+}
+
+#review .interviewMoreBlock.more03::before {
+  background: url("../images/interview_more_icon03.png") no-repeat;
+  background-size: 100% auto;
+}
+#review .interviewMoreBlock.more04::before {
+  background: url("../images/interview_more_icon04.png") no-repeat;
+  background-size: 100% auto;
+}
+#review .interviewMoreBlock.more05::before {
+  background: url("../images/interview_more_icon05.png") no-repeat;
+  background-size: 100% auto;
+}
+#review .interviewMoreBlock.more06::before {
+  background: url("../images/interview_more_icon06.png") no-repeat;
+  background-size: 100% auto;
+}
+#review .interviewMoreBlock.more07::before {
+  background: url("../images/interview_more_icon07.png") no-repeat;
+  background-size: 100% auto;
+}
+#review .interviewMoreBlock.more08::before {
+  background: url("../images/interview_more_icon08.png") no-repeat;
+  background-size: 100% auto;
+}
