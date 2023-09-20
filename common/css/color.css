@@ -1,0 +1,581 @@
+@charset "utf-8";
+
+/* ============================================================ 
+ver.2020.04.01
+
+Original Color Format
+
+// CRM領域のカラー変更可能箇所を記載しています。
+// 対象：ヘッダー、フッター、TOPページ
+
+========================================================== */
+
+
+/* ---------------------------------------------------------------------------
+
+header
+// ヘッダー
+
+--------------------------------------------------------------------------- */
+
+/* 資料請求ボタン */
+.colorRequest {
+  background-image: -moz-linear-gradient( 0deg, rgb(102,139,103) 0%, rgb(69,116,70) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(102,139,103) 0%, rgb(69,116,70) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(102,139,103) 0%, rgb(69,116,70) 100%);
+}
+
+/* 公式サイト */
+.colorOfficial {
+  background-color: #4B7399 !important;
+}
+
+/* 来場予約 */
+.colorReserve {
+  background-color: #904e55 !important;
+}
+
+/* 資料請求者限定サイト */
+.colorMember {
+  border-color: #668b67 !important;
+  color: #668b67 !important;
+}
+
+/* 来場者限定サイト */
+.colorAttendance {
+  border-color: #904e55 !important;
+  color: #904e55 !important;
+}
+
+
+
+/* 下線（ホバー時） */
+.crm--header .gnav .gnavWrap li a::after {
+  background-color: #415464;
+}
+
+
+@media screen and (max-width: 1280px) {
+  header .gnav .salonNavWrap .member a {
+/*    border: 1px solid #974B4B;
+    color: #974B4B;*/
+  }
+    header .gnav .salonNavWrap .attendance a{
+/*      border:1px solid #974B4B;
+      color:#974B4B;*/
+    }
+    header .gnav .salonNavWrap .btn.request a{
+      background:url(../../crm/images/icon-arrow-wh.svg) right 10% center no-repeat,#668b67;
+      background-size: 10%;
+      border:1px solid #668b67;
+    }
+    header .gnav .salonNavWrap .btn.official a{
+      background:url(../../crm/images/icon-arrow-wh.svg) right 10% center no-repeat,#668b67;
+      background-size: 10%;
+      border:1px solid #668b67;
+    }
+    header .gnav .salonNavWrap .btn.reserve a{
+      background:url(../../crm/images/icon-arrow-wh.svg) right 10% center no-repeat,#904e55;
+      background-size: 10%;
+      border:1px solid #904e55;
+    }  
+}
+
+@media screen and (max-width: 480px) {
+  .crm--header .gnav .salonNavWrap .btn.request a,
+  .crm--header .gnav .salonNavWrap .btn.official a {
+		border: 1px solid #668b67;
+    background: url(../../crm/images/icon-arrow-wh.svg) right 10% center no-repeat,#668b67;
+    background-size: 15%;
+  }
+    header .gnav .salonNavWrap .btn.reserve a{
+      background:url(../../crm/images/icon-arrow-wh.svg) right 10% center no-repeat,#904e55;
+      background-size: 15%;
+    }  
+}
+
+
+/* ハンバーガーメニュー */
+.crm--header .spMenuBtn {
+  background: #0C1B37;
+}
+.crm--header .spMenuBtn span {
+  background: #fff;
+}
+.crm--header .spMenuBtn .menu {
+  color: #fff;
+}
+
+
+
+/*---------------------------------------------------------------
+
+crm--mainSlide
+// メインスライダー
+
+--------------------------------------------------------------- */
+
+/*PC スライダー背景*/
+.crm--mainSlide {
+  background: #FFF;
+}
+
+/* ドットナビ */
+.crm--Slide .slick-dots li button:before{
+	color: #b5c7ce;
+}
+.crm--mainSlide .slick-dots li.slick-active button:before {
+  color: #415464;
+}
+
+/* PREV NEXT　ボタン */
+@media screen and (max-width: 480px) {
+  .crm--mainSlide .slick-prev:before,.slick-next:before {
+    background: #415464;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .crm--mainSlide .slick-dotted.slick-slider {
+    margin-bottom: 45px;
+  }
+}
+
+/*---------------------------------------------------------------
+
+crm--infoArea
+// 新着情報
+
+--------------------------------------------------------------- */
+
+/* 背景 */
+.crm--infoArea {
+  background-image: -moz-linear-gradient( 90deg, rgb(194,202,205) 0%, rgb(194,202,205) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(194,202,205) 0%, rgb(194,202,205) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(194,202,205) 0%, rgb(194,202,205) 100%);
+}
+
+/* 見出し */
+.crm--infoArea h4 {
+  color: #252627;
+}
+
+
+
+/*---------------------------------------------------------------
+
+crm--meritBox
+// メリットボックス
+
+--------------------------------------------------------------- */
+
+/* 見出し */
+.crm--meritBox h4 {
+  color: #ffffff;
+}
+
+.crm--meritBox h4 span {
+	color: #bfb48f;
+}
+
+
+/* サブ */
+.crm--meritBox .sub {
+  opacity: 0.5;
+}
+
+/* 背景 */
+.crm--meritBox {
+  background: url(../../images/bg_merit.png) top center no-repeat, #415464;
+  background-size:cover;
+}
+
+
+
+/*---------------------------------------------------------------
+
+crm--secContentArea
+// コンテンツ動線エリア
+
+--------------------------------------------------------------- */
+
+/* 背景 */
+.crm--block {
+  background: url(../../images/bg_content_right.jpg)center right no-repeat, #ffffff;
+}
+
+/* テキストボックス */
+.crm--block .txtWrap {
+	background: #FFF;
+}
+
+/* 見出し */
+.crm--block .txtWrap .ttl {
+  color: #415464;
+}
+
+/* 英語表記 */
+.crm--block .txtWrap .en {
+  color: #415464;
+}
+
+/* コピー */
+.crm--block .txtWrap .copy {
+  color: #252627;
+}
+
+/* 反転画像 */
+.crm--block.reserve {
+  background: url(../../images/bg_content_left.jpg)center left no-repeat, #ffffff;
+	background-size: cover;
+}
+
+/* サブ */
+.crm--block .txtWrap .subTtl {
+  color: #415464;
+}
+
+/* コンテンツリンク　ボタン */
+.crm--block .txtWrap .btnContent a {
+  background: -moz-linear-gradient(135deg, rgba(79, 92, 124, 1) 0%, rgba(59, 69, 90, 1) 100%);
+  background: -webkit-linear-gradient(135deg, rgba(79, 92, 124, 1) 0%, rgba(59, 69, 90, 1) 100%);
+  background: linear-gradient(135deg, rgba(79, 92, 124, 1) 0%, rgba(59, 69, 90, 1) 100%);
+  color: #fff;
+  position: relative;
+}
+
+.crm--block .txtWrap .btnContent a::after {
+  content: url(../../crm/images/icon-arrow-wh.svg);
+  width: 30px;
+  position: absolute;
+  right: 7%;
+  top: 50%;
+  transition: 0.4s;
+  transform: translateY(-50%);
+}
+
+.crm--block .txtWrap .btnContent a:hover::after {
+  right: 5%;
+}
+
+
+
+/* コンテンツリンク　サブボタン */
+.crm--block .txtWrap .btnSub a {
+  background: url(../../crm/images/icon-arrow-gray.svg) right 5% top 45% no-repeat;
+  background-size: 30px;
+  border: 1px solid #3F4144;
+  color: #3F4144;
+}
+
+.crm--block .txtWrap .btnSub a:hover {
+  background: url(../../crm/images/icon-arrow-wh.svg) right 2% top 45% no-repeat, #3F4144;
+  background-size: 30px;
+  color: #fff;
+}
+
+/* コンテンツ別背景 */
+.crm--block#position .bg {
+  background: url(../../images/bg_content01_pc.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.crm--block#access .bg {
+  background: url(../../images/bg_content02_pc.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+
+.crm--block#location .bg {
+  background: url(../../images/bg_content03_pc.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.crm--block#design .bg {
+  background: url(../../images/bg_content_design_pc.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.crm--block#plan .bg {
+  background: url(../../images/bg_content05_pc.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.crm--block#safety .bg {
+  background: url(../../images/bg_content_safety_pc.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.crm--block#review .bg {
+  background: url(../../images/bg_content_review_pc.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.crm--block#special .bg {
+  background: url(../../images/bg_content08_pc.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 480px) {
+  .crm--block#position .bg {
+    background: url(../../images/bg_content01_sp.jpg) center center no-repeat;
+    background-size: cover;
+  }
+
+  .crm--block#access .bg {
+    background: url(../../images/bg_content02_sp.jpg) center center no-repeat;
+    background-size: cover;
+  }
+
+  .crm--block#location .bg {
+    background: url(../../images/bg_content03_sp.jpg) center center no-repeat;
+    background-size: cover;
+  }
+
+	.crm--block#design .bg {
+		background: url(../../images/bg_content_design_sp.jpg) center center no-repeat;
+		background-size: cover;
+	}
+
+	.crm--block#plan .bg {
+		background: url(../../images/bg_content05_sp.jpg) center center no-repeat;
+		background-size: cover;
+	}
+
+	.crm--block#safety .bg {
+		background: url(../../images/bg_content_safety_sp.jpg) center center no-repeat;
+		background-size: cover;
+	}
+
+	.crm--block#review .bg {
+		background: url(../../images/bg_content_review_sp.jpg) center center no-repeat;
+		background-size: cover;
+	}
+
+	.crm--block#special .bg {
+		background: url(../../images/bg_content08_sp.jpg) center center no-repeat;
+		background-size: cover;
+	}
+	
+  .crm--block .txtWrap .btnSub a {
+    background: url(../../crm/images/icon-arrow-gray.svg) right 5% top 45% no-repeat;
+    background-size: 20px;
+  }
+
+  .crm--block .txtWrap .btnSub a:hover {
+    background: url(../../crm/images/icon-arrow-wh.svg) right 2% top 45% no-repeat, #595758;
+    background-size: 20px;
+  }
+}
+
+
+
+/*---------------------------------------------------------------
+
+crm--secDegitalSalon
+// デジタルサロン
+
+--------------------------------------------------------------- */
+
+/* 資料請求ボタン */
+#pardot #pdt_link a {
+  color: #FFF;
+  background-image: -moz-linear-gradient( 0deg, rgb(102,139,103) 0%, rgb(69,116,70) 100%) !important;
+  background-image: -webkit-linear-gradient( 0deg, rgb(102,139,103) 0%, rgb(69,116,70) 100%) !important;
+  background-image: -ms-linear-gradient( 0deg, rgb(102,139,103) 0%, rgb(69,116,70) 100%) !important;
+  position: relative;
+}
+
+#pardot #pdt_link a::after {
+  content: url(../../crm/images/icon-arrow-wh.svg);
+  width: 30px;
+  position: absolute;
+  right: 7%;
+  top: 50%;
+  transition: 0.4s;
+  transform: translateY(-50%);
+}
+
+#pardot #pdt_link a:hover::after {
+  right: 5%;
+}
+
+/* 資料請求済の方 */
+#pardot #pdt_link02 a {
+  background: url(../../../pardot/common/img/icon_link.png) 95% 50% #415464 no-repeat !important;
+}
+
+#pardot #pdt_link02 a:hover {
+  background: url(../../../pardot/common/../img/icon_link.png) 98% 50% #415464 no-repeat;
+  opacity: 0.8;
+}
+
+
+
+/*---------------------------------------------------------------
+
+crm--secPicUpWord
+// ピックアップワード
+
+--------------------------------------------------------------- */
+
+/* タイトル */
+.crm--secPickUpWord .crm--ttlWrap .crm--ttl {
+  color: #fff;
+}
+.crm--secPickUpWord .crm--ttlWrap .crm--copy {
+  color: #fff;
+}
+
+/* タイトル背景 */
+.crm--secPickUpWord .crm--ttlWrap,
+.crm--secPickUpWord .crm--bg .crm--ttlBg {
+  background: #415464;
+}
+
+/* タグ */
+.crm--secPickUpWord .crm--listWrap .crm--list a {
+  border: solid 1px #333b4a;
+  color: #333b4a;
+}
+.crm--secPickUpWord .crm--listWrap .crm--list a:hover {
+  background: #333b4a;
+  color: #fff;
+}
+
+/* タグ背景 */
+.crm--secPickUpWord .crm--bg .crm--listBg {
+  background: #dce5e9;
+}
+
+@media screen and (max-width: 480px) {
+  .crm--secPickUpWord {
+    background: #415464;
+  }
+
+  .crm--secPickUpWord .crm--ttlWrap {
+    background: none;
+  }
+
+  .crm--secPickUpWord .crm--listWrap .crm--list a {
+    border: 1px solid #dce5e9;
+    color: #dce5e9;
+  }
+
+  .crm--secPickUpWord .crm--listWrap {
+    background: none;
+  }
+}
+
+
+
+/* ---------------------------------------------------------------------------
+
+crm--requestWrap
+// 資料請求
+
+--------------------------------------------------------------------------- */
+
+/* 枠線 */
+.crm--requestWrap {
+  border: 5px solid #35393D;
+}
+
+/* 資料請求ボタン */
+.crm--cvWrap.btn.request a {
+  background-image: -moz-linear-gradient( 0deg, rgb(102,139,103) 0%, rgb(69,116,70) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(102,139,103) 0%, rgb(69,116,70) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(102,139,103) 0%, rgb(69,116,70) 100%);
+}
+
+
+
+/* ---------------------------------------------------------------------------
+
+crm--cvWrap
+// 来場予約
+
+--------------------------------------------------------------------------- */
+
+/* 来場予約 */
+.crm--cvWrap.btn.reserve a {
+  background-image: -moz-linear-gradient( 0deg, rgb(144,78,85) 0%, rgb(138,70,77) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(144,78,85) 0%, rgb(138,70,77) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(144,78,85) 0%, rgb(138,70,77) 100%);
+}
+
+
+
+/* ---------------------------------------------------------------------------
+
+footer
+// フッター
+
+--------------------------------------------------------------------------- */
+
+/* ナビゲーション背景 */
+footer .crm--fNav {
+  background: #415464;
+}
+
+/* ナビゲーションテキスト */
+footer .crm--fNav p a {
+  color: #fff;
+  border-right: 1px solid #fff;
+}
+
+/* 問い合わせ先 背景 */
+footer .crm--inquiry {
+  background: #dce5e9;
+}
+
+@media screen and (max-width:480px) {
+
+  footer .crm--inquiry {
+    background: #fff;
+    border: 3px solid #c4c4c4;
+  }
+  
+  /* 問い合わせ先 発信ボタン */
+  footer .crm--inquiry .crm--inner .btnTel {
+    background: #323A49;
+  }
+}
+
+
+
+/* ---------------------------------------------------------------------------
+
+footFixNavi
+// 固定ナビゲーション //
+
+--------------------------------------------------------------------------- */
+/*資料請求*/
+.crm--footFixNav .footFixNavWrap .nav.request a {
+  background-image: -moz-linear-gradient( 0deg, rgb(102,139,103) 0%, rgb(69,116,70) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(102,139,103) 0%, rgb(69,116,70) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(102,139,103) 0%, rgb(69,116,70) 100%);
+}
+
+/*来場予約*/
+.crm--footFixNav .footFixNavWrap .nav.reserve a {
+  background-image: -moz-linear-gradient( 0deg, rgb(144,78,85) 0%, rgb(138,70,77) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(144,78,85) 0%, rgb(138,70,77) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(144,78,85) 0%, rgb(138,70,77) 100%);
+}
+
+
+
+/* ---------------------------------------------------------------------------
+
+scroll pageTop
+
+--------------------------------------------------------------------------- */
+.crm--pageTop a {
+  color: #FFF;
+  background: #333B4A;
+  border: 1px solid #333B4A;
+}
+
+.crm--pageTop a:hover {
+  color: #333B4A;
+  background: #FFF;
+}
