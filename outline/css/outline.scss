@@ -1,0 +1,77 @@
+@charset "utf-8";
+/**
+ *
+ *  ページ用CSS
+ *　OUTLINE
+ */
+
+//**************************
+// brake point
+//**************************
+$breakpoint-sm: 480px;
+$breakpoint-md: 767px;
+$breakpoint-lg: 960px;
+$breakpoint-xl: 1023px;
+$breakpoint-xll: 1279px;
+$breakpoint-max: 1600px;
+
+@mixin breakpoint-sm {
+	@media screen and (min-width:($breakpoint-sm)) { @content; } }
+
+@mixin breakpoint-md {
+	@media screen and (min-width:($breakpoint-md)) { @content; } }
+
+@mixin breakpoint-lg {
+	@media screen and (min-width:($breakpoint-lg)) { @content; } }
+
+@mixin breakpoint-xl {
+	@media screen and (min-width:($breakpoint-xl)) { @content; } }
+
+@mixin breakpoint-xll {
+	@media screen and (min-width:($breakpoint-xll)) { @content; } }
+
+@mixin breakpoint-max {
+	@media screen and (min-width:($breakpoint-max)) { @content; } }
+
+//**************************
+// color
+//**************************
+$color_primaryA_01:rgba(220, 229, 233, 1);
+$color_primaryA_02:rgba(181, 199, 206, 1);
+$color_primaryA_03:rgba(162, 182, 189, 1);
+$color_primaryA_04:rgba(65, 84, 100, 1);
+
+$color_accentA_01:rgba(144, 78, 85, 1);
+$color_accentB_01:rgba(102, 139, 103, 1);
+
+$color_accentC_01:rgba(235, 220, 203, 1);
+$color_accentC_02:rgba(191, 180, 143, 1);
+$color_accentC_03:rgba(148, 138, 104, 1);
+
+$color_gray_01:rgba(100, 100, 104, 1);
+$color_gray_02:rgba(37, 38, 39, 1);//TEXT Color
+$color_gray_03:rgba(8, 9, 9, 1);
+
+$color_white:rgba(255, 255, 255, 1);
+$color_black:rgba(0, 0, 0, 1);
+
+
+
+/*--------------------------------------------------------------------------
+   Content
+---------------------------------------------------------------------------*/
+
+.outlineBox{
+  width: 90%;
+  max-width: 740px;
+  margin:0 auto;
+}
+.outlineBox iframe{
+  height: 1200px;  
+}
+
+@media screen and (max-width:480px) {
+  .outlineBox iframe{
+    height: 1000px;  
+  }
+}

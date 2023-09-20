@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/**
+ *
+ *  ページ用CSS
+ *　OUTLINE
+ */
+/*--------------------------------------------------------------------------
+   Content
+---------------------------------------------------------------------------*/
+.outlineBox {
+  width: 90%;
+  max-width: 740px;
+  margin: 0 auto; }
+
+.outlineBox iframe {
+  height: 1200px; }
+
+@media screen and (max-width: 480px) {
+  .outlineBox iframe {
+    height: 1000px; } }
