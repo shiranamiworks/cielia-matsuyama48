@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/**
+ *
+ *  ページ用CSS
+ *　position
+ */
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------
+   Content
+---------------------------------------------------------------------------*/
+#map .text {
+  margin: 50px auto;
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+}
+#map .text .title{
+  display: inline-block;
+  font-size: 110%;
+  margin-bottom: 10px;
+}
+#map .mapBlock {
+  margin: 30px auto;
+  width: 90%;
+  max-width: 1000px;
+}
+#map .btnMap {
+  margin: 4em auto 0;
+  text-align: center;
+  width: 80%;
+  max-width: 1000px;
+}
+#map .btnMap a {
+  display: block;
+  margin: auto;
+  padding: 1.3em;
+  width: 100%;
+  max-width: 350px;
+  background-image: -moz-linear-gradient(-30deg, #415464 0%, #384c5d 58%, #2f4455 100%);
+  background-image: -webkit-linear-gradient(-30deg, #415464 0%, #384c5d 58%, #2f4455 100%);
+  background-image: -ms-linear-gradient(-30deg, #415464 0%, #384c5d 58%, #2f4455 100%);
+  color: #dce5e9;
+}
+#map figure {
+  position: relative;
+}
+#map figure figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 .5em;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.2rem;
+}
+
+#map .salonBlock {
+  margin-top: 3em;
+  padding: 3em 0;
+  border-top: 4px solid #415464;
+  border-bottom: 4px solid #415464;
+  background: #dce5e9;
+}
+@media screen and (min-width: 767px) {
+  #map .salonBlock {
+    margin-top: 6em;
+  }
+}
+#map .salonBlock .salonBlock__title .salonBlock__title__sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  color: #948a68;
+  font-size: 2rem;
+}
+@media screen and (min-width: 767px) {
+  #map .salonBlock .salonBlock__title .salonBlock__title__sub {
+    margin: auto;
+    max-width: 700px;
+  }
+}
+#map .salonBlock .salonBlock__title .salonBlock__title__sub::before, #map .salonBlock .salonBlock__title .salonBlock__title__sub::after {
+  border-top: 1px solid #948a68;
+  content: "";
+  flex-grow: 1;
+}
+#map .salonBlock .salonBlock__title .salonBlock__title__sub::before {
+  margin-right: 2rem;
+}
+#map .salonBlock .salonBlock__title .salonBlock__title__sub::after {
+  margin-left: 2rem;
+}
+#map .salonBlock .salonBlock__title .salonBlock__title__main {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 2.5rem;
+}
+#map .salonBlock .salonBlock__title .salonBlock__title__main span.small {
+  font-size: 2rem;
+}
+#map .salonBlock .sectionWrap {
+  margin: auto;
+  width: 90%;
+  max-width: 960px;
+}
+#map .salonBlock .salonBlock__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 767px) {
+  #map .salonBlock .salonBlock__inner {
+    margin-top: 4em;
+  }
+}
+#map .salonBlock .salonBlock__textBlock {
+  margin-top: 1em;
+  width: 100%;
+}
+@media screen and (min-width: 767px) {
+  #map .salonBlock .salonBlock__textBlock {
+    width: 50%;
+  }
+}
+#map .salonBlock .salonBlock__textBlock .salonBlock__textBlock__address .salonBlock__textBlock__address__title {
+  color: #948a68;
+}
+#map .salonBlock .salonBlock__textBlock .salonBlock__textBlock__address .salonBlock__textBlock__address__text {
+  margin-top: .5em;
+}
+@media screen and (min-width: 767px) {
+  #map .salonBlock .salonBlock__textBlock .salonBlock__textBlock__address .salonBlock__textBlock__address__text {
+    margin-top: 1em;
+  }
+}
+#map .salonBlock .salonBlock__textBlock .salonBlock__textBlock__car {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid #948a68;
+}
+#map .salonBlock .salonBlock__textBlock .salonBlock__textBlock__car .salonBlock__textBlock__car__title {
+  color: #948a68;
+}
+#map .salonBlock .salonBlock__textBlock .salonBlock__textBlock__car .salonBlock__textBlock__car__text {
+  margin-top: .5em;
+}
+@media screen and (min-width: 767px) {
+  #map .salonBlock .salonBlock__textBlock .salonBlock__textBlock__car .salonBlock__textBlock__car__text {
+    margin-top: 1em;
+  }
+}
+#map .salonBlock .salonBlock__textBlock .salonBlock__textBlock__car .salonBlock__textBlock__car__text em {
+  font-size: 3rem;
+}
+#map .salonBlock .salonBlock__textBlock .salonBlock__textBlock__car .salonBlock__textBlock__car__note {
+  margin-top: 1em;
+  font-size: 1.2rem;
+}
+#map .salonBlock .salonBlock__textBlock .salonBlock__textBlock__car__carnavi {
+  margin-top: 1em;
+  padding: .5em 1em;
+  text-align: center;
+  border: 1px solid #948a68;
+}
+@media screen and (min-width: 767px) {
+  #map .salonBlock .salonBlock__textBlock .salonBlock__textBlock__car__carnavi {
+    margin-top: 2.5em;
+  }
+}
+#map .salonBlock .salonBlock__textBlock .salonBlock__textBlock__car__carnavi .salonBlock__textBlock__car__carnavi__naviaddress {
+  font-size: 2.5rem;
+  color: #948a68;
+}
+#map .salonBlock .salonBlock__photoBlock {
+  margin-top: 2em;
+}
+@media screen and (min-width: 767px) {
+  #map .salonBlock .salonBlock__photoBlock {
+    width: 40%;
+  }
+}

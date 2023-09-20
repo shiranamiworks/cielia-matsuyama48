@@ -1,0 +1,20 @@
+=================================================================
+【メモ】
+・クラス「ldk」「menseki」を対象プランの内容へ変更してください。
+=================================================================
+
+
+<div class="planWrap 1ldk">
+<div class="spec">
+<p class="type"><span>C</span><span>type</span></p>
+<div class="madori">
+<p class="ldk">1LDK<span>+N</span></p>
+<p class="menseki"><span>住居専有面積</span>42.48m&sup2;</p>
+</div>
+</div>
+<div class="detail"><img src="img/plan_1ldk.jpg"></div>
+
+<div class="anotherPlan">
+<p class="info write">“モデルルーム事前案内会”に<br class="sp">ご参加いただいた際に<br>全タイプの間取りをご案内予定です。</p>
+</div>
+</div><!--planWrap-->

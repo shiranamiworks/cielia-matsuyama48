@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<!-- Google Tag Manager -->
+<!-- End Google Tag Manager -->
+
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+<title>間取りのご提案│あなただけのご提案シート｜【公式】シエリア松山市駅｜松山市48｜関電不動産開発がお届けする新築分譲マンション</title>
+	
+<link rel="stylesheet" type="text/css" href="common/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="common/css/format.css" />
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="common/js/breakpoints.js"></script>
+<script src="common/js/index.js"></script>
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'anl1lot',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="Page Column">
+<section class="Main">
+<h1 class="logo"><a href="https://www.cielia.com/" target="_blank"><img src="common/img/img-logo-cielia.svg" alt="シエリア"></a></h1>
+<div class="ttlWrap">
+<p class="mainName write"><script type="text/javascript" src="https://info.kanden-rd.co.jp/dcjs/577441/1625/dc.js"></script><!--NameFixTag--></p>
+<h2 class="mainTitle"><img src="common/img/ttl-main-sp.svg" alt="あなただけのご提案シート"></h2>
+</div>
+<p class="pen"><img src="common/img/img-main-pen.png"></p>
+<p class="envelope"><img src="common/img/img-main-envelope.png"></p>
+</section>
+
+<section class="mainContent boxContent">
+<div class="bgBoxContent">
+<h3>間取りのご提案</h3>
+
+<script type="text/javascript" src="https://info.kanden-rd.co.jp/dcjs/577441/1693/dc.js"></script><!--PlanTag-->
+
+</div><!--bgBoxContent-->
+
+<div class="senkoInfo">
+<p class="copy">アンケートにご回答いただいたお客様へ<br>限定間取りを公開しております。</p>
+<div class="btnWrap">
+<p class="btn"><a href="../member/senko.html"><span>- アンケートご回答者様用 -</span>限定間取りはこちら</a></p>
+<p class="btn back"><a href="#" onclick="javascript:window.history.back(-1);return false;">前のページへ戻る</a></p>
+</div>
+</div>
+</section>
+</div><!-- / .Page -->
+
+<script type="text/javascript">parts('./','footer.html');</script>  
+
+<!-- Yahoo Tag Manager -->
+<!-- Yahoo Tag Manager -->
+
+</body>
+
+</html>

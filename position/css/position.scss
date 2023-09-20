@@ -1,0 +1,234 @@
+@charset "utf-8";
+/**
+ *
+ *  ページ用CSS
+ *　position
+ */
+
+//**************************
+// brake point
+//**************************
+$breakpoint-sm: 480px;
+$breakpoint-md: 767px;
+$breakpoint-lg: 960px;
+$breakpoint-xl: 1023px;
+$breakpoint-xll: 1279px;
+$breakpoint-max: 1600px;
+
+@mixin breakpoint-sm {
+	@media screen and (min-width:($breakpoint-sm)) { @content; } }
+
+@mixin breakpoint-md {
+	@media screen and (min-width:($breakpoint-md)) { @content; } }
+
+@mixin breakpoint-lg {
+	@media screen and (min-width:($breakpoint-lg)) { @content; } }
+
+@mixin breakpoint-xl {
+	@media screen and (min-width:($breakpoint-xl)) { @content; } }
+
+@mixin breakpoint-xll {
+	@media screen and (min-width:($breakpoint-xll)) { @content; } }
+
+@mixin breakpoint-max {
+	@media screen and (min-width:($breakpoint-max)) { @content; } }
+
+//**************************
+// color
+//**************************
+$color_primaryA_01:rgba(220, 229, 233, 1);
+$color_primaryA_02:rgba(181, 199, 206, 1);
+$color_primaryA_03:rgba(162, 182, 189, 1);
+$color_primaryA_04:rgba(65, 84, 100, 1);
+
+$color_accentA_01:rgba(144, 78, 85, 1);
+$color_accentB_01:rgba(102, 139, 103, 1);
+
+$color_accentC_01:rgba(235, 220, 203, 1);
+$color_accentC_02:rgba(191, 180, 143, 1);
+$color_accentC_03:rgba(148, 138, 104, 1);
+
+$color_gray_01:rgba(100, 100, 104, 1);
+$color_gray_02:rgba(37, 38, 39, 1);//TEXT Color
+$color_gray_03:rgba(8, 9, 9, 1);
+
+$color_white:rgba(255, 255, 255, 1);
+$color_black:rgba(0, 0, 0, 1);
+
+
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------------------
+   Content
+---------------------------------------------------------------------------*/
+
+#map {
+	.mapBlock {
+		margin: auto;
+		width: 90%;
+		max-width: 1000px;
+	}
+	.btnMap {
+		margin: 4em auto 0;
+		text-align: center;
+		width: 80%;
+		max-width: 1000px;
+		a {
+			display: block;
+			margin: auto;
+			padding: 1.3em;
+			width: 100%;
+			max-width: 350px;
+			background-image: -moz-linear-gradient( -30deg, rgb(65,84,100) 0%, rgb(56,76,93) 58%, rgb(47,68,85) 100%);
+			background-image: -webkit-linear-gradient( -30deg, rgb(65,84,100) 0%, rgb(56,76,93) 58%, rgb(47,68,85) 100%);
+			background-image: -ms-linear-gradient( -30deg, rgb(65,84,100) 0%, rgb(56,76,93) 58%, rgb(47,68,85) 100%);
+			color: $color_primaryA_01;
+		}
+	}
+	figure {
+		position: relative;
+		figcaption {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			padding: 0 .5em;
+			background: rgba($color_black, .5);
+			color: $color_white;
+			font-size: 1.2rem;
+		}
+	}
+}
+
+
+
+#map .salonBlock {
+	margin-top: 3em;
+	padding: 3em 0;
+	border-top: 4px solid $color_primaryA_04;
+	border-bottom: 4px solid $color_primaryA_04;
+	background: $color_primaryA_01;
+	@include breakpoint-md {
+		margin-top: 6em;
+	}
+	.salonBlock__title {
+		.salonBlock__title__sub {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			align-items: center;
+			color: $color_accentC_03;
+			font-size: 2rem;
+			@include breakpoint-md {
+				margin: auto;
+				max-width: 700px;
+			}
+			&::before,
+			&::after {
+				border-top: 1px solid $color_accentC_03;
+				content: "";
+				flex-grow: 1;
+			}
+			&::before {
+				margin-right: 2rem;
+			}
+			&::after {
+				margin-left: 2rem;
+			}
+			}
+		.salonBlock__title__main {
+			margin-top: 1em;
+			text-align: center;
+			font-size: 2.5rem;
+			span.small {font-size:2rem; }
+		}
+	}
+	.sectionWrap {
+		margin: auto;
+		width: 90%;
+		max-width: 960px;
+	}
+	.salonBlock__inner {
+		display:-webkit-box;
+		display:-ms-flexbox;
+		display:flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		@include breakpoint-md {
+			margin-top: 4em;
+		}
+	}
+	.salonBlock__textBlock {
+		margin-top: 1em;
+		width: 100%;
+		@include breakpoint-md {
+			width: 50%;
+		}
+		.salonBlock__textBlock__address {
+			.salonBlock__textBlock__address__title {
+				color: $color_accentC_03;
+			}
+			.salonBlock__textBlock__address__text {
+				margin-top: .5em;
+				@include breakpoint-md {
+					margin-top: 1em;
+				}
+			}
+		}
+		.salonBlock__textBlock__car {
+			margin-top: 1em;
+			padding-top: 1em;
+			border-top: 1px solid $color_accentC_03;
+			.salonBlock__textBlock__car__title {
+				color: $color_accentC_03;
+			}
+			.salonBlock__textBlock__car__text {
+				margin-top: .5em;
+				@include breakpoint-md {
+					margin-top: 1em;
+				}
+				em {
+					font-size: 3rem;
+				}
+			}
+			.salonBlock__textBlock__car__note {
+				margin-top: 1em;
+				font-size: 1.2rem;
+			}
+		}
+		.salonBlock__textBlock__car__carnavi {
+			margin-top: 1em;
+			padding: .5em 1em;
+			text-align: center;
+			border: 1px solid $color_accentC_03;
+			@include breakpoint-md {
+				margin-top: 2.5em;
+			}
+			.salonBlock__textBlock__car__carnavi__naviaddress {
+				font-size: 2.5rem;
+				color: $color_accentC_03;
+			}
+		}
+	}
+	.salonBlock__photoBlock {
+		margin-top: 2em;
+		@include breakpoint-md {
+			width: 40%;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
