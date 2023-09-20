@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/* ============================================================ 
+ver.2020.04.01
+
+//改変しないでください
+=============================================================== */
+
+
+
+/* Arrows */
+.crm--Slide .slick-prev,.slick-next{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.crm--Slide .slick-prev:hover,
+.crm--Slide .slick-prev:focus,
+.crm--Slide .slick-next:hover,
+.crm--Slide .slick-next:focus{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.crm--Slide .slick-prev:hover:before,
+.crm--Slide .slick-prev:focus:before,
+.crm--Slide .slick-next:hover:before,
+.crm--Slide .slick-next:focus:before{
+    opacity: 1;
+}
+.crm--Slide .slick-prev.slick-disabled:before,
+.crm--Slide .slick-next.slick-disabled:before{
+    opacity: .25;
+}
+.crm--Slide .slick-prev:before,
+.crm--Slide .slick-next:before{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.crm--Slide .slick-prev{
+    left: -25px;
+}
+.crm--Slide [dir='rtl'] .slick-prev{
+    right: -25px;
+    left: auto;
+}
+.crm--Slide .slick-prev:before{
+    content: '←';
+}
+.crm--Slide [dir='rtl'] .slick-prev:before{
+    content: '→';
+}
+
+.crm--Slide .slick-next{
+    right: -25px;
+}
+.crm--Slide [dir='rtl'] .slick-next{
+    right: auto;
+    left: -25px;
+}
+.crm--Slide .slick-next:before{
+    content: '→';
+}
+.crm--Slide [dir='rtl'] .slick-next:before{
+    content: '←';
+}
+
+/* Dots */
+.crm--Slide .slick-dotted.slick-slider{
+    margin-bottom: 30px;
+}
+
+.crm--Slide .slick-dots{
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.crm--Slide .slick-dots li{
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.crm--Slide .slick-dots li button{
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 10px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+    transition: 0.4s;
+}
+.crm--Slide .slick-dots li button:hover,
+.crm--Slide .slick-dots li button:focus{
+    outline: none;
+}
+.crm--Slide .slick-dots li button:hover:before,
+.crm--Slide .slick-dots li button:focus:before{
+    opacity: 1;
+}
+.crm--Slide .slick-dots li button:before{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 20px;
+    content: '●';
+    text-align: center;
+    opacity: .25;
+    color: #9e9e9e;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.crm--Slide .slick-dots li.slick-active button:before{
+    opacity: .75;
+}

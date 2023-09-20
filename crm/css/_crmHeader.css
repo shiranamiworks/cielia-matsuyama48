@@ -1,0 +1,655 @@
+@charset "utf-8";
+
+/* ============================================================ 
+ver.2020.04.01
+
+//ヘッダー
+
+デバイスサイズ1,280px以下でハンバーガーメニューに切り替え
+=============================================================== */
+
+
+
+/*---------------------------------------------------------------
+
+icon
+//「new」「update」、「soon」マーク
+
+--------------------------------------------------------------- */
+
+.crm--header .gnav .gnavWrap li.new a::before,
+.crm--header .gnav .gnavWrap li.update a::before,
+.crm--header .gnav .gnavWrap li.soon a::before{
+  display: inline-block;
+  padding:1px 8px 2px;
+  color:#fff;
+  font-size: 1.2rem;
+  text-align: center;
+  position: absolute;
+  top:0;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+@media screen and (max-width:1280px) {
+  .crm--header .gnav .gnavWrap li.new a::before,
+  .crm--header .gnav .gnavWrap li.update a::before,
+  .crm--header .gnav .gnavWrap li.soon a::before{
+    padding:0.5% 2% 1%;
+    top:50%;
+    left:auto;
+    right:20%;
+    transform: translate(0,-50%);
+  }
+}
+
+/* new */
+.crm--header .gnav .gnavWrap li.new a::before{
+  content:"new";
+  background: #b33c3c;
+}
+
+/* update */
+.crm--header .gnav .gnavWrap li.update a::before{
+  content:"update";
+  background: #b33c3c;
+}
+
+/* soon */
+.crm--header .gnav .gnavWrap li.soon a{
+  opacity: 0.7;
+  pointer-events: none;
+}
+.crm--header .gnav .gnavWrap li.soon a::before{
+  content:"soon";
+  background: #c6c6c6;
+}
+
+
+
+/*---------------------------------------------------------------
+
+header
+
+--------------------------------------------------------------- */
+.crm--header a {
+  transition: 0.4s;
+}
+.crm--header a:link {
+  text-decoration: none;
+}
+.crm--header a:visited {
+  text-decoration: none;
+}
+
+.crm--header{
+  position: fixed;
+  top:0;
+  width: 100%;
+  height:140px;
+  letter-spacing: 0.1rem;
+  background: rgba(255, 255, 255, 1.0);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+  z-index: 9999999;
+}
+
+/* 上段 */
+.crm--header .headerInline{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.crm--header .headerInline .logo{
+  height: 55px;
+  padding-top: 15px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.crm--header .headerInline .logo a{
+  display: block;
+  height:100%;
+  transition: 0.4s;
+}
+.crm--header .headerInline .logo a:hover{
+  opacity: 0.7;
+}
+.crm--header .headerInline .logo a img{
+  width: auto;
+  height:100%;
+}
+
+/* salonNav */
+.crm--header .headerInline .salonNav{
+  width: 70%;
+  max-width: 680px;
+}
+.crm--header .headerInline .salonNav .salonNavWrap{
+  display: flex;
+  justify-content: flex-end;
+}
+.crm--header .headerInline .salonNav .salonNavWrap .site{
+  width: 20%;
+  max-width: 120px;
+}
+.crm--header .headerInline .salonNav .salonNavWrap .site.attendance{
+  margin-left:5px;
+}
+.crm--header .headerInline .salonNav .salonNavWrap .site a{
+  display: block;
+  padding:7px 10px;
+  border-style:solid;
+  border-width:1px; 
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  letter-spacing: 0.02rem;
+  transition: 0.4s;
+}
+.crm--header .headerInline .salonNav .salonNavWrap .site a:hover{
+  opacity: 0.7;
+}
+.crm--header .headerInline .salonNav .salonNavWrap .btn{
+  width:  22%;
+  max-width: 150px;
+}
+.crm--header .headerInline .salonNav .salonNavWrap .btn.request{
+  margin-left:7px;
+}
+.crm--header .headerInline .salonNav .salonNavWrap .btn.reserve,
+.crm--header .headerInline .salonNav .salonNavWrap .btn.official{
+  margin-left:1px;
+}
+.crm--header .headerInline .salonNav .salonNavWrap .btn a{
+  display: block;
+  padding:15px 20px;
+  color:#fff;
+  text-align: center;
+  line-height: 1.4;
+  transition: 0.4s;
+}
+.crm--header .headerInline .salonNav .salonNavWrap .btn a:hover{
+  opacity: 0.7;
+}
+.crm--header .headerInline .salonNav .salonNavWrap .btn a span{
+  display: block;
+  font-size: 1.0rem;
+}
+.crm--header .headerInline .salonNav .salonNavWrap .gnav--wrap{
+  margin-right:15px;
+}
+.crm--header .headerInline .salonNav .salonNavWrap .gnav--wrap a{
+  display: block;
+  margin-top:10px;
+  padding:0 0 0 12px;
+  background: url(../images/icon-arrow-nav.svg) left center no-repeat;
+  background-size: 5px;
+  color:#191919;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+.crm--header .spNav{
+  display: none;
+}
+
+.crm--header .gnav{
+  width: 98%;
+  max-width: 1920px;
+  margin:20px auto 0;
+}
+.crm--header .gnav .salonNavWrap,
+.crm--header .gnav .gnavWrap{
+  display: flex;
+  justify-content: center;
+}
+.crm--header .gnav .salonNavWrap{
+  display: none;
+}
+.crm--header .gnav .salonNavWrap li,
+.crm--header .gnav .gnavWrap li{
+  position: relative;
+}
+.crm--header .gnav .gnavWrap li{
+  width: 100%;
+}
+.crm--header .gnav .gnavWrap li::before{
+  display:block;
+  content:"";
+  width: 1px;
+  height: 24px;
+  background:#D4D3D1;	
+  position: absolute;
+  right:0;
+  top:50%;
+  transform:translateY(-50%);
+}
+.crm--header .gnav .gnavWrap li:first-of-type::after{
+  display:block;
+  content:"";
+  width: 1px;
+  height: 24px;
+  background:#D4D3D1;	
+  position: absolute;
+  left:0;
+  top:50%;
+  transform:translateY(-50%);
+}
+.crm--header .gnav .gnavWrap li a{
+  display:block;
+  height:55px;
+  padding:12px 5% 0;
+  color:#191919;
+  line-height:1;
+  text-align: center;
+  word-break: keep-all;
+  box-sizing: border-box;
+  position: relative;
+}
+.crm--header .gnav .gnavWrap li a::after{
+  display:block;
+  content:"";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  left:0;
+  bottom:0;
+  transition:.3s;	
+}
+/* 限定サイト*/
+.crm--header.member .gnav .gnavWrap li a,
+.crm--header.attendance .gnav .gnavWrap li a{
+  padding-right:40px;
+  padding-left:40px;
+  font-size:1.6rem;
+}
+.crm--header .gnav .gnavWrap li a:hover::after,
+.crm--header .gnav .gnavWrap li.current a::after{
+  width: calc(100%);
+}
+.crm--header .gnav .gnavWrap li a p{
+  display:inline-block;
+  font-size:0.85vw;
+}
+.crm--header .gnav .gnavWrap li a p .en{
+  display:block;
+  margin-top: 5px;
+  font-size:60%;
+  opacity: 0.5;
+}
+
+/* special */
+.crm--header .gnav .gnavWrap .navSp {
+  position: relative;
+}
+.crm--header .gnav .gnavWrap .navSp .navSpWrap {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.95);
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+.crm--header .gnav .gnavWrap .navSp:hover .navSpWrap {
+  visibility: visible;
+  opacity: 1;
+}
+.crm--header .gnav .gnavWrap .navSp .navSpWrap li{
+  border-bottom:1px solid #D4D3D1;
+}
+.crm--header .gnav .gnavWrap .navSp .navSpWrap li::before{
+  display: none;
+}
+.crm--header .gnav .gnavWrap .navSp .navSpWrap li a{
+  padding: 20px 40px 0;
+}
+
+.crm--navPc{
+  display: inline-block;
+}
+.crm--navSp{
+  display: none;
+}
+
+
+@media screen and (max-width:1280px) {
+  .crm--header{
+    height:60px;
+    position: relative;
+  }
+  .crm--header .headerInline .logo{
+    width: calc(100% - 90px);
+    padding: 12.5px 0 0 15px;
+  }
+  .crm--header .headerInline .logo a img{
+    width: auto !important;
+    max-height:35px !important;
+  }
+  .crm--header .spNav{
+    display:block;
+    position: fixed;
+    right:0;
+    top:0;
+    z-index: 999;
+  }
+  .crm--header .spMenuBtn{
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    border:1px solid rgba(255,255,255,0.6);
+    box-sizing: border-box;
+    position: relative;	
+  }
+  .crm--header .spMenuBtn span{
+    position: absolute;
+    display:block;
+    width: 40px;
+    height: 2px;
+    border-radius: 2px;
+    left:10px;
+    transition:.3s;
+  }
+  .crm--header .spMenuBtn .menu{
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    position: absolute;
+    bottom:5px;
+    left:50%;
+    transform: translateX(-50%);
+  }
+  .crm--header .spMenuBtn span:nth-of-type(1){
+    top:15px;
+  }
+  .crm--header .spMenuBtn span:nth-of-type(2){
+    top:22px;
+  }
+  .crm--header .spMenuBtn span:nth-of-type(3){
+    top:29px;
+  }
+  .crm--header .spMenuBtn.open span:nth-of-type(1){
+    top:22px;
+    transform:rotate(-45deg);
+  }
+  .crm--header .spMenuBtn.open span:nth-of-type(2){
+    display:none;
+  }
+  .crm--header .spMenuBtn.open span:nth-of-type(3){
+    top:22px;
+    transform:rotate(45deg);
+  }
+  .crm--header .gnav{
+    width: 100%;
+    height:100vh;
+    margin-top:0;
+    position: fixed;
+    top:0;
+    right: -100%;
+    background: rgba(255, 255, 255,1.0);
+    overflow-y: scroll;
+    opacity: 0.5;
+    transition: 0.4s ease-out;
+  }
+  .crm--header .gnav.open{
+    right: 0;
+    opacity: 1;
+  }  
+  .crm--header .gnav .logo{
+    width: calc(100% - 90px);
+    padding:15px 15px 0 15px;
+  }
+  .crm--header .gnav .logo a{
+    display: flex;
+  }
+  .crm--header .gnav .logo a img{
+    width: auto !important;
+    max-height:35px !important;
+  }
+  .crm--header .gnav .salonNavWrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:3% 5%;
+  }
+  .crm--header .gnav .salonNavWrap li{
+    width: 100%;
+    max-width: 100%;
+  }
+  .crm--header.attendance .gnav .salonNavWrap li{
+    width: 100%;
+  }
+  .crm--header .gnav .salonNavWrap li.official{
+    margin-top:2%;
+    width: 100%;
+  }
+
+  .crm--header .gnav .salonNavWrap li:nth-child(2),
+  .crm--header .gnav .salonNavWrap li:nth-child(3),
+  .crm--header .gnav .salonNavWrap li:nth-child(4){
+    margin-top:2%;
+  }  
+  .crm--header .gnav .salonNavWrap .site a{
+    display: block;
+    padding:15px 10px;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    line-height: 1.3;
+    letter-spacing: 0.02rem;
+    transition: 0.4s;
+  }
+  .crm--header .gnav .salonNavWrap .site a:hover{
+    opacity: 0.7;
+  }
+  .crm--header .gnav .salonNavWrap .btn a{
+    display: block;
+    padding:15px 10px;
+    background: url(../../crm/images/icon-arrow-wh.svg) right 10% center no-repeat;
+    background-size: 10%;
+    position: relative;
+    color:#fff;
+    text-align: center;
+    line-height: 1.4;
+    transition: 0.4s;
+  }
+  .crm--header .gnav .salonNavWrap .btn.request a,
+  .crm--header .gnav .salonNavWrap .btn.reserve a{
+    border-style: solid;
+    border-width: 1px;
+  }
+  .member .crm--header .gnav .salonNavWrap .btn.official a,
+  .attendance .crm--header .gnav .salonNavWrap .btn.reserve a,
+  .attendance .crm--header .gnav .salonNavWrap .btn.official a{
+    background: url(../../crm/images/icon-arrow-wh.svg) right 5% center no-repeat;
+    background-size: 5%;
+  }
+  .crm--header .gnav .salonNavWrap .btn a:hover{
+    opacity: 0.7;
+  }
+  .crm--header .gnav .salonNavWrap .btn a span{
+    display: none;
+  }
+  .crm--header .gnav .gnavWrap{
+    display: block;
+    margin-top:2%;
+    background: #e8e8e8;
+  }  
+  .crm--header .gnav .gnavWrap li{
+    width:100%;
+    border-bottom:1px solid #D4D3D1;
+    position: relative;
+    flex-grow: inherit;
+  }
+  .crm--header .gnav .gnavWrap li.crm--sp{
+    display: inline-block;
+  }
+  .crm--header .gnav .gnavWrap li a{
+    height: auto;
+    padding:2% 3%;
+    background: url(../images/icon-arrow-gray.svg) right 5% center no-repeat;
+    background-size: 30px;
+    text-align: left;
+  }
+  .crm--header .gnav .gnavWrap li a.spLinkNone{
+    pointer-events: none;
+  }
+  
+  /* 限定サイト*/
+  .crm--header.member .gnav .gnavWrap li a,
+  .crm--header.attendance .gnav .gnavWrap li a{
+    padding:2% 4%;
+    font-size:inherit;
+  }
+  
+  .crm--header .gnav .gnavWrap li a p{
+    font-size: 1.4rem;
+  }
+  .crm--header .gnav .gnavWrap li a p .en{
+    display: none;
+  }
+  .crm--header .gnav .gnavWrap li::before,
+  .crm--header .gnav .gnavWrap li a::after{
+    display:none;
+  }
+
+  /* special */
+  .crm--header .gnav .gnavWrap li.navSp{
+    position: relative;
+  }
+  .crm--header .gnav .gnavWrap li.navSp>a{
+    background: none;
+  }
+  .crm--header .gnav .gnavWrap .navSp .navSpWrap {
+    position: static;
+    transform: translateX(0);
+    background:none;
+    display: none;
+  }
+  .crm--header .gnav .gnavWrap .navSp .navSpWrap li{
+    border-bottom:none;
+  }
+  .crm--header .gnav .gnavWrap .navSp .navSpWrap > li a{
+    padding:3% 5% 3% 10%;
+    background: url(../images/icon-arrow-short-gray.svg) right 5% center no-repeat;
+    background-size: 30px;  
+  }
+  .crm--header .gnav .gnavWrap .navSp .navSpWrap li:last-of-type a{
+    padding-bottom:5%;
+  }  
+  .crm--header .gnav .gnavWrap .navSp .btnOpen{
+    display: block;
+    width: 30px;
+    height:auto;
+    padding:3% 0;
+    background: url(../images/icon-open-gray.svg) top 50% center no-repeat;
+    background-size: 80%;
+    position: absolute;
+    top:0;
+    right:4.5%;
+    transition: 0.4s;
+    z-index: 99;
+  }
+  .crm--header .gnav .gnavWrap .navSp .btnOpen.open{
+    background: url(../images/icon-close-gray.svg) center center no-repeat;
+    background-size: 80%;
+  }
+  .crm--mainSlide.innerNav{
+    display: block;
+    padding:5% 5%;
+    background: #fff;
+  }
+  .crm--btnNavClose{
+    display: block !important;
+    width: 60%;
+    max-width: 420px;
+    margin:5% auto 20%;
+    padding:2% 5%;
+    border:1px solid #191919;
+    text-align: center;
+    cursor: pointer;
+  }
+  .crm--navPc{
+    display: none;
+  }
+  .crm--navSp{
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .crm--header .gnav .salonNavWrap{
+    padding:10% 5% 5%;
+  }
+  .crm--header .gnav .salonNavWrap .site a{
+    padding:7px 10px;
+  }
+  .member .crm--header .gnav .salonNavWrap .btn.official a,
+  .attendance .crm--header .gnav .salonNavWrap .btn.reserve a,
+  .attendance .crm--header .gnav .salonNavWrap .btn.official a{
+    background-size: 10%;
+  }
+  .crm--header .gnav .gnavWrap li a{
+    padding:5% 3%;
+  }
+  
+  /* 限定サイト*/
+  .crm--header.member .gnav .gnavWrap li a,
+  .crm--header.attendance .gnav .gnavWrap li a{
+    padding:5% 5%;
+    font-size:inherit;
+  }
+
+  .crm--header .gnav .gnavWrap .navSp .navSpWrap li a{
+    padding:3% 5% 3% 10%;
+    background: url(../images/icon-arrow-short-gray.svg) right 5% center no-repeat;
+    background-size: 30px;
+  }
+  .crm--header .gnav .gnavWrap .navSp .navSpWrap li:last-of-type a{
+    padding-bottom:5%;
+  }  
+  .crm--header .gnav .gnavWrap .navSp .btnOpen{
+    display: block;
+    width: 30px;
+    padding:7% 0;
+    background: url(../images/icon-open-gray.svg) top 50% center no-repeat;
+    background-size: 80%;
+    position: absolute;
+    top:0;
+    right:4.5%;
+    pointer-events:fill;
+    transition: 0.4s;
+    z-index: 99;
+  }
+  .crm--header .gnav .gnavWrap .navSp .btnOpen.open{
+    background: url(../images/icon-close-gray.svg) center center no-repeat;
+    background-size: 80%;
+  }
+  .crm--mainSlide.innerNav{
+    display: block;
+    padding:5% 5%;
+    background: #fff;
+  }
+  .crm--btnNavClose{
+    display: block !important;
+    width: 60%;
+    max-width: 420px;
+    margin:5% auto 20%;
+    padding:2% 5%;
+    border:1px solid #191919;
+    text-align: center;
+  }
+  .crm--navPc{
+    display: none;
+  }
+  .crm--navSp{
+    display: inline-block;
+  }
+}
+
+@media print {
+  .crm--header nav {display: none;}
+}

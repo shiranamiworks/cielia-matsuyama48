@@ -1,0 +1,334 @@
+@charset "utf-8";
+
+/* ============================================================ 
+ver.2020.04.01
+
+//フッター
+サイトレギュレーションで指定する下記要素を設定
+
+■資料請求・来場予約ボタンエリア
+
+デバイスサイズ480px以下で表示でスマホ表示に切り替え
+=============================================================== */
+
+
+
+/* ---------------------------------------------------------------------------
+
+cvWrap
+//資料請求・来場予約ボタンエリア
+
+--------------------------------------------------------------------------- */
+.crm--requestWrap {
+  width: 90%;
+  max-width: 860px;
+  margin:60px auto 0;
+  padding:30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.member .crm--requestWrap,.attendance .crm--requestWrap{
+  display: none;
+}
+.crm--requestWrap .crm--inner .crm--copy{
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+}
+.crm--requestWrap .crm--inner .crm--ttl{
+  display: inline-block;
+  margin-top:15px;
+  padding: 3px 20px;
+  background: #333;
+  color:#fff;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+}
+.crm--requestWrap .crm--inner ul{
+  display: flex;
+  justify-content: center;
+  margin:15px auto 0;
+  align-items:flex-start;
+}
+.crm--requestWrap .crm--inner ul li{
+  width: 31%;
+  padding:0 1%;
+}
+.crm--requestWrap .crm--inner ul li p{
+  margin-top:5px;
+  font-size: 1.5rem;
+}
+.crm--requestWrap .crm--inner ul li p span{
+  display: block;
+  font-size: 1.1rem;
+  line-height: 1.1;
+  padding-top: 5px;
+}
+.crm--cvWrap.btn{
+  width:  90%;
+  max-width: 420px;
+  margin:30px auto 0;
+}
+.crm--cvWrap.btn a{
+  display: block;
+  padding:20px 20px;
+  color:#fff;
+  text-align: center;
+  line-height: 1.4;
+  transition: 0.4s;
+  position: relative;
+}
+.crm--cvWrap.btn a::after {
+  content: url(../../crm/images/icon-arrow-wh.svg);
+  width: 40px;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transition: 0.4s;
+  transform: translateY(-50%);
+}
+.crm--cvWrap.btn a:hover{
+  opacity: 0.7;
+}
+.crm--cvWrap.btn a:hover::after {
+  right: 2%;
+}
+
+@media screen and (max-width:480px) {
+  .crm--requestWrap {
+    width: 90%;
+    margin:10% auto 0;
+    padding:5%;
+    border: 3px solid #baa160;
+  }
+  .crm--requestWrap .crm--inner .crm--copy{
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+  }
+  .crm--requestWrap .crm--inner .crm--ttl{
+    margin-top:4%;
+    padding: 1% 4%;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+  }
+  .crm--requestWrap .crm--inner ul{
+    display: block;
+    margin:5% auto 0;
+  }
+  .crm--requestWrap .crm--inner ul.pre{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .crm--requestWrap .crm--inner ul li{
+    width: 100%;
+    margin-bottom: 4%;
+  }
+  .crm--requestWrap .crm--inner ul.pre li:nth-child(1),
+  .crm--requestWrap .crm--inner ul.pre li:nth-child(2){
+    width: 49%;
+    margin-top:5%;
+  }
+  .crm--requestWrap .crm--inner ul li p{
+    margin-top:3%;
+    font-size: 1.4ewm;
+  }
+  .crm--requestWrap .crm--inner ul li p span{
+    font-size: 1.3rem;
+    line-height: 1.3;
+  }
+  .crm--cvWrap.btn{
+    margin:5% auto 0;
+  }
+  .crm--cvWrap.btn.request{
+    width:100%;
+  }
+  .crm--cvWrap.btn a{
+    display: block;
+    padding:7%;
+  }
+}
+
+
+/* ---------------------------------------------------------------------------
+
+footer
+
+--------------------------------------------------------------------------- */
+footer .crm--fNav{
+  padding:15px 5%;
+  text-align: center;
+}
+footer .crm--fNav p{
+  max-width: 1200px;
+  margin:0 auto;
+}
+footer .crm--fNav p a{
+  padding:0 0.6%;
+  font-size: 0.8vw;
+  text-align: center;
+  word-break: keep-all;
+}
+footer .crm--fNav p a:last-of-type{
+  border-right:none;
+}
+footer .crm--fNav p a:hover{
+  opacity: 0.7;
+}
+footer .crm--inquiry {
+  margin:60px auto 0;
+  padding:30px 0;
+  box-sizing: border-box;
+}
+footer .crm--inquiry .crm--inner{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  max-width: 900px;
+  margin:0 auto 0;
+  align-items: center;
+}
+footer .crm--inquiry .crm--inner .salon{
+  padding-right:30px;
+  text-align: left;
+}
+footer .crm--inquiry .crm--inner .tel .time{
+  margin-top:5px;
+  font-size: 1.3rem;
+}
+footer .crm--developerWrap{
+  margin:30px auto 20px;
+  text-align: center;
+}
+footer .crm--developerWrap .developerLogo{
+  max-width: 280px;
+  margin:0 auto;
+}
+footer .crm--developerWrap .siteTtl{
+  margin:30px auto 0;
+  font-size: 1.3rem;
+}
+footer .crm--developerWrap .copyright{
+  margin:10px auto 0;
+  padding-top:5px;
+  font-size: 1.2rem;
+  border-top:1px solid #c1c1c1;
+}
+
+@media screen and (max-width:1080px) {
+  footer .crm--fNav p a{
+    font-size: 1.4vw;
+  }
+}
+
+@media screen and (max-width:480px) {
+  footer {
+    padding-bottom:80px;
+  }
+  footer .crm--fNav{
+    padding:0;
+  }
+  footer .crm--fNav p{
+    text-align: left;
+  }
+  footer .crm--fNav p a{
+    display: block;
+    padding:3% 5%;
+    border-right:none;
+    background: url(../../crm/images/icon-arrow-wh.svg) center right 5% no-repeat;
+    background-size: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 1.6rem;
+    text-align: left;
+  }
+  footer .crm--inquiry {
+    width: 90%;
+    margin:10% auto;
+    padding:5%;
+    text-align: center;
+  }
+  footer .crm--inquiry .crm--inner{
+    display: block;
+    width: 100%;
+    margin:0 auto;
+  }
+  footer .crm--inquiry .crm--inner .salon,footer .crm--inquiry .crm--inner .tel{
+    width: 100%;
+  }
+  footer .crm--inquiry .crm--inner .salon{
+    padding-right:0;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+  footer .crm--inquiry .crm--inner .tel{
+    margin-top:6%;    
+  }
+  footer .crm--inquiry .crm--inner .tel .time{
+    margin-top:3%;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
+  footer .crm--inquiry .crm--inner .btnTel{
+    width: 100%;
+    margin-top:5%;
+  }
+  footer .crm--inquiry .crm--inner .btnTel a{
+    display: block;
+    padding:4% 30%;
+  } 
+  footer .crm--developerWrap{
+    margin:10% auto 0;
+    text-align: center;
+  }
+  footer .crm--developerWrap .developerLogo{
+    max-width: 280px;
+    margin:0 auto;
+  }
+  footer .crm--developerWrap .siteTtl{
+    margin:30px auto 0;
+    font-size: 1.2rem;
+  }
+  footer .crm--developerWrap .copyright{
+    margin:10px auto 0;
+    padding-top:5px;
+    font-size: 1.2rem;
+    border-top:1px solid #c1c1c1;
+  }
+}
+
+
+
+/* ---------------------------------------------------------------------------
+
+scroll pageTop
+
+--------------------------------------------------------------------------- */
+.crm--pageTop {
+  position: fixed;
+  right: 1%;
+  font-size: 1.2rem;
+  text-align: center;
+  z-index: 999;
+  opacity: 0.8;
+}
+.crm--pageTop a {
+  display: block;
+  width: 100%;
+  color: #FFF;
+  line-height: 1.6rem;
+  padding: 14px;
+  background: rgba(120, 185, 190, 0.9);
+  box-sizing: border-box;
+}
+.crm--pageTop a:hover {
+  text-decoration: none;
+  color: #003e6a;
+  background: #FFF;
+  opacity: 1;
+}
+
+@media screen and (max-width:480px) {
+  .crm--pageTop {
+    padding-bottom:60px;
+  }
+}

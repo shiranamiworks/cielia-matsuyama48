@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/**
+ *
+ *  ページ用CSS
+ *　access
+ */
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------
+   Content
+---------------------------------------------------------------------------*/
+#access .sm {
+  display: block; }
+  @media screen and (min-width: 480px) {
+    #access .sm {
+      display: none; } }
+#access .md {
+  display: none; }
+  @media screen and (min-width: 767px) {
+    #access .md {
+      display: block; } }
+#access .intro {
+  margin: auto;
+  width: 90%;
+  max-width: 1200px; }
+  #access .intro h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #415464; }
+    @media screen and (min-width: 767px) {
+      #access .intro h3 {
+        font-size: 2.5rem; } }
+  #access .intro .accessTime {
+    margin-top: 3em; }
+    @media screen and (min-width: 767px) {
+      #access .intro .accessTime {
+        margin: 3em auto 0;
+        width: 70%;
+        max-width: 510px; } }
+  #access .intro .photoBlock {
+    margin-top: 3em; }
+    @media screen and (min-width: 767px) {
+      #access .intro .photoBlock {
+        margin-top: 5em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
+  #access .intro figure {
+    position: relative; }
+    #access .intro figure figcaption {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 0 .5em;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 1.2rem; }
+  #access .intro .read {
+    margin-top: 3em; }
+    @media screen and (min-width: 767px) {
+      #access .intro .read {
+        text-align: center; } }
+  #access .intro .accessIllust {
+    margin-top: 3em; }
+    @media screen and (min-width: 767px) {
+      #access .intro .accessIllust {
+        margin: 5em auto 0;
+        width: 70%;
+        max-width: 700px; } }
+#access .simulation {
+  margin-top: 3em;
+  background: url("../images/access_img05.png") center top no-repeat;
+  background-size: cover; }
+  #access .simulation .sectionWrap {
+    margin: auto;
+    padding: 2em 0;
+    width: 90%;
+    max-width: 1000px; }
+  #access .simulation h4 {
+    color: #415464;
+    text-align: center; }
+    #access .simulation h4 .subTitle {
+      font-size: 1.2rem; }
+      @media screen and (min-width: 767px) {
+        #access .simulation h4 .subTitle {
+          font-size: 1.6rem; } }
+    #access .simulation h4 .Title {
+      margin-bottom: 2em;
+      position: relative;
+      display: inline-block;
+      font-size: 1.8rem; }
+      @media screen and (min-width: 767px) {
+        #access .simulation h4 .Title {
+          margin-top: 2em;
+          font-size: 2.5rem; } }
+      #access .simulation h4 .Title::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -15px;
+        /*線の上下位置*/
+        display: inline-block;
+        width: 70%;
+        height: 2px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color: #415464; }
+  #access .simulation .read {
+    text-align: center; }
+
+.search .searchBlock {
+  margin-top: 2em;
+  padding: 8% 5%;
+  background: #FFF; }
+  @media screen and (min-width: 767px) {
+    .search .searchBlock {
+      padding: 6% 5%; } }
+
+@media screen and (min-width: 767px) {
+  .search ul.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; } }
+
+.search .wrap li {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  line-height: 2.0rem;
+  text-align: center; }
+  @media screen and (min-width: 767px) {
+    .search .wrap li {
+      width: 35%;
+      font-size: 1.6rem; } }
+
+.search .wrap li + li {
+  width: 5%; }
+
+.search .wrap li + li span.sm {
+  display: inline-block; }
+
+.search .wrap li + li img {
+  vertical-align: baseline;
+  transform: rotate(90deg); }
+  @media screen and (min-width: 767px) {
+    .search .wrap li + li img {
+      width: 15px;
+      vertical-align: middle;
+      transform: rotate(0deg); } }
+
+.search .wrap li + li + li {
+  width: 100%;
+  text-align: center;
+  line-height: 1; }
+  @media screen and (min-width: 767px) {
+    .search .wrap li + li + li {
+      width: 60%; } }
+
+.search .wrap li + li + li span.md {
+  display: inline-block !important; }
+
+.search .wrap li select,
+.search .wrap li input {
+  font-size: 1.5rem;
+  height: 4em !important; }
+  @media screen and (min-width: 767px) {
+    .search .wrap li select,
+    .search .wrap li input {
+      font-size: 1.6rem;
+      height: 3em !important; } }
+
+input::placeholder {
+  color: #969696; }
+
+input:-ms-input-placeholder {
+  color: #969696; }
+
+input::-ms-input-placeholder {
+  color: #969696; }
+
+.search .btn {
+  width: 100%;
+  margin: 10% auto 0; }
+
+.search .btn #btnSearch {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 1.6rem; }
+
+.search .wrap li select {
+  width: 90%; }
+
+.search .wrap li #goal {
+  width: 90%;
+  margin: 5% auto 0;
+  font-size: 1.5rem; }
+  @media screen and (min-width: 767px) {
+    .search .wrap li #goal {
+      margin: 0 10px;
+      width: 65%; } }
+
+.search .wrap li.arrow {
+  margin-top: 5px;
+  text-align: center; }
+
+.search .btnSearch {
+  margin-top: 2em; }
+  @media screen and (min-width: 767px) {
+    .search .btnSearch {
+      margin: 2em auto 0;
+      width: 50%; } }
+
+.search .btnSearch #btnSearch {
+  padding: 15px 0;
+  width: 100%;
+  border: none;
+  background-image: -moz-linear-gradient(-30deg, #415464 0%, #384c5d 58%, #2f4455 100%);
+  background-image: -webkit-linear-gradient(-30deg, #415464 0%, #384c5d 58%, #2f4455 100%);
+  background-image: -ms-linear-gradient(-30deg, #415464 0%, #384c5d 58%, #2f4455 100%);
+  color: #dce5e9;
+  text-align: center;
+  position: relative;
+  transition: 0.4s;
+  cursor: pointer; }
+
+.search .btnSearch #btnSearch:hover {
+  opacity: 0.8; }
+
+.search .note {
+  margin-top: 3em;
+  font-size: 1.3rem; }

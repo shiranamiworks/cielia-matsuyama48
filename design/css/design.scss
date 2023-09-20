@@ -1,0 +1,412 @@
+@charset "utf-8";
+/**
+ *
+ *  ページ用CSS
+ *　DESIGN
+ */
+
+//**************************
+// brake point
+//**************************
+$breakpoint-sm: 480px;
+$breakpoint-md: 767px;
+$breakpoint-lg: 960px;
+$breakpoint-xl: 1023px;
+$breakpoint-xll: 1279px;
+$breakpoint-max: 1600px;
+
+@mixin breakpoint-sm {
+	@media screen and (min-width:($breakpoint-sm)) { @content; } }
+
+@mixin breakpoint-md {
+	@media screen and (min-width:($breakpoint-md)) { @content; } }
+
+@mixin breakpoint-lg {
+	@media screen and (min-width:($breakpoint-lg)) { @content; } }
+
+@mixin breakpoint-xl {
+	@media screen and (min-width:($breakpoint-xl)) { @content; } }
+
+@mixin breakpoint-xll {
+	@media screen and (min-width:($breakpoint-xll)) { @content; } }
+
+@mixin breakpoint-max {
+	@media screen and (min-width:($breakpoint-max)) { @content; } }
+
+//**************************
+// color
+//**************************
+$color_primaryA_01:rgba(220, 229, 233, 1);
+$color_primaryA_02:rgba(181, 199, 206, 1);
+$color_primaryA_03:rgba(162, 182, 189, 1);
+$color_primaryA_04:rgba(65, 84, 100, 1);
+
+$color_accentA_01:rgba(144, 78, 85, 1);
+$color_accentB_01:rgba(102, 139, 103, 1);
+
+$color_accentC_01:rgba(235, 220, 203, 1);
+$color_accentC_02:rgba(191, 180, 143, 1);
+$color_accentC_03:rgba(148, 138, 104, 1);
+
+$color_gray_01:rgba(100, 100, 104, 1);
+$color_gray_02:rgba(37, 38, 39, 1);//TEXT Color
+$color_gray_03:rgba(8, 9, 9, 1);
+
+$color_white:rgba(255, 255, 255, 1);
+$color_black:rgba(0, 0, 0, 1);
+
+.sm {
+	display: block;
+	@include breakpoint-sm {
+		display: none;
+	}
+}
+.sm-lg {
+	display: block;
+	@include breakpoint-xl {
+		display: none;
+	}
+}
+.md {
+	display: none;
+	@include breakpoint-md {
+		display: block;
+	}
+}
+.lg {
+	display: none;
+	@include breakpoint-lg {
+		display: block;
+	}
+}
+
+.xl {
+	display: none;
+	@include breakpoint-xl {
+		display: block;
+	}
+}
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------
+   Content
+---------------------------------------------------------------------------*/
+#design {
+	figure {
+		position: relative;
+		figcaption {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			padding: 0 .5em;
+			background: rgba($color_black, .5);
+			color: $color_white;
+			font-size: 1.2rem;
+		}
+	}
+}
+
+#design {
+	.subTitle {
+		text-align: center;
+		font-size: 1.6rem;
+		color: $color_accentC_03;
+	}
+	.mainTitle {
+		margin-top: 1em;
+		text-align: center;
+		font-size: 1.9rem;
+		color: $color_primaryA_04;
+		@include breakpoint-lg {
+			font-size: 2.5rem
+		}
+	}
+	.mainTitle +p {
+		margin-top: 3em;
+	}
+}
+
+#design {
+	.intro {
+		margin: auto;
+		width: 90%;
+		max-width: 1200px;
+		text-align: center;
+		@include breakpoint-lg {
+			margin-top: 4em;
+		}
+		h3 {
+			text-align: center;
+			font-size: 1.8rem;
+			color: $color_primaryA_04;
+			@include breakpoint-md {
+				font-size: 2.5rem;
+			}
+		}
+		h3 + p {
+			margin-top: 1em;
+			@include breakpoint-lg {
+				margin-top: 2em;
+			}
+		}
+		p+p {
+			margin-top: 1em;
+		}
+	}
+}
+
+#design .facade {
+	margin-top: 3em;
+	//padding-bottom: 10em;
+	position: relative;
+	background: url("../images/facade_bg01_sp.png") no-repeat right top;
+	background-size:100% 90%;
+	@include breakpoint-lg {
+		margin-top: 6em;
+		background: url("../images/facade_bg01.png") no-repeat right top;
+	}
+	.sectionWrap {
+		margin: auto;
+		width: 100%;
+		max-width: 1200px;
+	}
+	&__titleBlock {
+		position: absolute;
+		left: 5%;
+		top:2em;
+		z-index: 2;
+		width: 90%;
+		padding: 40px 5% 3em 5%;
+		background: rgba($color_white,.8);
+		@include breakpoint-lg {
+			padding: 66px 3em 3em 3em;
+			width: 600px;
+			left: 42%;
+		}
+		&__subTitle {
+			position: relative;
+			font-size: 1.8rem;
+			color: $color_accentC_03;
+			&::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: -40px;
+				display: inline-block;
+				width: 2px;
+				height: 38px;
+				background-color:$color_accentC_03;
+				@include breakpoint-lg {
+					top: -66px;
+					height: 66px;
+				}
+			}
+		}
+		&__mainTitle {
+			margin-top: 1em;
+			font-size: 2.1rem;
+			color: $color_primaryA_04;
+			@include breakpoint-lg {
+				font-size: 3rem;
+			}
+		}
+	}
+	&__photoBlock {
+		padding-top: 200px;
+		@include breakpoint-lg {
+			padding-top: 0;
+			width: 50%;
+		}
+	}
+	&__readBlock {
+		margin: 2em auto 0 auto;
+		width: 90%;
+		@include breakpoint-lg {
+			position: absolute;
+			top: 400px;
+			left: 50%;
+			width: 480px;
+			font-size: 1.7rem;
+			line-height: 1.8em;
+		}
+		p+p {margin-top: 1em;}
+	}
+}
+
+#design .material {
+	.sectionWrap {
+		margin: 3em auto 0 auto;
+		width: 90%;
+		max-width: 950px;
+		border: 3px solid #bfbfbf;
+		padding: 8% 5%;
+		background: $color_white;
+		@include breakpoint-lg {
+			padding: 3em;
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+
+		}
+	}
+	&__titleBlock {
+		@include breakpoint-lg {
+			width: 45%;
+		}
+		.subTitle {
+			@include breakpoint-lg {text-align: left;}
+		}
+		.mainTitle {
+			@include breakpoint-lg {
+				margin-top: .5em;
+				text-align: left;
+			}
+		}
+	}
+	&__readBlock {
+		@include breakpoint-lg {
+			width: 57%;
+		}
+		p {
+			margin: auto;
+			width: 90%;
+		}
+	}
+}
+
+
+#design .entrance {
+	margin-top: 3em;
+	padding: 3em 0 0;
+	background: $color_primaryA_01;
+	@include breakpoint-lg {
+		margin-top: 8em;
+		padding: 3em 0;
+	}
+	.sectionWrap {
+		margin: auto;
+		width: 100%;
+		//max-width: 1200px;
+		@include breakpoint-lg {
+		display:-webkit-box;
+		display:-ms-flexbox;
+		display:flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: reverse;
+		-ms-flex-direction: row-reverse;
+		flex-direction: row-reverse;
+		}
+		
+	}
+	&__textBlock {
+		@include breakpoint-lg {
+			margin: 5em 5%  5em -4em;
+			padding: 4em 4em 2em 4em;
+			z-index: 2;
+			width: 40%;
+			background: rgba($color_white,.8);
+		}
+		.subTitle {
+			@include breakpoint-lg {
+				text-align: left;
+			}
+		}
+		.mainTitle {
+			@include breakpoint-lg {
+				margin-top: .5em;
+				text-align: left;
+			}
+		}
+	}
+	&__readBlock {
+		margin: 2em auto 0 auto;
+		width: 90%;
+		@include breakpoint-lg {
+			width: 100%;
+		}
+		p+p {
+			margin-top: 1em;
+		}
+	}
+	&__photoBlock {
+		margin-top: 2em;
+		@include breakpoint-lg {
+			z-index: 1;
+			margin-top: 0;
+			width: 60%;
+		}
+	}
+}
+
+#design .entranceHall {
+	margin-top: 3em;
+	@include breakpoint-lg {
+		padding: 3em 0;
+	}
+	.sectionWrap {
+		margin: auto;
+		width: 100%;
+		//max-width: 1200px;
+		@include breakpoint-lg {
+		display:-webkit-box;
+		display:-ms-flexbox;
+		display:flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		}
+		
+	}
+	&__textBlock {
+		@include breakpoint-lg {
+			margin: 5em -4em 5em 5%;
+			padding: 4em 4em 2em 4em;
+			z-index: 2;
+			width: 40%;
+			background: rgba($color_white,.8);
+		}
+		.subTitle {
+			@include breakpoint-lg {
+				text-align: left;
+			}
+		}
+		.mainTitle {
+			@include breakpoint-lg {
+				margin-top: .5em;
+				text-align: left;
+			}
+		}
+	}
+	&__readBlock {
+		margin: 2em auto 0 auto;
+		width: 90%;
+		@include breakpoint-lg {
+			width: 100%;
+		}
+		p+p {
+			margin-top: 1em;
+		}
+	}
+	&__photoBlock {
+		margin-top: 2em;
+		@include breakpoint-lg {
+			z-index: 1;
+			margin-top: 0;
+			width: 60%;
+		}
+	}
+}
+
+
+

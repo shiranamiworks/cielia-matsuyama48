@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/* ============================================================ 
+ver.2020.04.01
+
+//改変しないでください
+=============================================================== */
+
+
+
+/* Slider */
+.crm--Slide .slick-slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.crm--Slide .slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.crm--Slide .slick-list:focus{
+    outline: none;
+}
+.crm--Slide .slick-list.dragging{
+    cursor: pointer;
+    cursor: hand;
+}
+.crm--Slide .slick-slider .slick-track,
+.crm--Slide .slick-slider .slick-list{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.crm--Slide .slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.crm--Slide .slick-track:before,
+.crm--Slide .slick-track:after{
+    display: table;
+    content: '';
+}
+.crm--Slide .slick-track:after{
+    clear: both;
+}
+.crm--Slide .slick-loading .slick-track{
+    visibility: hidden;
+}
+
+.crm--Slide .slick-slide{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    margin:0 7px;
+}
+.crm--Slide [dir='rtl'] .slick-slide{
+    float: right;
+}
+.crm--Slide .slick-slide img{
+    display: block;
+}
+.crm--Slide .slick-slide.slick-loading img{
+    display: none;
+}
+.crm--Slide .slick-slide.dragging img{
+    pointer-events: none;
+}
+.crm--Slide .slick-initialized .slick-slide{
+    display: block;
+}
+.crm--Slide .slick-initialized .slick-slide a{
+    display: block;
+    transition: 0.4s;
+}
+.crm--Slide .slick-initialized .slick-slide a:hover{
+    opacity: 0.7;
+}
+.crm--Slide .slick-loading .slick-slide{
+    visibility: hidden;
+}
+.crm--Slide .slick-vertical .slick-slide{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.crm--Slide .slick-arrow.slick-hidden {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .crm--Slide .slick-slide{
+      margin:0;
+  }
+}

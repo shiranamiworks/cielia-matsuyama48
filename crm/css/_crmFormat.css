@@ -1,0 +1,375 @@
+@charset "utf-8";
+
+/* ============================================================ 
+ver.2020.04.01
+
+//CRM領域
+サイトレギュレーションで指定する下記要素を設定
+
+■スライドビジュアル（トプページ）
+■ピックアップキーワード
+■コンテンツ回遊動線バナー
+
+デバイスサイズ1,280px以下でタブレット表示へ切り替え　480px以下でスマホ表示へ切り替え
+=============================================================== */
+
+
+
+/*---------------------------------------------------------------
+
+format
+
+--------------------------------------------------------------- */
+/* box-sizing */
+header,footer,section,div,h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,th,td,a,span {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.Page {
+  margin-top: 135px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+}
+
+/* CRM領域　画像切り替え */
+.crm--pc {
+  display: inline-block;
+}
+
+.crm--tabNone {
+  display: inline-block;
+}
+
+.crm--sp {
+  display: none;
+}
+
+
+@media screen and (max-width:1280px) {
+  .Page {
+    margin-top: 0px;
+  }
+
+  .crm--tabNone {
+    display: none;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .crm--pc {
+    display: none;
+  }
+
+  .crm--sp {
+    display: inline-block;
+  }
+
+  .Page {
+    margin-top: 0px;
+  }
+}
+
+
+
+/*---------------------------------------------------------------
+
+crm--mainSlide
+//スライドビジュアル（トプページ）
+
+--------------------------------------------------------------- */
+.crm--mainSlide {
+  padding: 20px 0 10px;
+}
+
+.crm--mainSlide .crm--slider .slick-slide {
+  margin: 7px;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1);
+}
+
+.crm--mainSlide .slick-prev,
+.slick-next {
+  width: 40px;
+  height: auto;
+  transition: 0.7s;
+  z-index: 99;
+  opacity: 0.9;
+}
+
+.crm--mainSlide .slick-prev:before,
+.slick-next:before {
+  display: block;
+  width: auto;
+  height: 100%;
+  padding: 200% 25%;
+  background: rgba(255, 255, 255, 1.0);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.crm--mainSlide .slick-prev:hover,
+.slick-next:hover {
+  opacity: 1.0;
+}
+
+.crm--mainSlide .slick-prev {
+  left: 0px;
+}
+
+.crm--mainSlide .slick-prev:before {
+  content: url(../images/icon-slide-prev.svg);
+}
+
+.crm--mainSlide .slick-next {
+  right: 0px;
+}
+
+.crm--mainSlide .slick-next:before {
+  content: url(../images/icon-slide-next.svg);
+}
+
+@media screen and (max-width: 480px) {
+  .crm--mainSlide {
+    padding: 0;
+  }
+
+  .crm--mainSlide .crm--slider .slick-slide {
+    margin: 5px 0;
+  }
+
+  .crm--mainSlide .slick-prev,
+  .slick-next {
+    top: calc(100% + 20px);
+    opacity: 1.0;
+  }
+
+  .crm--mainSlide .slick-prev:before,
+  .slick-next:before {
+    padding: 15% 33%;
+    box-shadow: none;
+  }
+
+  .crm--mainSlide .slick-prev:before {
+    content: url(../images/icon-slide-prev-sp.svg);
+  }
+
+  .crm--mainSlide .slick-next {
+    right: 0px;
+  }
+
+  .crm--mainSlide .slick-next:before {
+    content: url(../images/icon-slide-next-sp.svg);
+  }
+
+  .crm--mainSlide .slick-dots {
+    bottom: -30px;
+  }
+
+  .crm--mainSlide .slick-dotted.slick-slider {
+    margin-bottom: 40px;
+  }
+}
+
+
+
+/*---------------------------------------------------------------
+
+crm--secPicUpWord
+//ピックアップワード
+
+--------------------------------------------------------------- */
+.crm--secPickUpWord {
+  position: relative;
+}
+.crm--secPickUpWord .crm--inner {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.crm--secPickUpWord .crm--ttlWrap {
+  display: flex;
+  width: 30%;
+  padding: 20px;
+  text-align: left;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.crm--secPickUpWord .crm--ttlWrap .crm--ttl {
+  font-size: 1.6vw;
+  line-height: 1.5;
+  position: relative;
+}
+
+.crm--secPickUpWord .crm--ttlWrap .crm--copy {
+  margin-top: 5px;
+  font-size: 1.3rem;
+}
+
+.crm--secPickUpWord .crm--listWrap {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.crm--secPickUpWord .crm--listWrap .crm--list {
+  margin: 6px 3px 0;
+}
+
+.crm--secPickUpWord .crm--listWrap .crm--list a {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 2rem;
+  font-size: 1.4rem;
+  line-height: 1;
+  word-break: keep-all;
+  transition: 0.4s;
+}
+
+.crm--secPickUpWord .crm--listWrap .crm--list a:hover {
+  opacity: 0.7;
+}
+
+.crm--secPickUpWord .crm--bg {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: -1;
+}
+.crm--secPickUpWord .crm--bg .crm--ttlBg {
+  width: 30%;
+}
+
+.crm--secPickUpWord .crm--bg .crm--listBg {
+  width: 70%;
+}
+
+@media screen and (max-width:1080px) {
+  .crm--secPickUpWord .crm--ttlWrap {
+    width: 40%;
+  }
+
+  .crm--secPickUpWord .crm--ttlWrap .crm--ttl {
+    font-size: 2.8vw;
+  }
+
+  .crm--secPickUpWord .crm--listWrap {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .crm--secPickUpWord {
+    padding: 5% 5% 10%;
+  }
+
+  .crm--secPickUpWord .crm--inner {
+    display: block;
+    width: 100%;
+  }
+
+  .crm--secPickUpWord .crm--ttlWrap {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .crm--secPickUpWord .crm--ttlWrap .crm--ttl {
+    font-size: 2.4rem;
+    margin: 0 auto;
+  }
+
+  .crm--secPickUpWord .crm--ttlWrap .crm--copy {
+    font-size: 1.4rem;
+  }
+
+  .crm--secPickUpWord .crm--listWrap {
+    width: 100%;
+    margin-top: 5%;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .crm--secPickUpWord .crm--listWrap .crm--list {
+    margin: 2% 1% 0;
+  }
+
+  .crm--secPickUpWord .crm--listWrap .crm--list a {
+    display: block;
+  }
+  .crm--secPickUpWord .crm--bg{
+    display: nonel
+  }
+}
+
+
+
+/*---------------------------------------------------------------
+
+crm--contentBnr
+//コンテンツ回遊動線バナー
+
+--------------------------------------------------------------- */
+.crm--contentBnr {
+  padding: 30px 0;
+}
+
+.crm--contentBnr ul {
+  display: flex;
+  width: 90%;
+  max-width: 740px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.crm--contentBnr ul li {
+  width: 49%;
+  margin: 0 5px;
+}
+
+.crm--contentBnr ul li a {
+  display: block;
+  transition: 0.4s;
+}
+
+.crm--contentBnr ul li a:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 480px) {
+  .crm--contentBnr {
+    padding: 7% 0;
+  }
+
+  .crm--contentBnr ul {
+    display: block;
+  }
+
+  .crm--contentBnr ul li {
+    width: 100%;
+  }
+
+  .crm--contentBnr ul li:last-of-type {
+    margin-top: 3%;
+  }
+}
