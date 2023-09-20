@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<!-- data_layer -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+    'item_pagetype': '',
+    'item_category': 'new',
+  });
+</script>
+<!-- End data_layer -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WMCBSV');</script>
+<!-- End Google Tag Manager -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+<meta name="keywords" content="松山市,松山市駅,愛媛,いよてつ髙島屋,シエリア,分譲,マンション,関電不動産開発" />
+<meta name="description" content="関電不動産開発がお届けする、分譲マンション「シエリア松山市駅」は、松山市駅徒歩6分、開放感ある全邸南向き、オール電化マンションです" />
+<title>Cタイプ｜間取り｜【公式】シエリア松山市駅｜松山市48｜関電不動産開発がお届けする分譲マンション</title>
+	
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.cielia.com/m/matsuyama48/">
+<meta property="og:site_name" content="【公式】シエリア松山市駅｜松山市48｜関電不動産開発がお届けする分譲マンション">
+<meta property="og:title" content="【公式】シエリア松山市駅｜松山市48｜関電不動産開発がお届けする分譲マンション">
+<meta property="og:description" content="関電不動産開発がお届けする、分譲マンション「シエリア松山市駅」は、松山市駅徒歩6分、開放感ある全邸南向き、オール電化マンションです">
+<meta property="og:image" content="https://www.cielia.com/m/matsuyama48/ogp.png">
+
+<!-- CRM css start -->
+<link rel="stylesheet" type="text/css" href="../crm/css/import.css" />
+<!-- CRM css end -->
+<!-- CRM sciript start -->
+<script src="../crm/js/jquery-2.1.4.min.js"></script>
+<script src="../crm/js/base.js"></script>
+<script src="../crm/js/slick.min.js"></script>
+<!-- CRM sciript end -->
+
+
+<!-- // Start Editable Area //////////////////////////////////////////// -->
+<!-- original css start -->
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,500,700&display=swap&subset=japanese" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanmp-noto.min.css">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../common/css/base.css" />
+<link rel="stylesheet" type="text/css" href="../common/css/color.css" />
+<link rel="stylesheet" type="text/css" href="css/plan.css" />
+<!-- original css end -->
+<!-- original sciript start -->
+<script src="../common/js/breakpoints.js"></script>
+<script src="../common/js/base.js"></script>
+<!-- original sciript end -->
+<!-- // End Editable Area ////////////////////////////////////////////// -->
+</head>
+
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMCBSV" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<!-- // CRM Header Area ////////////////////////////////////////////// -->
+<script type="text/javascript">parts('../', 'header.html');</script>
+<!-- ///////////////////////////////////////////////////////////////// -->
+
+
+<div class="Page">
+  <!-- // Start Editable Area //////////////////////////////////////////// -->
+<div class="page-ttl">
+	<figure><img src="images/bg_ttl_pc.jpg" class="spswitch" alt=""/></figure>
+	<h2><p class="alphabetFont_Garamond">PLAN</p><span>間取り</span></h2>
+<!-- / .page-ttl --></div>
+	
+<div id="planDetails">
+	<div class="inner">
+
+	<section class="spec">
+		<div class="sectionWrap">
+			<h3>
+				<p class="type alphabetFont_Garamond"><strong>C</strong>type</p>
+				<p class="ldk alphabetFont_Garamond"><strong>1</strong>LDK<br class="pc"><span class="plan_small">+S(納戸)+WIC</span></p>
+			</h3>
+
+			<div class="mensekiBlock">
+				<dl class="menseki">
+					<dt>住居専有面積</dt>
+					<dd><strong class="lageMore">42</strong><strong class="lage">.48</strong>m&sup2;（約12.85坪）</dd>
+				</dl>
+				<dl class="otherMenseki">
+					<dt>バルコニー面積</dt>
+					<dd>8.55m&sup2;(約2.58坪)</dd>
+				</dl>
+				<!--<dl class="otherMenseki">
+					<dt>サービスバルコニー面積</dt>
+					<dd>0.00m&sup2;(約0.00坪)</dd>
+				</dl>-->
+				<!--<dl class="otherMenseki">
+					<dt>アルコーブ面積</dt>
+					<dd>0.00m&sup2;(約0.00坪)</dd>
+				</dl>-->
+			</div><!--mensekiBlock-->
+		</div><!--sectionWrap-->
+		
+		<div class="pickupword">		
+			<ul class="pickupword__list">
+				<li>対面キッチン</li>
+				<li>充実の玄関収納</li>
+				<li>LDKと一体利用できる洋室</li>
+				<li>ウォークインクロゼット</li>
+			</ul>
+		</div><!--pickupword-->
+		
+	</section><!--spec-->
+
+	
+	<section class="zumen">
+		<p><img src="images/plan_madori_c.png" alt="Cタイプ"/></p>
+		<p class="hanrei"><img src="images/txt-hanrei.svg" alt="凡例"/></p>
+	</section>
+
+	<section class="kagu">
+			<div class="kagu_contents">
+				<h5>- 家具レイアウトプラン例 -</h5>
+				<p><img src="images/plan_madori_c_kagu.png" alt="Cタイプ"/></p>
+			</div>
+	</section>
+	
+	<div class="btnBack"><a href="index.html">間取りTOPへ戻る</a></div>
+	
+<section class="caption">
+<div class="inner">
+<ul>
+<li>※掲載の間取図・面積等は計画段階のもので、今後変更になる場合がございます。</li>
+<li>※F=フリールーム、WIC=ウォークインクロゼット、SC=シューズクローク</li>
+</ul>
+</div>
+</section><!-- / .caption -->
+	
+</div><!-- / .inner -->
+</div><!-- / .plan -->
+  <!-- // End Editable Area ////////////////////////////////////////////// -->
+</div><!-- / .Page  -->
+
+
+<!-- // CRM Footer Area ////////////////////////////////////////////// -->
+<section class="crm--contentBnr">
+  <ul>
+    <li><a href="../access/"><img src="../common/images/bnr_contentAccess.jpg" alt="交通アクセス"></a></li>
+    <!--<li><a href="../plan/"><img src="../common/images/bnr_contentPlan.jpg" alt="間取り"></a></li>-->
+    <li><a href="../location/"><img src="../common/images/bnr_contentLocation.jpg" alt="生活環境"></a></li>
+  </ul>
+</section><!-- / .crm--contentBnr -->
+
+<script type="text/javascript">parts('../', 'pickUp.html');</script>
+<script type="text/javascript">parts('../', 'footCv.html');</script>
+<script type="text/javascript">parts('../', 'footfixNav.html');</script>
+<script type="text/javascript">parts('../', 'footer.html');</script>
+<!-- //////////////////////////////////////////////////////////////////// -->
+
+<!-- // Start Editable Area //////////////////////////////////////////// -->
+<!-- original sciript start -->
+<script>
+$(function() {
+	$('.nav06').addClass('current');
+});
+</script><!-- original sciript end -->
+<!-- // End Editable Area ////////////////////////////////////////////// -->
+<!-- Yahoo Tag Manager -->
+<!-- Yahoo Tag Manager -->
+
+</body>
+
+</html>

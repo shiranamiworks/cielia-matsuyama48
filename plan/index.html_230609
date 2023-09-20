@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<!-- data_layer -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+    'item_pagetype': '',
+    'item_category': 'new',
+  });
+</script>
+<!-- End data_layer -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WMCBSV');</script>
+<!-- End Google Tag Manager -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+<meta name="keywords" content="松山市,松山市駅,愛媛,いよてつ髙島屋,シエリア,分譲,マンション,関電不動産開発" />
+<meta name="description" content="関電不動産開発がお届けする、分譲マンション「シエリア松山市駅」は、松山市駅徒歩6分、開放感ある全邸南向き、オール電化マンションです" />
+<title>間取り｜【公式】シエリア松山市駅｜松山市48｜関電不動産開発がお届けする分譲マンション</title>
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.cielia.com/m/matsuyama48/">
+<meta property="og:site_name" content="【公式】シエリア松山市駅｜松山市48｜関電不動産開発がお届けする分譲マンション">
+<meta property="og:title" content="【公式】シエリア松山市駅｜松山市48｜関電不動産開発がお届けする分譲マンション">
+<meta property="og:description" content="関電不動産開発がお届けする、分譲マンション「シエリア松山市駅」は、松山市駅徒歩6分、開放感ある全邸南向き、オール電化マンションです">
+<meta property="og:image" content="https://www.cielia.com/m/matsuyama48/ogp.png">
+
+<!-- CRM css start -->
+<link rel="stylesheet" type="text/css" href="../crm/css/import.css" />
+<!-- CRM css end -->
+<!-- CRM sciript start -->
+<script src="../crm/js/jquery-2.1.4.min.js"></script>
+<script src="../crm/js/base.js"></script>
+<script src="../crm/js/slick.min.js"></script>
+<!-- CRM sciript end -->
+
+
+<!-- // Start Editable Area //////////////////////////////////////////// -->
+<!-- original css start -->
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,500,700&display=swap&subset=japanese" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanmp-noto.min.css">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../common/css/base.css" />
+<link rel="stylesheet" type="text/css" href="../common/css/color.css" />
+<link rel="stylesheet" type="text/css" href="css/plan.css" />
+
+<link rel="stylesheet" type="text/css" href="../common/css/modaal.min.css">
+<!-- original css end -->
+
+<!-- original sciript start -->
+<script src="../common/js/breakpoints.js"></script>
+<script src="../common/js/base.js"></script>
+<script src="../common/js/modaal.min.js"></script>
+<!-- original sciript end -->
+<!-- // End Editable Area ////////////////////////////////////////////// -->
+</head>
+
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMCBSV" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<!-- // CRM Header Area ////////////////////////////////////////////// -->
+<script type="text/javascript">parts('../', 'header.html');</script>
+<!-- ///////////////////////////////////////////////////////////////// -->
+
+
+<div class="Page">
+  <!-- // Start Editable Area //////////////////////////////////////////// -->
+<div class="page-ttl">
+	<figure><img src="images/bg_ttl_pc.jpg" class="spswitch" alt=""/></figure>
+	<h2><p class="alphabetFont_Garamond">PLAN</p><span>間取り</span></h2>
+		<div class="page-ttl__sub"><p>都市生活にフィットした暮らし</p></div>
+<!-- / .page-ttl --></div>
+
+
+<div id="plan">
+<div class="inner">
+
+	<h3><span class="inbl">都市生活にフィットする</span>
+		<span class="inbl type"><span class="ldkNum">1</span>LDK～<span class="ldkNum">2</span>LDK</span>
+		<span class="inbl lage">全邸南向きプラン</span></h3>
+
+		<div class="haichi"><img src="images/haichi.jpg"></div>
+
+		<figure>
+			<div class="viewphoto">
+      <figure class="commonSpModalImage" data-spmodal="images/viewphoto.jpg">
+      <img src="images/viewphoto.jpg" alt="">
+      <!-- <figcaption class="commonImgcap">外観完成予想図（南・東・北立面）</figcaption> -->
+    </div>
+    </figure>
+
+		<section class="ReleasePlanList">
+		<ul class="">
+			<li><a href="a.html"><img src="images/plan_bt_a.png" alt="Aタイプ"/></a></li>
+			<!-- <li><a href="a_menu01.html"><img src="images/plan_bt_a_menu01.png" alt="Aタイプ メニュー1"/></a></li> -->
+			<!-- <li><a href="a_menu02.html"><img src="images/plan_bt_a_menu02.png" alt="Aタイプ メニュー2"/></a></li> -->
+			<li><img src="images/plan_bt_a_menu03.png" alt="Aタイプ メニュー3"/></li>
+
+
+			<li><a href="b.html"><img src="images/plan_bt_b.png" alt="Bタイプ"/></a></li>
+			<!-- <li><a href="b_menu01.html"><img src="images/plan_bt_b_menu01.png" alt="Bタイプ メニュー1"/></a></li> -->
+			<!-- <li><a href="b_menu02.html"><img src="images/plan_bt_b_menu02.png" alt="Bタイプ メニュー2"/></a></li> -->
+
+			<li><a href="c.html"><img src="images/plan_bt_c.png" alt="Cタイプ"/></a></li>
+			<!-- <li><a href="c_menu01.html"><img src="images/plan_bt_c_menu01.png" alt="Cタイプ メニュー1"/></a></li> -->
+			<!-- <li><a href="c_menu02.html"><img src="images/plan_bt_c_menu02.png" alt="Cタイプ メニュー2"/></a></li> -->
+
+			<li><a href="d.html"><img src="images/plan_bt_d.png" alt="Dタイプ"/></a></li>
+
+
+			<li><a href="e.html"><img src="images/plan_bt_e.png" alt="Eタイプ"/></a></li>
+			<!-- <li><a href="e_menu01.html"><img src="images/plan_bt_e_menu01.png" alt="Eタイプ メニュー1"/></a></li> -->
+			<!-- <li><a href="e_menu02.html"><img src="images/plan_bt_e_menu02.png" alt="Eタイプ メニュー2"/></a></li> -->
+
+			<li><!-- <a href="f.html"> --><img src="images/plan_bt_f.png" alt="Fタイプ"/><!-- </a> --></li>
+		</ul>
+	</section>
+
+
+
+		<h3><span class="inbl">より快適な住まいを目指し、創意工夫を凝らした設備・仕様</span></h3>
+
+		<section class="equ">
+			<div class="kitchen">
+				<h4>KITCHEN</h4>
+				<ul>
+					<li>
+						<img src="images/eq_01.jpg" alt="人造大理石カウンター">
+						<h5>人造大理石カウンター</h5>
+						<p>耐久性に優れ、お手入れも簡単な人造大理石カウンターです。</p>
+					</li>
+					<li>
+						<img src="images/eq_02.jpg" alt="IHクッキングヒーター">
+						<h5>IHクッキングヒーター</h5>
+						<p>火を使わず安全に調理できるIHクッキングヒーター。便利な機能も搭載し、お手入れのしやすさも魅力です。</p>
+					</li>
+					<li>
+						<img src="images/eq_03.jpg" alt="蛇口一体型浄水器">
+						<h5>蛇口一体型浄水器</h5>
+						<p>ストレートとシャワー・原水と浄水・水とお湯の切り換えがワンタッチでできる混合水栓。シンクの隅々まで届くホースを採用。</p>
+					</li>
+					<li>
+						<img src="images/eq_04.jpg" alt="スパイスラック">
+						<h5>スパイスラック</h5>
+						<p>コンロサイドにお料理しながら手軽に調味料を取り出せる、便利なスパイスラックを設置しています。</p>
+					</li>
+					<li>
+						<img src="images/eq_05.jpg" alt="レンジフード">
+						<h5>レンジフード</h5>
+						<p>サッと拭くだけで汚れが落ちるお手入れのしやすいホーロー製の整流板です。</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="powder">
+				<h4>POWDER ROOM</h4>
+				<ul>
+					<li>
+						<img src="images/eq_06.jpg" alt="鏡裏収納">
+						<h5>鏡裏収納</h5>
+						<p>鏡裏は、化粧品などがすっきり収まる収納スペースです。</p>
+					</li>
+					<li>
+						<img src="images/eq_07.jpg" alt="シングルレバー式シャワー水栓">
+						<h5>シングルレバー式シャワー水栓</h5>
+						<p>水はねを抑える泡沫吐水の水栓。リフトアップ機能もついています。シャワーヘッドは引き出せ、吐水はシャワーと泡沫をワンタッチで簡単に切替えることができます。</p>
+					</li>
+					<li>
+						<img src="images/eq_08.jpg" alt="一体型ボウル">
+						<h5>一体型ボウル</h5>
+						<p>美しい光沢でカウンターとボウルに継ぎ目のない一体型を採用。フランジレスの排水栓でお手入れも簡単です。</p>
+					</li>
+					<li>
+					</li>
+					<li>
+					</li>
+				</ul>
+			</div>
+
+			<div class="toilet">
+				<h4>TOILET</h4>
+				<ul>
+					<li>
+						<img src="images/eq_09.jpg" alt="4.8ℓ超 節水洗浄トイレ">
+						<h5>4.8ℓ超節水洗浄トイレ</h5>
+						<p>洗浄使用量は大4.8ℓ/小3.6ℓ（※1）と従来品に比べ約70%の節水が可能で、環境にやさしく経済的です。</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="bathroom">
+				<h4>BATHROOM</h4>
+				<ul>
+					<li>
+						<img src="images/eq_10.jpg" alt="エアインシャワー">
+						<h5>エアインシャワー</h5>
+						<p>空気を含んだ大粒のシャワーにより、従来品と比べて大幅に節水しながら快適な浴び心地を実現します。</p>
+					</li>
+					<li>
+						<img src="images/eq_11.jpg" alt="低床式浴槽">
+						<h5>低床式浴槽</h5>
+						<p>入浴時の安全性に配慮し、幅広タイプでまたぎやすい高さの低床式浴槽を採用しています。</p>
+					</li>
+					<li>
+						<img src="images/eq_12.jpg" alt="電気式浴室暖房乾燥機">
+						<h5>電気式浴室暖房乾燥機</h5>
+						<p>洗濯物の乾燥などに便利な温風乾燥、暑い季節に役立つ涼風機能などを備え、季節に応じて浴室を快適な空間に。拭き掃除のしやすいフラットパネルを採用。</p>
+					</li>
+					<li>
+						<img src="images/eq_13.jpg" alt="フルオートバス">
+						<h5>フルオートバス</h5>
+						<p>スイッチひとつでお湯はり・保温・追い焚きができるフルオートバスを標準装備。</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+
+
+
+
+<section class="caption">
+<div class="inner">
+<ul>
+
+<li>※掲載の間取図・面積等は計画段階のもので、今後変更になる場合がございます。</li>
+<li>※1 ＜試算条件＞年間使用日数：365日●家族4人（男性2人、女性2人）●大1回／日・人、小3回／日、人●従来品：1987年～2001年商品（C720R）</li>
+<li>※2 事務所使用住戸は除きます。</li>
+<!--<li>※N=納戸、WIC=ウォークインクロゼット、SIC=シューズインクロゼット</li>-->
+</ul>
+</div>
+</section><!-- / .caption -->
+
+</div><!-- / .inner -->
+</div><!-- / .plan -->
+  <!-- // End Editable Area ////////////////////////////////////////////// -->
+</div><!-- / .Page  -->
+
+<section class="bnr_plan">
+	<h4>関連コンテンツのご紹介</h4>
+	<ul>
+		<li class="bnr_yu">
+			<a href="../special/lifestyle2/">
+				<img src="../special/images/bnr_img03.png" alt="ライフスタイル例" >
+			</a>
+		</li>
+
+		<li class="bnr_yu">
+			<a href="../special/modelroom/">
+				<img src="../special/images/bnr_img09.png" alt="モデルルーム" >
+			</a>
+		</li>
+
+		<li class="bnr_yu">
+			<a href="../special/south/">
+				<img src="../special/images/bnr_img12.png" alt="南向きコンテンツ">
+			</a>
+		</li>
+	</ul>
+</section>
+
+
+<!-- // CRM Footer Area ////////////////////////////////////////////// -->
+<section class="crm--contentBnr">
+  <ul>
+    <li><a href="../access/"><img src="../common/images/bnr_contentAccess.jpg" alt="交通アクセス"></a></li>
+    <!--<li><a href="../plan/"><img src="../common/images/bnr_contentPlan.jpg" alt="間取り"></a></li>-->
+    <li><a href="../location/"><img src="../common/images/bnr_contentLocation.jpg" alt="生活環境"></a></li>
+  </ul>
+</section><!-- / .crm--contentBnr -->
+
+<script type="text/javascript">parts('../', 'pickUp.html');</script>
+<script type="text/javascript">parts('../', 'footCv.html');</script>
+<script type="text/javascript">parts('../', 'footfixNav.html');</script>
+<script type="text/javascript">parts('../', 'footer.html');</script>
+<!-- //////////////////////////////////////////////////////////////////// -->
+
+<!-- // Start Editable Area //////////////////////////////////////////// -->
+<!-- original sciript start -->
+<script>
+$(function() {
+	$('.nav06').addClass('current');
+});
+</script><!-- original sciript end -->
+<!-- // End Editable Area ////////////////////////////////////////////// -->
+<!-- Yahoo Tag Manager -->
+<!-- Yahoo Tag Manager -->
+
+</body>
+
+</html>
