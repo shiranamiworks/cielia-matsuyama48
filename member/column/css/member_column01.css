@@ -1,0 +1,400 @@
+@charset "UTF-8";
+/**
+ *
+ *  ページ用CSS
+ *　member__column01
+ */
+.sm {
+  display: block;
+}
+@media screen and (min-width: 480px) {
+  .sm {
+    display: none;
+  }
+}
+
+.sm-lg {
+  display: block;
+}
+@media screen and (min-width: 1023px) {
+  .sm-lg {
+    display: none;
+  }
+}
+
+.md {
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  .md {
+    display: block;
+  }
+}
+
+.lg {
+  display: none;
+}
+@media screen and (min-width: 960px) {
+  .lg {
+    display: block;
+  }
+}
+
+.xl {
+  display: none;
+}
+@media screen and (min-width: 1023px) {
+  .xl {
+    display: block;
+  }
+}
+
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+.page-ttl {
+  padding: 0;
+}
+.page-ttl__inner {
+  position: relative;
+  height: 50vh;
+  max-height: 400px;
+  background: url("../images/column01/bg_ttl_pc.jpg") center center no-repeat;
+  background-size: cover;
+}
+.page-ttl__inner h2 {
+  margin-top: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: none;
+  width: 80%;
+  max-width: 450px;
+}
+
+@media screen and (max-width: 480px) {
+  .page-ttl {
+    padding: 4% 4% 4% 4%;
+  }
+  .page-ttl__inner {
+    position: relative;
+    height: 50vh;
+    max-height: 50vh;
+    background: url("../images/column01/bg_ttl_sp.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .page-ttl h2 {
+    margin-top: 0;
+  }
+}
+/*--------------------------------------------------------------------------
+   contents
+---------------------------------------------------------------------------*/
+#menber_column01 figure {
+  position: relative;
+}
+#menber_column01 figure figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 .5em;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.2rem;
+}
+
+#menber_column01 .sectionTitleBlock__subtitle {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #bfb48f;
+}
+@media screen and (min-width: 767px) {
+  #menber_column01 .sectionTitleBlock__subtitle {
+    font-size: 1.9rem;
+  }
+}
+#menber_column01 .sectionTitleBlock__maintitle {
+  margin-top: 1em;
+  font-size: 1.9rem;
+  text-align: center;
+  color: #415464;
+}
+@media screen and (min-width: 767px) {
+  #menber_column01 .sectionTitleBlock__maintitle {
+    font-size: 2.5rem;
+  }
+}
+#menber_column01 .sectionTitleBlock + p {
+  margin: 2.5em auto 0 auto;
+  max-width: 1000px;
+}
+#menber_column01 p + figure {
+  margin-top: 2em;
+}
+@media screen and (min-width: 767px) {
+  #menber_column01 p + figure {
+    margin-top: 4em;
+  }
+}
+#menber_column01 .intro {
+  margin: auto;
+  width: 90%;
+  max-width: 1200px;
+}
+@media screen and (min-width: 767px) {
+  #menber_column01 .intro .inner {
+    margin-top: 5em;
+  }
+}
+#menber_column01 .profile {
+  position: relative;
+}
+@media screen and (min-width: 960px) {
+  #menber_column01 .profile {
+    margin-top: 0em;
+  }
+}
+#menber_column01 .profile::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 30%;
+  transform: skewY(-5deg);
+  transform-origin: bottom left;
+  z-index: -1;
+  width: 100%;
+  height: 60%;
+  background: #415464;
+}
+@media screen and (min-width: 1023px) {
+  #menber_column01 .profile::after {
+    content: none;
+  }
+}
+#menber_column01 .profile .inner {
+  margin: auto;
+  width: 90%;
+  max-width: 896px;
+}
+@media screen and (min-width: 1023px) {
+  #menber_column01 .profile .inner {
+    padding-top: 0;
+  }
+}
+#menber_column01 .profile__photoBlock {
+  width: 85%;
+  max-width: 480px;
+}
+#menber_column01 .profile__photoBlock__nameBox {
+  margin-top: .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  color: white;
+}
+#menber_column01 .profile__photoBlock__nameBox__office {
+  white-space: nowrap;
+}
+#menber_column01 .profile__photoBlock__nameBox__name {
+  white-space: nowrap;
+  padding-left: .3em;
+  font-size: 2.5rem;
+  line-height: 1em;
+}
+@media screen and (min-width: 960px) {
+  #menber_column01 .profile__photoBlock__nameBox__name {
+    font-size: 3rem;
+  }
+}
+#menber_column01 .profile__photoBlock__nameBox__name span {
+  font-size: 1.7rem;
+}
+@media screen and (min-width: 960px) {
+  #menber_column01 .profile__photoBlock__nameBox__name span {
+    font-size: 2rem;
+  }
+}
+#menber_column01 .profile__readBlock {
+  margin: 2em 0 0 auto;
+  padding: 1.4em;
+  width: 85%;
+  max-width: 480px;
+  color: #948a68;
+  background: white;
+  border: 5px solid #dce5e9;
+}
+@media screen and (min-width: 960px) {
+  #menber_column01 .profile__readBlock {
+    width: 385px;
+    margin-top: -5em;
+  }
+}
+@media screen and (min-width: 1023px) {
+  #menber_column01 .profile__readBlock {
+    margin-top: 1em;
+  }
+}
+#menber_column01 .facade {
+  margin-top: 4em;
+}
+@media screen and (min-width: 1023px) {
+  #menber_column01 .facade {
+    margin-top: 4em;
+  }
+}
+@media screen and (min-width: 1023px) {
+  #menber_column01 .facade .sectionTitleBlock__subtitle,
+  #menber_column01 .facade .sectionTitleBlock__maintitle {
+    text-align: left;
+  }
+}
+#menber_column01 .facade p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 1000px;
+}
+@media screen and (min-width: 1023px) {
+  #menber_column01 .facade p {
+    width: 100%;
+  }
+}
+#menber_column01 .facade figure {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 850px;
+}
+@media screen and (min-width: 1023px) {
+  #menber_column01 .PCwrap {
+    position: relative;
+    margin-top: 4em;
+  }
+  #menber_column01 .PCwrap::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20%;
+    transform: skewY(-5deg);
+    transform-origin: bottom left;
+    z-index: -1;
+    width: 100%;
+    height: 40%;
+    background: #415464;
+  }
+  #menber_column01 .PCwrapInner {
+    position: relative;
+    margin: auto;
+    width: 90%;
+    max-width: 1300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  #menber_column01 .PCwrapInner .PCwrap__photoBlock {
+    width: 50%;
+  }
+  #menber_column01 .PCwrapInner .PCwrap__readBlock {
+    width: 45%;
+  }
+}
+#menber_column01 .commonSpace {
+  margin-top: 4em;
+  background: #dce5e9;
+}
+@media screen and (min-width: 1023px) {
+  #menber_column01 .commonSpace {
+    margin-top: 7em;
+  }
+}
+@media screen and (min-width: 767px) {
+  #menber_column01 .commonSpace .inner {
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+}
+@media screen and (min-width: 1023px) {
+  #menber_column01 .commonSpace .inner {
+    padding-top: 7em;
+    padding-bottom: 7em;
+  }
+}
+#menber_column01 .commonSpace p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 1000px;
+}
+#menber_column01 .commonSpace figure {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+#menber_column01 .landplan {
+  margin-top: 4em;
+}
+@media screen and (min-width: 1023px) {
+  #menber_column01 .landplan {
+    margin-top: 5em;
+  }
+}
+#menber_column01 .landplan p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 1000px;
+}
+#menber_column01 .landplan .landplan__photoBlock {
+  margin-top: 1em;
+  padding: 2em 5%;
+  position: relative;
+}
+@media screen and (min-width: 1023px) {
+  #menber_column01 .landplan .landplan__photoBlock {
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+}
+#menber_column01 .landplan .landplan__photoBlock .landplan__photoBlock__item01 {
+  padding: 0;
+  width: 100vw !important;
+  margin-left: calc( 50% - 50vw );
+  margin-right: calc( 50% - 50vw );
+  max-width: none;
+}
+@media screen and (min-width: 1023px) {
+  #menber_column01 .landplan .landplan__photoBlock .landplan__photoBlock__item01 {
+    width: 76% !important;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1023px) {
+  #menber_column01 .landplan .landplan__photoBlock .landplan__photoBlock__item02 {
+    margin-top: 0;
+    width: 22%;
+  }
+}

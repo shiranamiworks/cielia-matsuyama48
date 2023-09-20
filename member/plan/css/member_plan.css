@@ -1,0 +1,317 @@
+@charset "UTF-8";
+/**
+ *
+ *  ページ用CSS
+ *　member_plan
+ */
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+.page-ttl .japaneseTitle {
+  width: 80%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  font-size: 3rem;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: #dce5e9;
+}
+
+#menber_plan .MembersPlanList {
+  margin: 4em auto 0;
+  width: 90%;
+  max-width: 1000px;
+}
+#menber_plan .MembersPlanList h4 {
+  text-align: center;
+}
+#menber_plan .MembersPlanList h4 .subTitle {
+  color: #bfb48f;
+  font-size: 2rem;
+}
+@media screen and (min-width: 767px) {
+  #menber_plan .MembersPlanList h4 .subTitle {
+    font-size: 3rem;
+  }
+}
+#menber_plan .MembersPlanList h4 .Title {
+  margin-top: 1em;
+  font-size: 1.8rem;
+}
+#menber_plan .MembersPlanList ul {
+  margin-top: 2.5em;
+}
+@media screen and (min-width: 480px) {
+  #menber_plan .MembersPlanList ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -2%;
+  }
+  #menber_plan .MembersPlanList ul::before {
+    content: "";
+    display: block;
+    width: 31%;
+    height: 0;
+    order: 1;
+    margin-left: 2%;
+  }
+  #menber_plan .MembersPlanList ul:after {
+    content: "";
+    display: block;
+    width: 31%;
+    height: 0;
+    margin-left: 2%;
+  }
+}
+#menber_plan .MembersPlanList ul li {
+  margin-bottom: 2.5em;
+}
+@media screen and (min-width: 480px) {
+  #menber_plan .MembersPlanList ul li {
+    margin-left: 2%;
+    width: 31%;
+    max-width: 400px;
+  }
+}
+
+#menber_planDetails .inner {
+  padding-top: 0;
+}
+#menber_planDetails .spec {
+  margin: auto;
+  padding: 1em 0 2.5em 0;
+  text-align: center;
+  background: #415464;
+  color: #dce5e9;
+}
+@media screen and (min-width: 767px) {
+  #menber_planDetails .spec .sectionWrap {
+    margin: 2em auto 0;
+    width: 90%;
+    max-width: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top: 1px solid rgba(220, 229, 233, 0.5);
+    border-bottom: 1px solid rgba(220, 229, 233, 0.5);
+  }
+}
+#menber_planDetails .spec h3 {
+  margin: auto;
+  padding: .2em 0 .4em 0;
+  width: 80%;
+  border-top: 1px solid rgba(220, 229, 233, 0.5);
+  border-bottom: 1px solid rgba(220, 229, 233, 0.5);
+}
+@media screen and (min-width: 767px) {
+  #menber_planDetails .spec h3 {
+    margin: 0;
+    padding-top: 1em;
+    border-top: none;
+    border-bottom: none;
+    border-right: 1px solid rgba(220, 229, 233, 0.5);
+    width: 30%;
+    max-width: 200px;
+  }
+}
+#menber_planDetails .spec h3 .type {
+  font-size: 2.5rem;
+  line-height: 1;
+  color: #b5c7ce;
+}
+@media screen and (min-width: 767px) {
+  #menber_planDetails .spec h3 .type {
+    margin-bottom: .5em;
+  }
+}
+#menber_planDetails .spec h3 .type strong {
+  font-size: 6rem;
+}
+#menber_planDetails .spec h3 .type .nemuType {
+  border: 1px solid #b5c7ce;
+  margin-top: .2em;
+  margin-bottom: .2em;
+  display: inline-block;
+  padding: .2em .3em;
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 767px) {
+  #menber_planDetails .spec h3 .type .nemuType {
+    margin-bottom: 0;
+  }
+}
+#menber_planDetails .spec h3 .ldk {
+  font-size: 3rem;
+  line-height: .8;
+  margin-bottom: .2em;
+}
+#menber_planDetails .spec h3 .ldk strong {
+  font-size: 4rem;
+}
+#menber_planDetails .spec h3 .ldk .plan_small {
+  font-size: 2rem;
+}
+@media screen and (min-width: 767px) {
+  #menber_planDetails .spec .mensekiBlock {
+    width: 65%;
+    padding-bottom: 1em;
+  }
+}
+#menber_planDetails .spec dl {
+  margin: auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+@media screen and (min-width: 767px) {
+  #menber_planDetails .spec dl {
+    width: 100%;
+  }
+}
+#menber_planDetails .spec dl dt {
+  line-height: 1;
+}
+#menber_planDetails .spec dl.menseki {
+  margin: 1em auto .5em auto;
+  display: block;
+}
+#menber_planDetails .spec dl.menseki dt {
+  padding-right: .5em;
+  text-align: left;
+}
+#menber_planDetails .spec dl.menseki dd {
+  line-height: 1;
+  font-size: 1.6rem;
+  text-align: left;
+}
+#menber_planDetails .spec dl.menseki dd strong.lage {
+  font-size: 3.8rem;
+}
+#menber_planDetails .spec dl.menseki dd strong.lageMore {
+  font-size: 3.5rem;
+}
+@media screen and (min-width: 767px) {
+  #menber_planDetails .spec dl.menseki dd strong.lageMore {
+    font-size: 5.5rem;
+  }
+}
+#menber_planDetails .spec dl.otherMenseki {
+  color: #b5c7ce;
+}
+#menber_planDetails .spec dl.otherMenseki dt {
+  line-height: 1.5;
+  letter-spacing: -0.1px;
+}
+#menber_planDetails .spec dl.otherMenseki dd {
+  vertical-align: bottom;
+  line-height: 1.5;
+}
+#menber_planDetails .spec dl.otherMenseki dd::before {
+  content: "/";
+  padding: 0 0.3em;
+}
+#menber_planDetails .spec .pickupword {
+  margin: auto;
+  margin-top: 1em;
+  width: 80%;
+}
+@media screen and (min-width: 767px) {
+  #menber_planDetails .spec .pickupword {
+    margin-top: 1em;
+    width: 90%;
+    max-width: 600px;
+  }
+}
+#menber_planDetails .spec .pickupword__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+#menber_planDetails .spec .pickupword__list li {
+  font-size: 1.5rem;
+  letter-spacing: -0.05em;
+  margin-right: .4em;
+  margin-bottom: .5em;
+  padding: 0 .5em;
+  border: 1px solid #b5c7ce;
+  border-radius: 2rem;
+  color: #b5c7ce;
+}
+#menber_planDetails .kagu {
+  width: 100%;
+  background-image: url(../images/bg.png);
+}
+#menber_planDetails .kagu .kagu_contents {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4% 0;
+}
+#menber_planDetails .kagu .kagu_contents p{
+  display: block;
+  width: 100%;
+  margin: 4% auto;
+  text-align: center;
+}
+#menber_planDetails .kagu .kagu_contents h5{
+  text-align: center;
+  font-size: 2.0em;
+}
+#menber_planDetails .zumen {
+  margin: 1em auto 3em;
+  width: 90%;
+  max-width: 700px;
+}
+#menber_planDetails .zumen.wide {
+  max-width: 1125px;
+}
+#menber_planDetails .zumen .hanrei {
+  margin-top: 3em;
+  width: 100%;
+  max-width: 300px;
+}
+#menber_planDetails .btnBack {
+  margin: 4em auto 0;
+  text-align: center;
+  width: 80%;
+  max-width: 1000px;
+}
+#menber_planDetails .btnBack a {
+  display: block;
+  margin: auto;
+  padding: 1.3em;
+  width: 100%;
+  max-width: 350px;
+  background-image: -moz-linear-gradient(-30deg, #415464 0%, #384c5d 58%, #2f4455 100%);
+  background-image: -webkit-linear-gradient(-30deg, #415464 0%, #384c5d 58%, #2f4455 100%);
+  background-image: -ms-linear-gradient(-30deg, #415464 0%, #384c5d 58%, #2f4455 100%);
+  color: #dce5e9;
+}
+
+
+.allplan{
+  width: 90%;
+  max-width: 900px;
+  display: block;
+  margin: 30px auto;
+}

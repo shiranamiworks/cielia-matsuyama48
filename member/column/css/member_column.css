@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/**
+ *
+ *  ページ用CSS
+ *　member_column
+ */
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+.page-ttl h2 {
+  margin-top: -20px;
+  font-size: 4rem;
+}
+.page-ttl .japaneseTitle {
+  width: 80%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  font-size: 3rem;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: #dce5e9;
+}
+
+#menber_column .columnList .inner {
+  margin: auto;
+  width: 90%;
+  max-width: 1200px;
+}
+#menber_column .columnList ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+#menber_column .columnList ul li {
+  overflow: hidden;
+  margin-top: 2em;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  #menber_column .columnList ul li {
+    margin-right: 1.5%;
+    width: 48%;
+  }
+}
+@media screen and (min-width: 960px) {
+  #menber_column .columnList ul li {
+    width: 31%;
+  }
+}
+#menber_column .columnList ul li a {
+  display: block;
+  transition: 0.4s;
+}
+#menber_column .columnList ul li a:link, #menber_column .columnList ul li a:visited {
+  color: #904e55;
+}
+#menber_column .columnList ul li a:hover {
+  opacity: 0.7;
+}
+#menber_column .columnList ul li .new {
+  text-align: center;
+}

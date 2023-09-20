@@ -1,0 +1,457 @@
+@charset "utf-8";
+/**
+ *
+ *  ページ用CSS
+ *　member__column04
+ */
+
+//**************************
+// brake point
+//**************************
+$breakpoint-sm: 480px;
+$breakpoint-md: 767px;
+$breakpoint-lg: 960px;
+$breakpoint-xl: 1023px;
+$breakpoint-xll: 1279px;
+$breakpoint-max: 1600px;
+
+@mixin breakpoint-sm {
+	@media screen and (min-width:($breakpoint-sm)) { @content; } }
+
+@mixin breakpoint-md {
+	@media screen and (min-width:($breakpoint-md)) { @content; } }
+
+@mixin breakpoint-lg {
+	@media screen and (min-width:($breakpoint-lg)) { @content; } }
+
+@mixin breakpoint-xl {
+	@media screen and (min-width:($breakpoint-xl)) { @content; } }
+
+@mixin breakpoint-xll {
+	@media screen and (min-width:($breakpoint-xll)) { @content; } }
+
+@mixin breakpoint-max {
+	@media screen and (min-width:($breakpoint-max)) { @content; } }
+
+//**************************
+// color
+//**************************
+$color_primaryA_01:rgba(220, 229, 233, 1);
+$color_primaryA_02:rgba(181, 199, 206, 1);
+$color_primaryA_03:rgba(162, 182, 189, 1);
+$color_primaryA_04:rgba(65, 84, 100, 1);
+
+$color_accentA_01:rgba(144, 78, 85, 1);
+$color_accentB_01:rgba(102, 139, 103, 1);
+
+$color_accentC_01:rgba(235, 220, 203, 1);
+$color_accentC_02:rgba(191, 180, 143, 1);
+$color_accentC_03:rgba(148, 138, 104, 1);
+
+$color_gray_01:rgba(100, 100, 104, 1);
+$color_gray_02:rgba(37, 38, 39, 1);//TEXT Color
+$color_gray_03:rgba(8, 9, 9, 1);
+
+$color_white:rgba(255, 255, 255, 1);
+$color_black:rgba(0, 0, 0, 1);
+
+.sm {
+	display: block;
+	@include breakpoint-sm {
+		display: none;
+	}
+}
+.sm-lg {
+	display: block;
+	@include breakpoint-xl {
+		display: none;
+	}
+}
+.md {
+	display: none;
+	@include breakpoint-md {
+		display: block;
+	}
+}
+.lg {
+	display: none;
+	@include breakpoint-lg {
+		display: block;
+	}
+}
+
+.xl {
+	display: none;
+	@include breakpoint-xl {
+		display: block;
+	}
+}
+/* clearfix */
+.clearfix {
+	*zoom: 1;
+	overflow: hidden;
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+		height: 0;
+		visibility: hidden;
+	}
+}
+
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+.page-ttl {
+	padding: 0;
+	&__inner {
+		position: relative;
+		height: 50vh;
+		max-height: 400px;
+		background: url("../images/column04/bg_ttl_pc.jpg") center left no-repeat;
+		background-size: cover;
+		h2 {
+			margin-top: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			background: none;
+			width: 80%;
+			max-width: 450px;
+		}
+	}
+
+}
+@media screen and (max-width:480px) {
+	.page-ttl {
+		padding: 4% 4% 4% 4%;
+		&__inner {
+			position: relative;
+			height: 50vh;
+			max-height: 50vh;
+			background: url("../images/column04/bg_ttl_sp.png") center right no-repeat;
+			background-size: cover;
+		}
+	}
+	.page-ttl h2 {
+		margin-top: 0;
+	}
+}
+
+/*--------------------------------------------------------------------------
+   contents
+---------------------------------------------------------------------------*/
+
+#menber_column04 {
+	figure {
+		position: relative;
+		figcaption {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			padding: 0 .5em;
+			background: rgba($color_black, .5);
+			color: $color_white;
+			font-size: 1.2rem;
+		}
+	}
+	p + figure {
+		margin-top: 2em;
+		@include breakpoint-md {
+			margin-top: 4em;
+		}
+	}
+	figure + p {
+		margin-top: 2em;
+		@include breakpoint-md {
+			margin-top: 4em;
+		}
+	}
+	.sectionTitle {
+		padding: .5em;
+		text-align: center;
+		color: $color_white;
+		background: $color_primaryA_04;
+		font-size: 1.8rem;
+		@include breakpoint-md {
+			margin: auto;
+			max-width: 1000px;
+			font-size: 2.2rem;
+		}
+		&+P {
+			margin-top: 2em;
+		}
+	}
+}
+
+#menber_column04 {
+	.introTitle {
+		margin: auto;
+		width: 90%;
+		max-width: 780px;
+		.inner {
+			@include breakpoint-md {
+				margin-top: 2em;
+			}
+		}
+		.introTitleBlock {
+			&__maintitle {
+				margin-top: 1em;
+				font-size: 1.9rem;
+				text-align: center;
+				color: $color_primaryA_04;
+				@include breakpoint-md {
+					font-size: 2.5rem;
+				}
+			}
+			&+p {
+				margin-top: 2em;
+			}
+		}
+	}
+}
+
+#menber_column04 .intro {
+	margin: 3em auto 0;
+	width: 90%;
+	max-width: 850px;
+	@include breakpoint-lg {
+		margin-top: 3em;
+	}
+	&__titleBlock {
+		&__title {
+			font-size: 2rem;
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			align-items: center;
+			@include breakpoint-lg {
+				font-size: 2.8rem;
+			}
+			&::before,
+			&::after {
+				border-top: 3px solid $color_primaryA_04;
+				content: "";
+				flex-grow: 1;
+			}
+			&::before {
+				margin-right: 2rem;
+				@include breakpoint-lg {margin-right: 4rem;}
+			}
+			&::after {
+				margin-left: 2rem;
+				@include breakpoint-lg {margin-left: 4rem;}
+			}
+		}
+	}
+	&__contentsBlock {
+		margin-top: 3em;
+		@include breakpoint-lg {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+		}
+		&__photoBlock {
+			@include breakpoint-lg {
+				width: 40%;
+			}
+		}
+		&__readBlock {
+			margin-top: 1em;
+			@include breakpoint-lg {
+				margin-top: 0;
+				width: 54%;
+				display: flex;
+				flex-direction: column;
+			}
+			.jobTitle {
+				display: block;
+				@include breakpoint-lg {
+					display: inline;
+				}
+			}
+			.name {
+				display: block;
+				font-size: 2.8rem;
+				@include breakpoint-lg {
+					margin-left: .5em;
+					display: inline;
+				}
+			}
+			.nameRead {
+				@include breakpoint-lg {
+					margin-top: auto;
+				}
+			}
+		}
+	}
+}
+
+#menber_column04 .section01 {
+	margin: 3em auto 0;
+	@include breakpoint-lg {
+		margin-top: 5em;
+	}
+	.sectionWrap {
+		margin: 2em auto 0;
+		width: 90%;
+		max-width: 1000px;
+	}
+	&__list {
+		@include breakpoint-lg {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+		}
+		dl {
+			margin-top: 2em;
+			@include breakpoint-lg {
+				width: 45%;
+			}
+			dt {
+				color: $color_accentC_03;
+				font-size: 1.8rem;
+			}
+			dd {
+				margin-top: .5em;
+			}
+		}
+	}
+	&__inner01 {
+		margin-top: 2em;
+		@include breakpoint-lg {
+			margin-top: 4em;
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+		}
+		&__read {
+			@include breakpoint-lg {width: 45%;}
+		}
+		&__photo {
+			@include breakpoint-lg {
+				margin-top: 0;
+				width: 45%;
+			}
+		}
+	}
+}
+
+
+#menber_column04 .section02 {
+	margin: 3em auto 0;
+	@include breakpoint-lg {
+		margin-top: 5em;
+	}
+	.sectionWrap {
+		margin: 2em auto 0;
+		width: 90%;
+		max-width: 1000px;
+	}
+	&__inner01 {
+		margin-top: 2em;
+		@include breakpoint-lg {
+			margin-top: 4em;
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+		}
+		&__read {
+			@include breakpoint-lg {width: 45%;}
+		}
+		&__photo {
+			@include breakpoint-lg {
+				margin-top: 0;
+				width: 45%;
+			}
+		}
+		&+P {
+			margin-top: 1em;
+			@include breakpoint-lg {
+				margin-top: 3em;
+			}
+		}
+	}
+	.photo02 {
+		@include breakpoint-lg {
+			width: 80%;
+		}
+	}
+}
+
+#menber_column04 .section03 {
+	margin: 3em auto 0;
+	@include breakpoint-lg {
+		margin-top: 5em;
+	}
+	.sectionWrap {
+		margin: 2em auto 0;
+		width: 90%;
+		max-width: 1000px;
+	}
+	&__inner01 {
+		margin-top: 2em;
+		@include breakpoint-lg {
+			margin-top: 4em;
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: reverse;
+			-ms-flex-direction: row-reverse;
+			flex-direction: row-reverse;
+		}
+		&__read {
+			@include breakpoint-lg {width: 45%;}
+		}
+		&__photo {
+			@include breakpoint-lg {
+				margin-top: 0;
+				width: 45%;
+			}
+		}
+	}
+	&__inner02 {
+		margin-top: 2em;
+		@include breakpoint-lg {
+			margin-top: 4em;
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+		}
+		&__read {
+			@include breakpoint-lg {
+				width: 28%;
+			}
+		}
+		&__photo {
+			@include breakpoint-lg {
+				margin-top: 0;
+				width: 67%;
+			}
+		}
+	}
+}
+

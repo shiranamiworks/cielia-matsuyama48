@@ -1,0 +1,305 @@
+@charset "UTF-8";
+/**
+ *
+ *  ページ用CSS
+ *　member__column05
+ */
+.sm {
+  display: block;
+}
+@media screen and (min-width: 480px) {
+  .sm {
+    display: none;
+  }
+}
+
+.sm-lg {
+  display: block;
+}
+@media screen and (min-width: 1023px) {
+  .sm-lg {
+    display: none;
+  }
+}
+
+.md {
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  .md {
+    display: block;
+  }
+}
+
+.lg {
+  display: none;
+}
+@media screen and (min-width: 960px) {
+  .lg {
+    display: block;
+  }
+}
+
+.xl {
+  display: none;
+}
+@media screen and (min-width: 1023px) {
+  .xl {
+    display: block;
+  }
+}
+
+/* clearfix */
+.clearfix {
+  *zoom: 1;
+  overflow: hidden;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+.page-ttl {
+  padding: 0;
+}
+.page-ttl__inner {
+  position: relative;
+  height: 50vh;
+  max-height: 400px;
+  background: url("../images/column05/bg_ttl_pc.png") center center no-repeat;
+  background-size: cover;
+}
+.page-ttl__inner h2 {
+  margin-top: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: none;
+  width: 80%;
+  max-width: 450px;
+}
+
+@media screen and (max-width: 480px) {
+  .page-ttl {
+    padding: 4% 4% 4% 4%;
+  }
+  .page-ttl__inner {
+    position: relative;
+    height: 50vh;
+    max-height: 50vh;
+    background: url("../images/column05/bg_ttl_sp.png") no-repeat;
+    background-size: cover;
+  }
+
+  .page-ttl h2 {
+    margin-top: 0;
+  }
+}
+/*--------------------------------------------------------------------------
+   contents
+---------------------------------------------------------------------------*/
+#menber_column05 figure {
+  position: relative;
+}
+#menber_column05 figure figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 .5em;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.2rem;
+}
+
+#menber_column05 .sectionTitleBlock__subtitle {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #bfb48f;
+}
+@media screen and (min-width: 767px) {
+  #menber_column05 .sectionTitleBlock__subtitle {
+    font-size: 1.9rem;
+  }
+}
+#menber_column05 .sectionTitleBlock__maintitle {
+  margin-top: 1em;
+  font-size: 1.9rem;
+  text-align: center;
+  color: #415464;
+}
+@media screen and (min-width: 767px) {
+  #menber_column05 .sectionTitleBlock__maintitle {
+    font-size: 2.5rem;
+  }
+}
+#menber_column05 .sectionTitleBlock + p {
+  margin: 2.5em auto 0 auto;
+  max-width: 1000px;
+}
+#menber_column05 p + figure {
+  margin-top: 2em;
+}
+@media screen and (min-width: 767px) {
+  #menber_column05 p + figure {
+    margin-top: 4em;
+  }
+}
+#menber_column05 .intro {
+  margin: auto;
+  width: 90%;
+  max-width: 1200px;
+}
+@media screen and (min-width: 767px) {
+  #menber_column05 .intro .inner {
+    margin-top: 5em;
+  }
+}
+
+#menber_column05 .sectionPoint {
+  position: relative;
+}
+#menber_column05 .sectionPoint::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5%;
+  transform: skewY(5deg);
+  transform-origin: bottom left;
+  z-index: -1;
+  width: 100%;
+  height: 60%;
+  background: #b5c7ce;
+}
+@media screen and (min-width: 960px) {
+  #menber_column05 .sectionPoint::before {
+    top: 0;
+    height: 50%;
+  }
+}
+#menber_column05 .sectionPoint .sectionWrap {
+  margin: 2em auto 0;
+  width: 90%;
+  max-width: 1450px;
+}
+
+#menber_column05 .pointBlock {
+  margin-top: 5.5em;
+}
+@media screen and (min-width: 960px) {
+  #menber_column05 .pointBlock {
+    margin-top: 11em;
+  }
+}
+#menber_column05 .pointBlock:first-child {
+  margin-top: 3em;
+}
+@media screen and (min-width: 960px) {
+  #menber_column05 .pointBlock:first-child {
+    margin-top: 6em;
+  }
+}
+@media screen and (min-width: 960px) {
+  #menber_column05 .pointBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 960px) {
+  #menber_column05 .pointBlock__photoBlock {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 960px) {
+  #menber_column05 .pointBlock__readBlock {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  #menber_column05 .pointBlock__readBlock {
+    width: 30%;
+  }
+}
+#menber_column05 .pointBlock__readBlock__title {
+  margin-top: 1em;
+}
+#menber_column05 .pointBlock__readBlock__title__icon {
+  padding-bottom: .5em;
+  border-bottom: 1px solid #415464;
+}
+@media screen and (min-width: 960px) {
+  #menber_column05 .pointBlock__readBlock__title__icon {
+    padding-bottom: 1em;
+    padding-left: 10%;
+  }
+}
+#menber_column05 .pointBlock__readBlock__title__icon img {
+  width: 37%;
+  max-width: 200px;
+}
+#menber_column05 .pointBlock__readBlock__title__titRead {
+  margin-top: 1em;
+  font-size: 1.9rem;
+  color: #415464;
+}
+@media screen and (min-width: 960px) {
+  #menber_column05 .pointBlock__readBlock__title__titRead {
+    padding-left: 10%;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1279px) {
+  #menber_column05 .pointBlock__readBlock__title__titRead {
+    font-size: 2.5rem;
+  }
+}
+#menber_column05 .pointBlock__readBlock__text {
+  margin-top: 2em;
+}
+@media screen and (min-width: 960px) {
+  #menber_column05 .pointBlock__readBlock__text {
+    padding-left: 10%;
+  }
+}
+#menber_column05 .pointBlock__readBlock__text .note {
+  font-size: 1.2rem;
+  color: #646468;
+}
+
+@media screen and (min-width: 960px) {
+  #menber_column05 .pointBlock.odd {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (min-width: 960px) {
+  #menber_column05 .pointBlock.odd .pointBlock__readBlock__title__icon {
+    padding-left: 0;
+    padding-right: 10%;
+  }
+}
+@media screen and (min-width: 960px) {
+  #menber_column05 .pointBlock.odd .pointBlock__readBlock__title__titRead {
+    padding-left: 0;
+    padding-right: 10%;
+  }
+}
+@media screen and (min-width: 960px) {
+  #menber_column05 .pointBlock.odd .pointBlock__readBlock__text {
+    padding-left: 0;
+    padding-right: 10%;
+  }
+}

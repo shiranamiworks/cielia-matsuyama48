@@ -1,0 +1,548 @@
+@charset "utf-8";
+/**
+ *
+ *  ページ用CSS
+ *　member__column06
+ */
+
+//**************************
+// brake point
+//**************************
+$breakpoint-sm: 480px;
+$breakpoint-md: 767px;
+$breakpoint-lg: 960px;
+$breakpoint-xl: 1023px;
+$breakpoint-xll: 1279px;
+$breakpoint-max: 1600px;
+
+@mixin breakpoint-sm {
+	@media screen and (min-width:($breakpoint-sm)) { @content; } }
+
+@mixin breakpoint-md {
+	@media screen and (min-width:($breakpoint-md)) { @content; } }
+
+@mixin breakpoint-lg {
+	@media screen and (min-width:($breakpoint-lg)) { @content; } }
+
+@mixin breakpoint-xl {
+	@media screen and (min-width:($breakpoint-xl)) { @content; } }
+
+@mixin breakpoint-xll {
+	@media screen and (min-width:($breakpoint-xll)) { @content; } }
+
+@mixin breakpoint-max {
+	@media screen and (min-width:($breakpoint-max)) { @content; } }
+
+//**************************
+// color
+//**************************
+$color_primaryA_01:rgba(220, 229, 233, 1);
+$color_primaryA_02:rgba(181, 199, 206, 1);
+$color_primaryA_03:rgba(162, 182, 189, 1);
+$color_primaryA_04:rgba(65, 84, 100, 1);
+
+$color_accentA_01:rgba(144, 78, 85, 1);
+$color_accentB_01:rgba(102, 139, 103, 1);
+
+$color_accentC_01:rgba(235, 220, 203, 1);
+$color_accentC_02:rgba(191, 180, 143, 1);
+$color_accentC_03:rgba(148, 138, 104, 1);
+
+$color_gray_01:rgba(100, 100, 104, 1);
+$color_gray_02:rgba(37, 38, 39, 1);//TEXT Color
+$color_gray_03:rgba(8, 9, 9, 1);
+
+$color_white:rgba(255, 255, 255, 1);
+$color_black:rgba(0, 0, 0, 1);
+
+.sm {
+	display: block;
+	@include breakpoint-sm {
+		display: none;
+	}
+}
+.sm-lg {
+	display: block;
+	@include breakpoint-xl {
+		display: none;
+	}
+}
+.md {
+	display: none;
+	@include breakpoint-md {
+		display: block;
+	}
+}
+.lg {
+	display: none;
+	@include breakpoint-lg {
+		display: block;
+	}
+}
+
+.xl {
+	display: none;
+	@include breakpoint-xl {
+		display: block;
+	}
+}
+
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+.page-ttl {
+	padding: 0;
+	&__inner {
+		position: relative;
+		height: 50vh;
+		max-height: 400px;
+		background: url("../images/column06/bg_ttl_pc.png") center center no-repeat;
+		background-size: cover;
+		h2 {
+			margin-top: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			background: none;
+			width: 80%;
+			max-width: 450px;
+		}
+	}
+
+}
+@media screen and (max-width:480px) {
+	.page-ttl {
+		padding: 4% 4% 4% 4%;
+		&__inner {
+			position: relative;
+			height: 50vh;
+			max-height: 50vh;
+			background: url("../images/column06/bg_ttl_sp.png") no-repeat;
+			background-size: cover;
+		}
+	}
+	.page-ttl h2 {
+		margin-top: 0;
+	}
+}
+
+
+
+/*--------------------------------------------------------------------------
+   contents
+---------------------------------------------------------------------------*/
+
+#menber_column06 {
+	figure {
+		position: relative;
+		figcaption {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			padding: 0 .5em;
+			background: rgba($color_black, .5);
+			color: $color_white;
+			font-size: 1.2rem;
+		}
+	}
+}
+
+#menber_column06 {
+	.sectionTitleBlock {
+		&__subtitle {
+			font-size: 1.6rem;
+			text-align: center;
+			color: $color_accentC_02;
+			@include breakpoint-md {
+				font-size: 1.9rem;
+			}
+		}
+		&__maintitle {
+			margin-top: 1em;
+			font-size: 1.9rem;
+			text-align: center;
+			color: $color_primaryA_04;
+			@include breakpoint-md {
+				font-size: 2.5rem;
+			}
+		}
+	}
+	.sectionTitleBlock + p {
+		margin: 2.5em auto 0 auto;
+		max-width: 1000px;
+	}
+	p + figure {
+		margin-top: 2em;
+		@include breakpoint-md {
+			margin-top: 4em;
+		}
+	}
+}
+
+
+#menber_column06 .intro {
+		margin: auto;
+		width: 90%;
+		max-width: 1508px;
+		.inner {
+			@include breakpoint-md {
+				margin-top: 5em;
+			}
+		}
+	p {
+		@include breakpoint-md {
+			text-align: center;
+			line-height: 1.8em;
+		}
+	}
+	}
+	.introPhoto {
+		margin-top: 2em;
+		@include breakpoint-md {
+			margin-top: 4em;
+		}
+	}
+
+
+#menber_column06 .designer {
+	position: relative;
+	@include breakpoint-md {
+		margin-top: 4em;
+	}
+	&::after{
+		content:"";
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: skewY(-5deg);
+		transform-origin: bottom left;
+		z-index: -1;
+		width: 100%;
+		height: 55%;
+		background: $color_primaryA_04;
+		@include breakpoint-md {
+			top: 40%;
+			height: 80%;
+		}
+	}
+	.inner {
+		margin: auto;
+		width: 90%;
+		max-width: 1200px;
+	}
+	.innerWrap {
+		@include breakpoint-md {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-webkit-box-align: end;
+			-ms-flex-align: end;
+			align-items: flex-end;
+		}
+	}
+	.designer__titleBlock {
+		@include breakpoint-md {
+			width: 35%;
+			color: $color_white;
+		}
+		.sectionTitleBlock__maintitle {
+			@include breakpoint-md {
+				text-align: left;
+				color: $color_white;
+			}
+		}
+	}
+	.designer__profileBlock {
+		margin: auto;
+		margin-top: 2em;
+		padding: 1.5em;
+		width: 100%;
+		max-width: 1200px;
+		border: 5px solid $color_primaryA_02;
+		background: $color_white;
+		@include breakpoint-md {
+			width: 50%;
+			padding: 2em;
+		}
+		.designer__profileBlock__photoArea {
+			@include breakpoint-md {
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+				-webkit-box-pack: justify;
+				-ms-flex-pack: justify;
+				justify-content: space-between;
+			}
+			.designer__profileBlock__photoArea__logo {
+				margin: auto;
+				width: 50%;
+				@include breakpoint-md {
+					width: 25%;
+				}
+			}
+			.designer__profileBlock__photoArea__photo {
+				margin-top: 2em;
+				@include breakpoint-md {
+					margin-top: 0;
+					width: 60%;
+				}
+			}
+		}
+		.designer__profileBlock__profileArea {
+			margin-top: 1em;
+			color: $color_accentC_03;
+			@include breakpoint-md {
+				margin-top: 2em;
+			}
+			p {
+				margin-top: .4em;
+			}
+			em {
+				font-size: 2.1rem;
+				font-style: normal;
+			}
+			p.name {
+				margin-top: 1em;
+			}
+			p.read {
+				margin-top: 1em;
+			}
+		}
+	}
+}
+
+#menber_column06 .livingdining {
+	margin-top: 3em;
+	@include breakpoint-md {
+		margin-top: 10em;
+	}
+	.inner {
+		margin: auto;
+		width: 100%;
+		//max-width: 1200px;
+		position: relative;
+	}
+	.livingdining__titleBlock {
+		position: relative;
+		z-index: 1;
+		width: 100%;
+		max-width: 1200px;
+		margin-left: 5%;
+		margin-bottom: -10%;
+		@include breakpoint-md {
+			margin-bottom: -3%;
+		}
+		h3 {
+			display: inline-block;
+			padding: 1em;
+			padding-right: 3em;
+			background: rgba($color_white,.7);
+			font-size: 1.9rem;
+			color: $color_primaryA_04;
+			@include breakpoint-md {
+				font-size: 3rem;
+			}
+		}
+	}
+	ul {
+		@include breakpoint-md {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+		}
+		li {
+			margin-top: .3em;
+			@include breakpoint-md {
+				width: 50%;
+			}
+		}
+	}
+}
+
+#menber_column06 .bedRoom {
+	margin-top: 3em;
+	background: $color_primaryA_04;
+	color: $color_white;
+	@include breakpoint-md {
+		margin-top: 0;
+		padding-top: 3em;
+		padding-bottom: 3em;
+	}
+	.inner {
+		margin: auto;
+		width: 100%;
+		max-width: 1000px;
+		position: relative;
+	}
+	.bedRoom__titleBlock {
+		margin-left: 5%;
+		font-size: 1.9rem;
+			@include breakpoint-md {
+				font-size: 2.8rem;
+			}
+	}
+	ul {
+		margin-top: 2em;
+	}
+}
+
+#menber_column06 .kitchenBathroom {
+	margin-top: 3em;
+	@include breakpoint-md {
+		margin-top: 4em;
+	}
+	.inner {
+		margin: auto;
+		width: 100%;
+		//max-width: 1200px;
+		position: relative;
+	}
+	.kitchenBathroom__titleBlock {
+		position: relative;
+		z-index: 1;
+		width: 100%;
+		max-width: 1200px;
+		margin-left: 5%;
+		margin-bottom: -10%;
+		@include breakpoint-md {
+			margin-bottom: -3%;
+		}
+		h3 {
+			display: inline-block;
+			padding: 1em;
+			padding-right: 3em;
+			background: rgba($color_white,.7);
+			font-size: 1.9rem;
+			color: $color_primaryA_04;
+			@include breakpoint-md {
+				font-size: 3rem;
+			}
+		}
+	}
+	ul {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+		li {
+			&.kitchenBathroom__list__listItem01 {
+				width: 100%;
+				@include breakpoint-md {
+					width: 33.2%;
+				}
+			}
+			&.kitchenBathroom__list__listItem02 {
+				margin-top: 1%;
+				width: 49.5%;
+				@include breakpoint-md {
+					margin-top: 0;
+					width: 33.3%;
+				}
+			}
+			&.kitchenBathroom__list__listItem03 {
+				margin-top: 1%;
+				width: 49.5%;
+				@include breakpoint-md {
+					margin-top: 0;
+					width: 33.3%;
+				}
+			}
+		}
+	}
+}
+
+#menber_column06 .other {
+	margin-top: 3em;
+	position: relative;
+	@include breakpoint-md {
+		margin-top: 4em;
+		margin-bottom: 6em;
+	}
+	&::after{
+		content:"";
+		position: absolute;
+		left: 0;
+		top: 0%;
+		transform: skewY(-5deg);
+		transform-origin: bottom left;
+		z-index: -1;
+		width: 100%;
+		height: 55%;
+		background: $color_primaryA_01;
+		@include breakpoint-md {
+			margin-top: 6em;
+			top: 0%;
+			height: 100%;
+		}
+	}
+	.inner {
+		margin: auto;
+		width: 100%;
+		max-width: 1200px;
+		position: relative;
+	}
+	.other__titleBlock {
+		margin: auto;
+		width: 90%;
+		max-width: 1200px;
+		@include breakpoint-md {
+			margin-top: 4em;
+		}
+		h3 {
+			text-align: center;
+			font-size: 1.9rem;
+			color: $color_primaryA_04;
+			@include breakpoint-md {
+				font-size: 2.8rem;
+			}
+		}
+	}
+	ul {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+		li {
+			margin-top: 1em;
+			@include breakpoint-md {
+				margin-top: 3em;
+			}
+			&.other__list__listItem01 {
+				width: 100%;
+				@include breakpoint-md {
+					width: 49%;
+				}
+			}
+			&.other__list__listItem02 {
+				width: 100%;
+				@include breakpoint-md {
+					width: 49%;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+

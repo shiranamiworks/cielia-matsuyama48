@@ -1,0 +1,348 @@
+@charset "utf-8";
+/**
+ *
+ *  ページ用CSS
+ *　member__column02
+ */
+
+//**************************
+// brake point
+//**************************
+$breakpoint-sm: 480px;
+$breakpoint-md: 767px;
+$breakpoint-lg: 960px;
+$breakpoint-xl: 1023px;
+$breakpoint-xll: 1279px;
+$breakpoint-max: 1600px;
+
+@mixin breakpoint-sm {
+	@media screen and (min-width:($breakpoint-sm)) { @content; } }
+
+@mixin breakpoint-md {
+	@media screen and (min-width:($breakpoint-md)) { @content; } }
+
+@mixin breakpoint-lg {
+	@media screen and (min-width:($breakpoint-lg)) { @content; } }
+
+@mixin breakpoint-xl {
+	@media screen and (min-width:($breakpoint-xl)) { @content; } }
+
+@mixin breakpoint-xll {
+	@media screen and (min-width:($breakpoint-xll)) { @content; } }
+
+@mixin breakpoint-max {
+	@media screen and (min-width:($breakpoint-max)) { @content; } }
+
+//**************************
+// color
+//**************************
+$color_primaryA_01:rgba(220, 229, 233, 1);
+$color_primaryA_02:rgba(181, 199, 206, 1);
+$color_primaryA_03:rgba(162, 182, 189, 1);
+$color_primaryA_04:rgba(65, 84, 100, 1);
+
+$color_accentA_01:rgba(144, 78, 85, 1);
+$color_accentB_01:rgba(102, 139, 103, 1);
+
+$color_accentC_01:rgba(235, 220, 203, 1);
+$color_accentC_02:rgba(191, 180, 143, 1);
+$color_accentC_03:rgba(148, 138, 104, 1);
+
+$color_gray_01:rgba(100, 100, 104, 1);
+$color_gray_02:rgba(37, 38, 39, 1);//TEXT Color
+$color_gray_03:rgba(8, 9, 9, 1);
+
+$color_white:rgba(255, 255, 255, 1);
+$color_black:rgba(0, 0, 0, 1);
+
+.sm {
+	display: block;
+	@include breakpoint-sm {
+		display: none;
+	}
+}
+.sm-md {
+	display: block;
+	@include breakpoint-md {
+		display: none;
+	}
+}
+.sm-lg {
+	display: block;
+	@include breakpoint-xl {
+		display: none;
+	}
+}
+.md {
+	display: none;
+	@include breakpoint-md {
+		display: block;
+	}
+}
+.lg {
+	display: none;
+	@include breakpoint-lg {
+		display: block;
+	}
+}
+
+.xl {
+	display: none;
+	@include breakpoint-xl {
+		display: block;
+	}
+}
+
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+.page-ttl {
+	padding: 0;
+	&__inner {
+		position: relative;
+		height: 50vh;
+		max-height: 400px;
+		background: url("../images/column02/bg_ttl_pc.jpg") center center no-repeat;
+		background-size: cover;
+		h2 {
+			margin-top: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			background: none;
+			width: 80%;
+			max-width: 450px;
+		}
+	}
+}
+@media screen and (max-width:480px) {
+	.page-ttl {
+		padding: 4% 4% 4% 4%;
+		&__inner {
+			position: relative;
+			height: 50vh;
+			max-height: 50vh;
+			background: url("../images/column02/bg_ttl_sp.jpg") no-repeat;
+			background-position: left top;
+			background-size: cover;
+		}
+	}
+	.page-ttl h2 {
+		margin-top: 0;
+	}
+}
+
+/*--------------------------------------------------------------------------
+   contents
+---------------------------------------------------------------------------*/
+
+#menber_column02 {
+	figure {
+		position: relative;
+		figcaption {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			padding: 0 .5em;
+			background: rgba($color_black, .5);
+			color: $color_white;
+			font-size: 1.2rem;
+		}
+	}
+}
+
+#menber_column02 {
+	.sectionTitleBlock {
+		&__subtitle {
+			font-size: 1.6rem;
+			text-align: center;
+			color: $color_accentC_02;
+			@include breakpoint-md {
+				font-size: 1.9rem;
+			}
+		}
+		&__maintitle {
+			margin-top: 1em;
+			font-size: 1.9rem;
+			text-align: center;
+			color: $color_primaryA_04;
+			@include breakpoint-md {
+				font-size: 2.5rem;
+			}
+		}
+	}
+	.sectionReadBlock {
+		margin: 2.5em auto 0 auto;
+		max-width: 790px;
+		P+P {
+			margin-top: 2em;
+		}
+	}
+}
+
+#menber_column02 {
+	.whatIs {
+		margin: auto;
+		width: 90%;
+		max-width: 1000px;
+		.inner {
+			@include breakpoint-md {
+				margin-top: 5em;
+			}
+		}
+		.whatIs__photoBlock {
+			margin-top: 3em;
+			@include breakpoint-md {
+				margin-top: 6em;
+			}
+		}
+	}
+}
+
+#menber_column02 {
+	.attractiveness {
+		margin-top: 5em;
+		padding: 2em 0 4em 0;
+		background: $color_primaryA_01;
+		.inner {
+			margin: auto;
+			width: 90%;
+			max-width: 1000px;
+			@include breakpoint-md {
+				margin-top: 5em;
+			}
+		}
+		.attractiveness__photoBlock {
+			margin-top: 3em;
+			@include breakpoint-md {
+				margin: 6em auto 0;
+				width: 90%;
+				max-width: 1000px;
+			}
+		}
+	}
+}
+
+#menber_column02 {
+	.assetValue {
+		margin: auto;
+		width: 90%;
+		max-width: 1000px;
+		.inner {
+			@include breakpoint-md {
+				margin-top: 5em;
+			}
+		}
+		.assetValue__photoBlock {
+			margin-top: 3em;
+			figcaption {
+				position: relative;
+				bottom: 0;
+				right: 0;
+				background: none;
+				color: $color_gray_01;
+			}
+			@include breakpoint-md {
+				margin: 6em auto 0;
+				max-width: 700px;
+			}
+		}
+		h4 {
+			margin-top: 2em;
+			margin-bottom: 1em;
+			text-align: center;
+			padding: .2em;
+			background: $color_accentC_03;
+			color: #FFF;
+			@include breakpoint-md {
+				font-size: 2rem;
+			}
+		}
+	}
+}
+
+#menber_column02 {
+	.possibility {
+		margin: 5em auto 0 auto;
+		width: 90%;
+		max-width: 1000px;
+		h3.sectionTitleBlock__maintitle span.small {
+			font-size: 1.3rem;
+			@include breakpoint-md {
+				font-size: 1.8rem;
+			}
+		}
+		.inner {
+			@include breakpoint-md {
+				margin-top: 5em;
+			}
+		.possibilityInnerWrap {
+			@include breakpoint-lg {
+				margin-top: 5em;
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+				-webkit-box-pack: justify;
+				-ms-flex-pack: justify;
+				justify-content: space-between;
+			}
+		}
+		}
+		.possibility__textBlock {
+			@include breakpoint-lg {
+				width: 55%;
+			}
+			.sectionReadBlock {
+				@include breakpoint-lg {
+					margin-top: 0;
+				}
+			}
+			.sectionTitleBlock__subtitle {
+				@include breakpoint-lg {
+					text-align: left;
+				}
+			}
+			.sectionTitleBlock__maintitle {
+				@include breakpoint-lg {
+					text-align: left;
+				}
+			}
+		}
+		
+		.possibility__photoBlock {
+			margin-top: 3em;
+			@include breakpoint-lg {
+				margin-top: 0;
+				width: 40%;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

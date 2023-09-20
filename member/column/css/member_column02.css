@@ -1,0 +1,290 @@
+@charset "UTF-8";
+/**
+ *
+ *  ページ用CSS
+ *　member__column02
+ */
+.sm {
+  display: block;
+}
+@media screen and (min-width: 480px) {
+  .sm {
+    display: none;
+  }
+}
+
+.sm-md {
+  display: block;
+}
+@media screen and (min-width: 767px) {
+  .sm-md {
+    display: none;
+  }
+}
+
+.sm-lg {
+  display: block;
+}
+@media screen and (min-width: 1023px) {
+  .sm-lg {
+    display: none;
+  }
+}
+
+.md {
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  .md {
+    display: block;
+  }
+}
+
+.lg {
+  display: none;
+}
+@media screen and (min-width: 960px) {
+  .lg {
+    display: block;
+  }
+}
+
+.xl {
+  display: none;
+}
+@media screen and (min-width: 1023px) {
+  .xl {
+    display: block;
+  }
+}
+
+/*--------------------------------------------------------------------------
+   Overwright
+---------------------------------------------------------------------------*/
+.page-ttl {
+  padding: 0;
+}
+.page-ttl__inner {
+  position: relative;
+  height: 50vh;
+  max-height: 400px;
+  background: url("../images/column02/bg_ttl_pc.jpg") center center no-repeat;
+  background-size: cover;
+}
+.page-ttl__inner h2 {
+  margin-top: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: none;
+  width: 80%;
+  max-width: 450px;
+}
+
+@media screen and (max-width: 480px) {
+  .page-ttl {
+    padding: 4% 4% 4% 4%;
+  }
+  .page-ttl__inner {
+    position: relative;
+    height: 50vh;
+    max-height: 50vh;
+    background: url("../images/column02/bg_ttl_sp.jpg") no-repeat;
+    background-position: left top;
+    background-size: cover;
+  }
+
+  .page-ttl h2 {
+    margin-top: 0;
+  }
+}
+/*--------------------------------------------------------------------------
+   contents
+---------------------------------------------------------------------------*/
+#menber_column02 figure {
+  position: relative;
+}
+#menber_column02 figure figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 .5em;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.2rem;
+}
+
+#menber_column02 .sectionTitleBlock__subtitle {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #bfb48f;
+}
+@media screen and (min-width: 767px) {
+  #menber_column02 .sectionTitleBlock__subtitle {
+    font-size: 1.9rem;
+  }
+}
+#menber_column02 .sectionTitleBlock__maintitle {
+  margin-top: 1em;
+  font-size: 1.9rem;
+  text-align: center;
+  color: #415464;
+}
+@media screen and (min-width: 767px) {
+  #menber_column02 .sectionTitleBlock__maintitle {
+    font-size: 2.5rem;
+  }
+}
+#menber_column02 .sectionReadBlock {
+  margin: 2.5em auto 0 auto;
+  max-width: 790px;
+}
+#menber_column02 .sectionReadBlock P + P {
+  margin-top: 2em;
+}
+
+#menber_column02 .whatIs {
+  margin: auto;
+  width: 90%;
+  max-width: 1000px;
+}
+@media screen and (min-width: 767px) {
+  #menber_column02 .whatIs .inner {
+    margin-top: 5em;
+  }
+}
+#menber_column02 .whatIs .whatIs__photoBlock {
+  margin-top: 3em;
+}
+@media screen and (min-width: 767px) {
+  #menber_column02 .whatIs .whatIs__photoBlock {
+    margin-top: 6em;
+  }
+}
+
+#menber_column02 .attractiveness {
+  margin-top: 5em;
+  padding: 2em 0 4em 0;
+  background: #dce5e9;
+}
+#menber_column02 .attractiveness .inner {
+  margin: auto;
+  width: 90%;
+  max-width: 1000px;
+}
+@media screen and (min-width: 767px) {
+  #menber_column02 .attractiveness .inner {
+    margin-top: 5em;
+  }
+}
+#menber_column02 .attractiveness .attractiveness__photoBlock {
+  margin-top: 3em;
+}
+@media screen and (min-width: 767px) {
+  #menber_column02 .attractiveness .attractiveness__photoBlock {
+    margin: 6em auto 0;
+    width: 90%;
+    max-width: 1000px;
+  }
+}
+
+#menber_column02 .assetValue {
+  margin: auto;
+  width: 90%;
+  max-width: 1000px;
+}
+@media screen and (min-width: 767px) {
+  #menber_column02 .assetValue .inner {
+    margin-top: 5em;
+  }
+}
+#menber_column02 .assetValue .assetValue__photoBlock {
+  margin-top: 3em;
+}
+#menber_column02 .assetValue .assetValue__photoBlock figcaption {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  background: none;
+  color: #646468;
+}
+@media screen and (min-width: 767px) {
+  #menber_column02 .assetValue .assetValue__photoBlock {
+    margin: 6em auto 0;
+    max-width: 700px;
+  }
+}
+#menber_column02 .assetValue h4 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+  padding: .2em;
+  background: #948a68;
+  color: #FFF;
+}
+@media screen and (min-width: 767px) {
+  #menber_column02 .assetValue h4 {
+    font-size: 2rem;
+  }
+}
+
+#menber_column02 .possibility {
+  margin: 5em auto 0 auto;
+  width: 90%;
+  max-width: 1000px;
+}
+#menber_column02 .possibility h3.sectionTitleBlock__maintitle span.small {
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 767px) {
+  #menber_column02 .possibility h3.sectionTitleBlock__maintitle span.small {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 767px) {
+  #menber_column02 .possibility .inner {
+    margin-top: 5em;
+  }
+}
+@media screen and (min-width: 960px) {
+  #menber_column02 .possibility .inner .possibilityInnerWrap {
+    margin-top: 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 960px) {
+  #menber_column02 .possibility .possibility__textBlock {
+    width: 55%;
+  }
+}
+@media screen and (min-width: 960px) {
+  #menber_column02 .possibility .possibility__textBlock .sectionReadBlock {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  #menber_column02 .possibility .possibility__textBlock .sectionTitleBlock__subtitle {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 960px) {
+  #menber_column02 .possibility .possibility__textBlock .sectionTitleBlock__maintitle {
+    text-align: left;
+  }
+}
+#menber_column02 .possibility .possibility__photoBlock {
+  margin-top: 3em;
+}
+@media screen and (min-width: 960px) {
+  #menber_column02 .possibility .possibility__photoBlock {
+    margin-top: 0;
+    width: 40%;
+  }
+}
