@@ -355,7 +355,7 @@
     max-width: 420px;}
     @media screen and (min-width: 767px) {
          #newstyle .contents03 .photoBlock .link.sp{
-        display: none;}
+             display: none;}}
   #newstyle .contents03 .photoBlock .link a{
     display: inline-block;
     width: 100%;
@@ -397,6 +397,7 @@
     color: #fff;
     font-size: 0.6rem;}
 #newstyle .contents04 .linkarea{
+    padding: 0 10px;
     display: block;}
 #newstyle .contents04 .linkarea figure{
     display: block;}
