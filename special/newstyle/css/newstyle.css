@@ -380,7 +380,7 @@
          #newstyle .contents04 .bnrarea,#newstyle .contents04 .linkarea{
         display: inline-flex;
         margin: 0 auto 3em;
-        max-width: 1000px; }}
+        max-width: 500px; }}
 #newstyle .contents04 .bnrarea figure{
     position: relative;
     margin-right: 0;
