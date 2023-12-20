@@ -118,6 +118,7 @@ crm--mainSlide
 /*PC スライダー背景*/
 .crm--mainSlide {
   background: #FFF;
+  display: none;
 }
 
 /* ドットナビ */
@@ -143,6 +144,19 @@ crm--mainSlide
 
 /*---------------------------------------------------------------
 
+crm--ownersLogin
+// ご契約者様限定サイト
+
+--------------------------------------------------------------- */
+
+/* 背景 */
+.crm--ownersLogin {
+  padding: 40px 0;
+  background: #efefef;
+}
+
+/*---------------------------------------------------------------
+
 crm--infoArea
 // 新着情報
 
@@ -150,6 +164,7 @@ crm--infoArea
 
 /* 背景 */
 .crm--infoArea {
+  display: none;
   background-image: -moz-linear-gradient( 90deg, rgb(194,202,205) 0%, rgb(194,202,205) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(194,202,205) 0%, rgb(194,202,205) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(194,202,205) 0%, rgb(194,202,205) 100%);
@@ -186,6 +201,7 @@ crm--meritBox
 
 /* 背景 */
 .crm--meritBox {
+  display: none;
   background: url(../../images/bg_merit.png) top center no-repeat, #415464;
   background-size:cover;
 }
@@ -198,6 +214,9 @@ crm--secContentArea
 // コンテンツ動線エリア
 
 --------------------------------------------------------------- */
+.crm--secContentArea{
+   display: none; 
+}
 
 /* 背景 */
 .crm--block {
@@ -368,12 +387,16 @@ crm--secContentArea
 
 
 
+
 /*---------------------------------------------------------------
 
 crm--secDegitalSalon
 // デジタルサロン
 
 --------------------------------------------------------------- */
+.crm--secDegitalSalon{
+    display: none;
+}
 
 /* 資料請求ボタン */
 #pardot #pdt_link a {
