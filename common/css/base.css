@@ -1056,6 +1056,14 @@ footer .crm--developerWrap .developerLogo a:nth-child(2) {
     letter-spacing: 5px;
     color: #181878;
 }
+.crm--ownersLogin h4 .eTtl {
+    display: block;
+    padding-top: 5px;
+    letter-spacing: 7px;
+    text-align: center;
+    font-size: 14px;
+    opacity: .7; 
+}
 .crm--ownersLogin a {
     display: block;
     max-width: 420px;
