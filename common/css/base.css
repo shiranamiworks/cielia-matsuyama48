@@ -1044,6 +1044,20 @@ footer .crm--developerWrap .developerLogo a:nth-child(2) {
 /********************************************
   soldout
   *********************************************/
+.crm--mainVisual .mv{
+   position: relative; 
+}
+
+.crm--mainVisual .cap{
+   position: absolute; 
+   bottom: 0;
+   right: 0;
+   color: #bfbfbf;
+   padding: 1%;
+   text-shadow: 1px 1px 4px #000, -1px 1px 4px #000, 1px -1px 4px #000, -1px -1px 4px #000;
+   background: transparent;
+   z-index: 5; 
+}
 
 .crm--ownersLogin .ownersClub{
     text-align: center;
